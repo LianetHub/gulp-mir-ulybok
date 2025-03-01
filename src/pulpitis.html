@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', {
+    'title': 'Лечение пульпита'
+    })
+    <body>
+        <div class="wrapper">
+            @@include('html/_header.html', {})
+            <main class="page">
+                @@include('html/_promo.html', {
+                "breads": ["Главная", "Услуги", "Лечение зубов", "Лечение пульпита"],
+                "hasCover": true,
+                "background": "@img/promo/treatment-of-pulpitis.jpg",
+                "title": "Лечение пульпита",
+                "desc": "Пульпит — это воспаление пульпы зуба, мягкой ткани, содержащей нервы и кровеносные сосуды. Оно возникает, как правило, в результате запущенного кариеса, когда бактерии проникают в более глубокие слои зуба и затрагивают пульпу.",
+                "btnText": "Записаться на прием"
+                })
+                @@include('html/_reviews.html', {})
+                @@include('html/_feedback.html', {
+                "image": "@img/feedback/04.png",
+                "inContainer": false
+                })
+            </main>
+            @@include('html/_footer.html', {})
+            @@include('html/_modal.html', {})
+            @@include('html/_js.html', {})
+        </div>
+    </body>
+</html>

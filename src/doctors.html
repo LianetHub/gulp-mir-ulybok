@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', {
+    'title': 'Наши врачи'
+    })
+    <body>
+        <div class="wrapper">
+            @@include('html/_header.html', {})
+            <main class="page">
+                @@include('html/_promo.html', {
+                "breads": ["Главная", "Врачи"],
+                "hasCover": true,
+                "background": "@img/promo/doctors.jpg",
+                "title": "Наши врачи",
+                "desc": "В стоматологии «Мир Улыбок» работают опытные и внимательные специалисты, которые помогут вернуть здоровье и красоту вашей улыбке. Мы стремимся к идеальному результату и делаем всё, чтобы ваше посещение было комфортным и приятным.",
+                "btnText": "Смотреть врачей"
+                })
+                @@include('html/_specialists.html', {
+                "title": "Мы гордимся нашими специалистами !",
+                "type": 3
+                })
+                @@include('html/_reviews.html', {})
+            </main>
+            @@include('html/_footer.html', {})
+            @@include('html/_modal.html', {})
+            @@include('html/_js.html', {})
+        </div>
+    </body>
+</html>

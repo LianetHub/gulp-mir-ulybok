@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', {
+    'title': 'Коронки'
+    })
+    <body>
+        <div class="wrapper">
+            @@include('html/_header.html', {})
+            <main class="page">
+                @@include('html/_promo.html', {
+                "breads": ["Главная", "Услуги", "Коронки"],
+                "hasCover": true,
+                "background": "@img/promo/crowns.jpg",
+                "title": "Коронки",
+                "desc": "Протезы, которые устанавливаются на зубы для восстановления их формы, функции и эстетического вида. Коронки могут использоваться для лечения различных состояний зубов",
+                "btnText": "Консультация"
+                })
+                @@include('html/_steps', {
+                "title": "Установка коронок в 3 шага",
+                "background": "@img/steps/steps-bg-4.jpg",
+                "list": [
+                {
+                "title": "Предварительное лечение",
+                "desc": "При необходимости назначается рентгеновский снимок, проводится терапевтическое лечение и депульпирование. Врач-ортопед готовит зуб к протезированию и снимает оттиски с челюстей для последующего изготовления конструкции.",
+                "image": "@img/steps/11.jpg"
+                },
+                {
+                "title": "Подготовка",
+                "desc": "Зуб готовится к установке протеза, проводится дополнительная обработка и снятие оттисков для точного изготовления протеза.",
+                "image": "@img/steps/15.jpg"
+                },
+                {
+                "title": "Протезирование",
+                "desc": "Готовая коронка примеряется в полости рта и крепится с помощью специального сверхпрочного цемента.",
+                "image": "@img/steps/14.jpg"
+                }
+                ]
+                })
+                @@include('html/_reviews.html', {})
+                @@include('html/_feedback.html', {
+                "image": "@img/feedback/05.png",
+                "inContainer": true
+                })
+            </main>
+            @@include('html/_footer.html', {})
+            @@include('html/_modal.html', {})
+            @@include('html/_js.html', {})
+        </div>
+    </body>
+</html>
