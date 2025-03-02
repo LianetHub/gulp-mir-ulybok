@@ -1,16 +1,9 @@
-.breads {
-	padding: rem(50) 0;
-	// .breads__container
-	&__container {
-	}
-	// .breads__list
-	&__list {
-		display: flex;
-		align-items: center;
-		flex-wrap: wrap;
-		gap: 1rem;
-	}
-	// .breads__item
+.breadcrumbs {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 1rem;
+	// .breadcrumbs__item
 	&__item {
 		display: flex;
 		align-items: center;
@@ -22,7 +15,7 @@
 			}
 		}
 	}
-	// .breads__link
+	// .breadcrumbs__link
 	&__link {
 		transition: color 0.3s ease;
 		@media (any-hover: hover) {

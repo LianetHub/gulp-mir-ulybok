@@ -1,5 +1,18 @@
 <section class="guidelines">
-    <div class="guidelines__container">
+    <div class="guidelines__wrapper@@if(backgroundColor === 'white'){ guidelines__wrapper_white}" style="background-image: url(@@image);">
+
+        <div class="guidelines__container">
+
+            <h2 class="guidelines__title title">@@title</h2>
+            <ol class="guidelines__list">
+                @@for(var i = 0; i < list.length; i++) { <li class="guidelines__item">
+                    <div class="guidelines__item-caption">`+list[i].title+`</div>
+                    <div class="guidelines__item-desc">`+list[i].text+`</div>
+                    </li>
+                    }
+
+            </ol>
+        </div>
 
     </div>
 </section>

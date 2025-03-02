@@ -9,15 +9,52 @@
             <main class="page">
                 <section class="main">
                     <div class="main__container">
-                        <div class="main__caption">Комфортное лечение зубов по доступной цене</div>
-                        <h1 class="main__title">мир улыбок</h1>
-                        <p class="main__tagline">
-                            Решаем большинство стоматологических проблем за одно посещение !
-                        </p>
-                        <div class="main__btns">
-                            <a href="" class="main__btn btn btn-primary">Записаться</a>
-                            <a href="" class="main__btn btn btn-primary-outline">К услугам</a>
+                        <div class="main__header">
+                            <div class="main__offter">
+                                <div class="main__caption">Комфортное лечение зубов по доступной цене</div>
+                                <h1 class="main__title">мир улыбок</h1>
+                                <p class="main__tagline">
+                                    Решаем большинство стоматологических проблем за одно посещение !
+                                </p>
+                                <div class="main__btns">
+                                    <a href="" class="main__btn btn btn-primary">Записаться</a>
+                                    <a href="" class="main__btn btn btn-primary-outline">К услугам</a>
+                                </div>
+                            </div>
+                            <div class="main__sale">
+                                <div class="main__sale-header">
+                                    <div class="main__sale-icon">
+                                        <img src="@img/icons/clock.svg" alt="Иконка">
+                                    </div>
+                                    <div class="main__sale-time">Акция продлится до 31.12.2024</div>
+                                </div>
+                                <div class="main__sale-name">Консультация наших специалистов</div>
+                                <div class="main__sale-price">
+                                    <div class="main__sale-price-old">1 000 руб. </div>
+                                    <div class="main__sale-price-current">Бесплатно</div>
+                                </div>
+                            </div>
                         </div>
+                        <form action="#" class="main__form form">
+                            <div class="form__row">
+                                <div class="form__field">
+                                    <label for="problem-field" class="form__label">Что беспокоит</label>
+                                    <input type="text" name="problem" id="problem-field" class="form__input" placeholder="Проблема">
+                                </div>
+                                <div class="form__field">
+                                    <label for="date-field" class="form__label">Выбрать дату</label>
+                                    <input type="text" name="date" id="date-field" class="form__input" placeholder="Дата">
+                                </div>
+                                <div class="form__field">
+                                    <label for="name-field" class="form__label">Ваше имя</label>
+                                    <input type="text" name="name" id="name-field" class="form__input" placeholder="Имя">
+                                </div>
+                                <div class="form__field">
+                                    <label for="phone-field" class="form__label">Ваш телефон</label>
+                                    <input type="tel" name="phone" id="phone-field" class="form__input" placeholder="Телефон">
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </section>
                 <section class="benefits">
@@ -140,6 +177,7 @@
                                 <img src="@img/banner.png" alt="Фото зубов">
                             </div>
                         </div>
+                        <a href="" class="sales__more more-link icon-arrow-circle">Все акции</a>
                     </div>
                 </section>
                 @@include('html/_works.html', {
@@ -149,7 +187,15 @@
                 @@include('html/_license.html', {})
                 <section class="gallery">
                     <div class="gallery__container">
-
+                        <h2 class="gallery__title title">Фото клиники</h2>
+                        <div class="gallery__slider swiper">
+                            <div class="swiper-wrapper">
+                                <a href="@img/clinic/01.jpg" data-fancybox class="gallery__slide">
+                                    <img src="@img/clinic/01.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <a href="" class="gallery__more more-link icon-arrow-circle">Все фото</a>
                     </div>
                 </section>
                 @@include('html/_contacts.html', {

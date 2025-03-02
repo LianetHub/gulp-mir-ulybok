@@ -1,31 +1,38 @@
 <section class="contacts">
-    <div class="contacts__container">
-        <div class="contacts__body">
-            <div class="contacts__side">
-                <h2 class="contacts__title title">Контакты</h2>
-                <ul class="contacts__list">
-                    <li class="contacts__item">
-                        <div class="contacts__item-caption">Адрес</div>
-                        <address class="contacts__item-value">г. Москва, мкрн. Кожухово, ул. Руднёвка, д.3</address>
-                    </li>
-                    <li class="contacts__item">
-                        <div class="contacts__item-caption">Часы работы</div>
-                        <div class="contacts__item-value">Пн-Вс: 9:00-21:00</div>
-                    </li>
-                    <li class="contacts__item">
-                        <div class="contacts__item-caption">E-mail</div>
-                        <a href="mailto:DobroDent.stom@yandex.ru" class="contacts__item-value">DobroDent.stom@yandex.ru</a>
-                    </li>
-                    <li class="contacts__item">
-                        <div class="contacts__item-caption">Телефон</div>
-                        <a href="tel:+74991107705" class="contacts__item-value">+ 7 (499) 110-77-05</a>
-                    </li>
-                </ul>
-                <div class="contacts__socials">
-                    <a href="" class="contacts__social icon-whatsapp"></a>
-                    <a href="" class="contacts__social icon-vk"></a>
-                    <a href="" class="contacts__social icon-youtube"></a>
+    <div class="contacts__wrapper">
+        <div class="contacts__container">
+            <div class="contacts__body">
+                <div class="contacts__side">
+                    <h2 class="contacts__title title">Контакты</h2>
+                    <ul class="contacts__list">
+                        <li class="contacts__item">
+                            <div class="contacts__item-caption">Адрес</div>
+                            <address class="contacts__item-value">г. Москва, мкрн. Кожухово, ул. Руднёвка, д.3</address>
+                        </li>
+                        <li class="contacts__item">
+                            <div class="contacts__item-caption">Часы работы</div>
+                            <div class="contacts__item-value">Пн-Вс: 9:00-21:00</div>
+                        </li>
+                        <li class="contacts__item">
+                            <div class="contacts__item-caption">E-mail</div>
+                            <a href="mailto:DobroDent.stom@yandex.ru" class="contacts__item-value">DobroDent.stom@yandex.ru</a>
+                        </li>
+                        <li class="contacts__item">
+                            <div class="contacts__item-caption">Телефон</div>
+                            <a href="tel:+74991107705" class="contacts__item-value">+ 7 (499) 110-77-05</a>
+                        </li>
+                    </ul>
+                    <div class="contacts__socials">
+                        <a href="" class="contacts__social icon-whatsapp"></a>
+                        <a href="" class="contacts__social icon-vk"></a>
+                        <a href="" class="contacts__social icon-youtube"></a>
+                    </div>
                 </div>
+                @@include('./templates/_question-form.html', {
+                "className": "contacts__form",
+                "title": "Остались вопросы ?",
+                "subtitle": "Оставьте заявку и получите бесплатную консультацию наших специалистов."
+                })
             </div>
         </div>
     </div>

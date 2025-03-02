@@ -1,5 +1,25 @@
+.main {
+	// .main__container
+	&__container {
+	}
+	// .main__caption
+	&__caption {
+	}
+	// .main__title
+	&__title {
+	}
+	// .main__tagline
+	&__tagline {
+	}
+	// .main__btns
+	&__btns {
+	}
+	// .main__btn
+	&__btn {
+	}
+}
+
 .benefits {
-	padding: rem(60) 0;
 	// .benefits__container
 	&__container {
 	}
@@ -64,7 +84,6 @@
 }
 
 .about {
-	padding: rem(60) 0;
 	// .about__container
 	&__container {
 	}
@@ -117,7 +136,6 @@
 }
 
 .sales {
-	padding: rem(60) 0;
 	// .sales__container
 	&__container {
 	}
@@ -192,5 +210,11 @@
 			height: 100%;
 			width: auto;
 		}
+	}
+	&__more {
+		margin-top: 4rem;
+		margin-left: auto;
+		margin-right: auto;
+		width: fit-content;
 	}
 }
