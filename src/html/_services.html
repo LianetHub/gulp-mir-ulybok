@@ -1,5 +1,13 @@
 <section class="services">
     <div class="services__container">
-
+        <h2 class="services__title title">@@title</h2>
+        <ul class="@@if(grid===true){services__grid}@@if(grid===false){services__list}">
+            @@if(typeof json !== 'undefined') {
+            @@loop('./templates/_service.html', @@json)
+            }
+        </ul>
+        @@if(hasBtn===true){
+        <a href="#" class="services__btn btn btn-primary">Перейти к прайсу</a>
+        }
     </div>
 </section>

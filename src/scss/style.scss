@@ -11,8 +11,9 @@
 // ======================================ШРИФТЫ===============================================
 
 // Шрифт по умолчанию
-$fontfamily: "Roboto";
-$font-montserrat: "Montserrat";
+$fontfamily: "MontserratAlternates";
+$font-gilroy: "Gilroy";
+$font-manrope: "Manrope";
 // Шрифт по умолчанию
 
 $md1: 1399.98px;
@@ -32,25 +33,11 @@ $containerPadding: 30;
 // ЦВЕТА
 
 $white: #fff;
-$text: var(--primary);
-$text-01: var(--primary-01);
-$text-02: var(--primary-02);
-$text-03: var(--primary-03);
-$text-04: var(--primary-04);
-$text-05: var(--primary-05);
-$text-06: var(--primary-06);
-$text-07: var(--primary-07);
-$text-08: var(--primary-08);
-$text-09: var(--primary-09);
+$text: #171717;
 
-$accent: var(--accent);
-$accent-06: var(--accent-06);
-$secondary: var(--secondary);
-
-$grey: var(--grey);
-$brown: var(--brown);
-$brownDark: var(--brown-dark);
-$red: #fa0644;
+$accent: #3fc1c9;
+$blue: #106fae;
+$red: #ce0000;
 
 // Z-Index
 

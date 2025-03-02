@@ -1,0 +1,16 @@
+<li class="specialist">
+    <a href="@@link" class="specialist__image">
+        <img src="@@image" alt="Фото доктора">
+    </a>
+    <div class="specialist__body">
+        <a href="@@link" class="specialist__name">@@name</a>
+        @@if(typeof experience !== 'undefined'){<div class="specialist__experience">Стаж @@experience</div>}
+        @@if(typeof position !== 'undefined'){<div class="specialist__position">@@position</div>}
+
+        @@if(typeof btns !== 'undefined' && btns.length > 0) {
+        <div class="specialist__btns">
+            @@for(var i = 0; i < btns.length; i++) { <a href="" class="specialist__btn btn btn-primary">`+btns[i]+`</a>}
+        </div>
+        }
+    </div>
+</li>

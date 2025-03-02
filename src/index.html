@@ -9,34 +9,142 @@
             <main class="page">
                 <section class="main">
                     <div class="main__container">
-
+                        <div class="main__caption">Комфортное лечение зубов по доступной цене</div>
+                        <h1 class="main__title">мир улыбок</h1>
+                        <p class="main__tagline">
+                            Решаем большинство стоматологических проблем за одно посещение !
+                        </p>
+                        <div class="main__btns">
+                            <a href="" class="main__btn btn btn-primary">Записаться</a>
+                            <a href="" class="main__btn btn btn-primary-outline">К услугам</a>
+                        </div>
                     </div>
                 </section>
                 <section class="benefits">
                     <div class="benefits__container">
-
+                        <h2 class="benefits__title title">Ваша улыбка - наша работа</h2>
+                        <ol class="benefits__list">
+                            <li class="benefits__item">
+                                <div class="benefits__item-icon">
+                                    <img src="@img/icons/shield.svg" alt="Иконка">
+                                </div>
+                                <div class="benefits__item-column">
+                                    <div class="benefits__item-caption title-sm">Качество по доступной цене</div>
+                                    <div class="benefits__item-text">Мы гарантируем высокое качество услуг и оказываем внимательное отношение каждому пациенту</div>
+                                </div>
+                            </li>
+                            <li class="benefits__item">
+                                <div class="benefits__item-icon">
+                                    <img src="@img/icons/sale.svg" alt="Иконка">
+                                </div>
+                                <div class="benefits__item-column">
+                                    <div class="benefits__item-caption title-sm">Программа лояльности</div>
+                                    <div class="benefits__item-text">С каждым визитом у вас есть возможность накапливать бонусные баллы и получать скидки</div>
+                                </div>
+                            </li>
+                            <li class="benefits__item">
+                                <div class="benefits__item-icon">
+                                    <img src="@img/icons/specialist.svg" alt="Иконка">
+                                </div>
+                                <div class="benefits__item-column">
+                                    <div class="benefits__item-caption title-sm">
+                                        Узкопрофильные специалисты
+                                    </div>
+                                    <div class="benefits__item-text">Средний стаж работы наших специалистов – 12 лет. Каждый врач регулярно проходит курсы повышения квалификации</div>
+                                </div>
+                            </li>
+                            <li class="benefits__item">
+                                <div class="benefits__item-icon">
+                                    <img src="@img/icons/health.svg" alt="Иконка">
+                                </div>
+                                <div class="benefits__item-column">
+                                    <div class="benefits__item-caption title-sm">Комплексный подход к лечению</div>
+                                    <div class="benefits__item-text">Осуществляем лечение до 95% известных заболеваний зубов и полости рта</div>
+                                </div>
+                            </li>
+                            <li class="benefits__item">
+                                <div class="benefits__item-icon">
+                                    <img src="@img/icons/location.svg" alt="Иконка">
+                                </div>
+                                <div class="benefits__item-column">
+                                    <div class="benefits__item-caption title-sm">Удобное местоположение</div>
+                                    <div class="benefits__item-text">Наша клиника находится всего в нескольких минутах ходьбы от станции метро «Улица Дмитриевского»</div>
+                                </div>
+                            </li>
+                            <li class="benefits__item">
+                                <div class="benefits__item-icon">
+                                    <img src="@img/icons/standart.svg" alt="Иконка">
+                                </div>
+                                <div class="benefits__item-column">
+                                    <div class="benefits__item-caption title-sm">Качество по доступной цене</div>
+                                    <div class="benefits__item-text">Мы гарантируем высокое качество услуг и оказываем внимательное отношение каждому пациенту</div>
+                                </div>
+                            </li>
+                        </ol>
                     </div>
                 </section>
                 @@include('html/_services.html', {
                 "title": "Оказываем весь спектр стоматологических услуг",
                 "grid": true,
-                "hasBtn": false
-                })
+                "hasBtn": false,
+                "json": "'./html/json/home-services.json'"
+                }, )
                 @@include('html/_specialists.html', {
                 "title": "Наши специалисты - наша гордость",
-                "type": 1
+                "type": "grid",
+                "json": "'./html/json/home-specialists.json'"
                 })
                 <section class="about">
                     <div class="about__container">
-
+                        <h2 class="about__title title">О клинике</h2>
+                        <div class="about__content">
+                            <div class="about__images">
+                                <a href="@img/clinic/01.jpg" data-fancybox="about-gallery" class="about__image">
+                                    <img src="@img/clinic/01.jpg" class="cover-image" alt="Фото клиники">
+                                </a>
+                                <a href="@img/clinic/02.jpg" data-fancybox="about-gallery" class="about__image">
+                                    <img src="@img/clinic/02.jpg" class="cover-image" alt="Фото клиники">
+                                </a>
+                                <a href="@img/clinic/03.jpg" data-fancybox="about-gallery" class="about__image">
+                                    <img src="@img/clinic/03.jpg" class="cover-image" alt="Фото клиники">
+                                </a>
+                            </div>
+                            <div class="about__body">
+                                <div class="about__desc">
+                                    <p>Стоматологическая клиника «Мир Улыбок» – это место, где каждый пациент чувствует себя по-настоящему в надежных руках. Уже более 4 лет мы заботимся о здоровье и эстетике улыбок наших клиентов, предлагая комплексный подход к лечению и профилактике.</p>
+                                    <p>Оказываем полный спектр стоматологических услуг: от регулярных профилактических осмотров и профессиональной чистки до сложных восстановительных процедур. Использование современных технологий и материалов гарантирует высокое качество лечения и комфорт на каждом этапе.</p>
+                                    <p>Наша миссия – не только восстановить здоровье зубов, но и помочь каждому пациенту обрести уверенность в себе и своей улыбке!</p>
+                                </div>
+                                <a href="" class="about__more more-link icon-arrow-circle">Подробнее</a>
+                            </div>
+                        </div>
                     </div>
                 </section>
                 <section class="sales">
                     <div class="sales__container">
-
+                        <h2 class="sales__title title">Акции и скидки</h2>
+                        <p class="sales__subtitle">Не пропустите выгодные предложения стоматологии “Мир Улыбок” !</p>
+                        <div class="sales__banner">
+                            <div class="sales__banner-main">
+                                <h3 class="sales__banner-title title">Профессиональная <br> чистка зубов</h3>
+                                <p class="sales__banner-desc">Абсолютно безболезненная процедура, включающая удаление твердых зубных отложений с эмали с использованием ультразвукового скейлера для эффективного очищения и поддержания здоровья полости рта.</p>
+                                <div class="sales__banner-footer">
+                                    <div class="sales__banner-price">
+                                        <span class="sales__banner-price-old">5 250 руб</span>
+                                        <span class="sales__banner-price-new">3 500 руб</span>
+                                    </div>
+                                    <a href="" class="sales__banner-btn btn btn-primary">Записаться</a>
+                                </div>
+                            </div>
+                            <div class="sales__banner-image">
+                                <img src="@img/banner.png" alt="Фото зубов">
+                            </div>
+                        </div>
                     </div>
                 </section>
-                @@include('html/_works.html', {})
+                @@include('html/_works.html', {
+                "title": "Примеры наших работ"
+                })
                 @@include('html/_reviews.html', {})
                 @@include('html/_license.html', {})
                 <section class="gallery">

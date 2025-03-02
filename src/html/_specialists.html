@@ -1,5 +1,12 @@
-<section class="specialists">
-    <div class="specialists__container">
-
-    </div>
-</section>
+@@if(typeof title !== 'undefined'){<section class="specialists">}
+    @@if(typeof title == 'undefined'){<div class="specialists">}
+        <div class="specialists__container">
+            @@if(typeof title !== 'undefined'){<h2 class="specialists__title title">@@title</h2>}
+            <ul class="@@if(type==='grid'){specialists__grid}@@if(type==='row'){services__row}@@if(type==='column'){services__column}">
+                @@if(typeof json !== 'undefined') {
+                @@loop('./templates/_specialist.html', @@json)
+                }
+            </ul>
+        </div>
+        @@if(typeof title !== 'undefined'){</section>}
+@@if(typeof title == 'undefined'){</div>}

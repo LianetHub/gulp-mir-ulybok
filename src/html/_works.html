@@ -1,5 +1,32 @@
 <section class="works">
     <div class="works__container">
-
+        <h2 class="works__title title">@@title</h2>
+        <ul class="works__items">
+            <li class="works__item">
+                @@include('./templates/_before-slider.html', {
+                "className": "works__item-before-slider",
+                "before": "@img/before-slider/01-before.jpg",
+                "after": "@img/before-slider/01-after.jpg"
+                })
+                <div class="works__item-desc">Исправление скученного положения зубов, устранение перекрестного прикуса</div>
+            </li>
+            <li class="works__item">
+                @@include('./templates/_before-slider.html', {
+                "className": "works__item-before-slider",
+                "before": "@img/before-slider/02-before.jpg",
+                "after": "@img/before-slider/02-after.jpg"
+                })
+                <div class="works__item-desc">Исправление скученного положения зубов, устранение перекрестного прикуса</div>
+            </li>
+            <li class="works__item">
+                @@include('./templates/_before-slider.html', {
+                "className": "works__item-before-slider",
+                "before": "@img/before-slider/03-before.jpg",
+                "after": "@img/before-slider/03-after.jpg"
+                })
+                <div class="works__item-desc">Исправление скученного положения зубов, устранение перекрестного прикуса</div>
+            </li>
+        </ul>
+        <a href="" class="works__more more-link icon-arrow-circle">Все акции</a>
     </div>
 </section>

@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Елизавета Евгеньевна Тюрина",
+        "position": "Стоматолог-ортодонт",
+        "experience": "4 года",
+        "image": "@img/specialists/tyurina-elizaveta-evgenievna.jpg",
+        "link": "tyurina-elizaveta-evgenievna",
+        "btns": [
+            "Записаться"
+        ]
+    },
+    {
+        "name": "Михаил Вадимович Юрченко",
+        "position": "Хирург-имплантолог",
+        "experience": "11 лет",
+        "image": "@img/specialists/yurchenko-mikhail-vadimovich.jpg",
+        "link": "urchenko-mikhail-vadimovich",
+        "btns": [
+            "Записаться"
+        ]
+    },
+    {
+        "name": "Николай Сергеевич Павленко",
+        "position": "Врач стоматолог общей практики, ортопед, хирург",
+        "experience": "17 лет",
+        "image": "@img/specialists/pavlenko-nikolay-sergeevich.jpg",
+        "link": "pavlenko-nikolay-sergeevich",
+        "btns": [
+            "Записаться"
+        ]
+    },
+    {
+        "name": "Татьяна Олеговна Кузьмичева",
+        "position": "Стоматолог-терапевт",
+        "experience": "5 лет",
+        "image": "@img/specialists/kuzmicheva-tatyana-olegovna.jpg",
+        "link": "kuzmicheva-tatyana-olegovna",
+        "btns": [
+            "Записаться"
+        ]
+    }
+]

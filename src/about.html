@@ -58,11 +58,12 @@
                 @@include('html/_services.html', {
                 "title": "Спектр наших услуг",
                 "grid": false,
-                "hasBtn": false
+                "hasBtn": true,
+                "json": "'./html/json/about-services.json'"
                 })
                 @@include('html/_specialists.html', {
                 "title": "Мы гордимся нашими специалистами !",
-                "type": 2
+                "type": "grid"
                 })
                 <section class="diploms">
                     <div class="diploms__container">
