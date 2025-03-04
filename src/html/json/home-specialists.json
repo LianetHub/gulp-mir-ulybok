@@ -1,5 +1,6 @@
 [
     {
+        "className": "swiper-slide",
         "name": "Тюрина <br> Елизавета Евгеньевна ",
         "position": "Стоматолог-ортодонт",
         "experience": "4 года",
@@ -10,6 +11,7 @@
         ]
     },
     {
+        "className": "swiper-slide",
         "name": "Юрченко <br> Михаил Вадимович",
         "position": "Хирург-имплантолог",
         "experience": "11 лет",
@@ -20,6 +22,7 @@
         ]
     },
     {
+        "className": "swiper-slide",
         "name": "Павленко <br> Николай Сергеевич",
         "position": "Врач стоматолог общей практики, ортопед, хирург",
         "experience": "17 лет",
@@ -30,6 +33,7 @@
         ]
     },
     {
+        "className": "swiper-slide",
         "name": "Кузьмичева <br> Татьяна Олеговна",
         "position": "Стоматолог-терапевт",
         "experience": "5 лет",
@@ -40,6 +44,7 @@
         ]
     },
     {
+        "className": "swiper-slide",
         "name": "Семернина <br> Марина Александровна",
         "position": "Стоматолог общей практики",
         "experience": "24 года",
@@ -50,6 +55,7 @@
         ]
     },
     {
+        "className": "swiper-slide",
         "name": "Раюшкин <br> Игорь Игоревич",
         "position": "Терапевт-ортопед",
         "experience": "5 лет",

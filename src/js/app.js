@@ -62,6 +62,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // sliders
 
+    if (document.querySelector('.benefits__slider')) {
+        getMobileSlider('.benefits__slider', {
+            slidesPerView: 1,
+            spaceBetween: 27,
+            watchSlidesProgress: true,
+            pagination: {
+                el: '.benefits__pagination',
+                clickable: true,
+            },
+        })
+    }
+
     if (document.querySelector('.gallery__slider')) {
         new Swiper('.gallery__slider .swiper', {
             slidesPerView: 1,
@@ -74,7 +86,70 @@ document.addEventListener("DOMContentLoaded", () => {
         })
     }
 
+    if (document.querySelector('.specialists__slider')) {
+        getMobileSlider('.specialists__slider', {
+            slidesPerView: 1,
+            spaceBetween: 27,
+            watchSlidesProgress: true,
+            pagination: {
+                el: '.specialists__pagination',
+                clickable: true,
+            },
+        })
+    }
 
+
+    if (document.querySelector('.reviews__slider')) {
+        new Swiper('.reviews__slider', {
+            slidesPerView: "auto",
+            spaceBetween: 16,
+            watchOverflow: true,
+            pagination: {
+                el: '.reviews__pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                768: {
+                    spaceBetween: 46,
+                }
+            }
+        })
+    }
+
+    if (document.querySelector('.works__slider')) {
+        new Swiper('.works__slider', {
+            slidesPerView: 3,
+            spaceBetween: 21,
+            watchOverflow: true,
+            pagination: {
+                el: '.works__pagination',
+                clickable: true,
+            },
+
+        })
+    }
+
+
+    function getMobileSlider(sliderName, options) {
+
+        let init = false;
+        let swiper = null;
+
+        function getSwiper() {
+            if (window.innerWidth <= 767.98) {
+                if (!init) {
+                    init = true;
+                    swiper = new Swiper(sliderName, options);
+                }
+            } else if (init) {
+                swiper.destroy();
+                swiper = null;
+                init = false;
+            }
+        }
+        getSwiper();
+        window.addEventListener("resize", getSwiper);
+    }
 
 
 
@@ -92,6 +167,7 @@ document.addEventListener("DOMContentLoaded", () => {
     updateHeaderHeight();
 
     window.addEventListener('resize', updateHeaderHeight);
+
 
 
 

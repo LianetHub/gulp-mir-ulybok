@@ -1,12 +1,23 @@
 @@if(typeof title !== 'undefined'){<section class="specialists">}
     @@if(typeof title == 'undefined'){<div class="specialists">}
         <div class="specialists__container">
-            @@if(typeof title !== 'undefined'){<h2 class="specialists__title title">@@title</h2>}
+            <!-- @@if(typeof title !== 'undefined'){<h2 class="specialists__title title">@@title</h2>}
             <ul class="@@if(type==='grid'){specialists__grid}@@if(type==='row'){services__row}@@if(type==='column'){services__column}">
                 @@if(typeof json !== 'undefined') {
                 @@loop('./templates/_specialist.html', @@json)
                 }
-            </ul>
+            </ul> -->
+            @@if(type==='grid'){
+            <div class="specialists__slider swiper">
+                <ul class="swiper-wrapper">
+                    @@if(typeof json !== 'undefined') {
+                    @@loop('./templates/_specialist.html', @@json)
+                    }
+                </ul>
+                <div class="specialists__pagination swiper-pagination"></div>
+            </div>
+            <a href="" class="specialists__more more-link icon-arrow-circle">Все врачи</a>
+            }
         </div>
         @@if(typeof title !== 'undefined'){</section>}
 @@if(typeof title == 'undefined'){</div>}

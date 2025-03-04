@@ -201,8 +201,14 @@
 		}
 	}
 	&.btn-sm {
-		font-size: 1.25rem;
 		padding: 0.75rem 1.25rem;
+		font-size: 0.875rem;
+		@media (min-width: $md5) {
+			font-size: 1rem;
+		}
+		@media (min-width: $md2) {
+			font-size: 1.25rem;
+		}
 	}
 	&.btn-xl {
 		font-size: rem(30);
@@ -256,9 +262,9 @@
 // 	}
 // }
 
-.iti__selected-flag {
-	background-color: rgba(0, 0, 0, 0.05);
-}
+// .iti__selected-flag {
+// 	background-color: rgba(0, 0, 0, 0.05);
+// }
 
 // .select {
 // 	position: relative;

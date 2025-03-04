@@ -28,7 +28,13 @@ body {
 	flex: 1 1 auto;
 	overflow: hidden;
 	& > * {
-		padding: rem(60) 0;
+		padding: rem(28) 0;
+		@media (min-width: $md2) {
+			padding: rem(32) 0;
+		}
+		@media (min-width: $md5) {
+			padding: rem(60) 0;
+		}
 		&:first-child {
 			&:not(.promo) {
 				padding-top: 0;
@@ -75,7 +81,7 @@ body {
 	}
 	// .promo__body
 	&__body {
-		padding: 6.37rem 0 5.19rem;
+		padding: 7rem 0 5.19rem;
 		background-color: #006276;
 		position: relative;
 		&::before {
@@ -269,6 +275,7 @@ body {
 	// .service__link
 	&__link {
 		margin-top: 1.5rem;
+		margin-left: 0;
 	}
 }
 
@@ -280,12 +287,22 @@ body {
 	&__title {
 		margin-bottom: rem(72);
 	}
-	// .specialists__grid
-	&__grid {
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		row-gap: rem(72);
-		column-gap: rem(20);
+	// .specialists__slider
+	&__slider {
+		@media (min-width: $md4) {
+			.swiper-wrapper {
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				row-gap: rem(72);
+				column-gap: rem(20);
+			}
+		}
+	}
+	// .specialists__pagination
+	&__pagination {
+		@media (min-width: $md4) {
+			display: none;
+		}
 	}
 	// .specialists__row
 	&__row {
@@ -294,6 +311,9 @@ body {
 	}
 	// .specialists__column
 	&__column {
+	}
+	// .specialists__more
+	&__more {
 	}
 }
 
@@ -371,32 +391,49 @@ body {
 	}
 	// .reviews__subtitle
 	&__subtitle {
-		margin-top: 4.5rem;
 		color: $blue;
-		font-size: 1.875rem;
+		margin-top: 1rem;
+		font-size: 0.875rem;
+		@media (min-width: $md5) {
+			margin-top: 2.5rem;
+			font-size: 1.25rem;
+		}
+		@media (min-width: $md5) {
+			font-size: 1.875rem;
+			margin-top: 4.5rem;
+		}
 	}
-	// .reviews__list
-	&__list {
-		margin-top: 4.5rem;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-wrap: wrap;
-		gap: 2.88rem;
+	// .reviews__slider
+	&__slider {
+		width: fit-content;
+		overflow: visible;
+		max-width: 100%;
+		margin-top: 2.5rem;
+		@media (min-width: $md5) {
+			margin-top: 3.5rem;
+		}
+		@media (min-width: $md2) {
+			margin-top: 4.5rem;
+		}
 	}
 	// .reviews__item
 	&__item {
+		width: auto;
 	}
 	// .reviews__item-card
 	&__item-card {
-		border-radius: 0.9375rem;
 		background: #fff;
 		display: flex;
 		flex-direction: column;
 		text-align: center;
 		align-items: center;
 		padding: 1.25rem 1rem;
-		min-width: 15.25rem;
+		width: rem(170);
+		border-radius: 0.5rem;
+		@media (min-width: $md5) {
+			border-radius: 0.9375rem;
+			width: 15.25rem;
+		}
 		transition: background-color 0.3s ease;
 		@media (any-hover: hover) {
 			&:hover {
@@ -406,15 +443,27 @@ body {
 	}
 	// .reviews__item-logo
 	&__item-logo {
+		& img {
+			height: 1.375rem;
+			@media (min-width: $md5) {
+				height: auto;
+			}
+		}
 	}
 	// .reviews__item-rate
 	&__item-rate {
-		margin-top: 1.15rem;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		gap: 0.25rem;
-		font-size: 1.5625rem;
+		margin-top: 0.5rem;
+		@media (min-width: $md5) {
+			margin-top: 1.15rem;
+			font-size: 1.25rem;
+		}
+		@media (min-width: $md2) {
+			font-size: 1.5625rem;
+		}
 	}
 	// .reviews__item-star
 	&__item-star {
@@ -424,7 +473,13 @@ body {
 	&__item-quantity {
 		margin-top: 0.23rem;
 		color: #666a71;
-		font-size: 1.375rem;
+		font-size: 0.75rem;
+		@media (min-width: $md5) {
+			font-size: 1rem;
+		}
+		@media (min-width: $md2) {
+			font-size: 1.375rem;
+		}
 	}
 }
 
@@ -495,12 +550,18 @@ body {
 	// .works__title
 	&__title {
 	}
-	// .works__items
-	&__items {
-		margin-top: rem(72);
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		gap: 1.31rem;
+	// .works__slider
+	&__slider {
+		// display: grid;
+		// grid-template-columns: repeat(3, 1fr);
+		// gap: 1.31rem;
+		margin-top: 2.5rem;
+		@media (min-width: $md5) {
+			margin-top: 3.5rem;
+		}
+		@media (min-width: $md2) {
+			margin-top: rem(72);
+		}
 	}
 	// .works__item
 	&__item {
@@ -513,15 +574,17 @@ body {
 	// .works__item-desc
 	&__item-desc {
 		margin-top: rem(12);
-		font-size: 1.625rem;
 		font-weight: 500;
+		font-size: 1rem;
+		@media (min-width: $md5) {
+			font-size: 1.25rem;
+		}
+		@media (min-width: $md2) {
+			font-size: 1.625rem;
+		}
 	}
 	// .works__more
 	&__more {
-		margin-top: 4rem;
-		margin-left: auto;
-		margin-right: auto;
-		width: fit-content;
 	}
 }
 

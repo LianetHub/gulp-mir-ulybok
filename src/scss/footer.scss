@@ -1,5 +1,8 @@
 .footer {
-	padding: 4.5rem 0;
+	padding: 2rem 0;
+	@media (min-width: $md5) {
+		padding: 4.5rem 0;
+	}
 	background: #3fc1c9;
 	color: #fff;
 	// .footer__container
@@ -7,8 +10,14 @@
 	}
 	// .footer__body
 	&__body {
-		display: flex;
-		justify-content: space-between;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+
+		@media (min-width: $md3) {
+			display: flex;
+			justify-content: space-between;
+		}
+		gap: 1rem;
 	}
 	// .footer__column
 	&__column {
@@ -16,16 +25,25 @@
 	}
 	// .footer__logo
 	&__logo {
-		max-width: 10.6875rem;
 		display: inline-block;
+		max-width: 5.3125rem;
+		@media (min-width: $md5) {
+			max-width: 10.6875rem;
+		}
 	}
 	// .footer__license
 	&__license {
 		margin-top: 1rem;
-		font-size: 1.125rem;
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
+		font-size: 0.75rem;
+		@media (min-width: $md5) {
+			font-size: 1rem;
+		}
+		@media (min-width: $md2) {
+			font-size: 1.125rem;
+		}
 	}
 	// .footer__license-title
 	&__license-title {
@@ -36,13 +54,25 @@
 	}
 	// .footer__menu
 	&__menu {
+		@media (min-width: $md3) {
+			max-width: 9rem;
+			flex: 0 0 9rem;
+		}
+		@media (min-width: $md2) {
+			flex: 0 1 auto;
+		}
 		& ul {
-			display: grid;
-			grid-template-columns: repeat(2, 1fr);
-			gap: 1rem;
-			font-size: 1.125rem;
+			font-size: 0.75rem;
+			@media (min-width: $md5) {
+				font-size: 1rem;
+			}
+			@media (min-width: $md2) {
+				font-size: 1.125rem;
+			}
 			& li {
-				max-width: 9rem;
+				&:not(:last-child) {
+					margin-bottom: 1rem;
+				}
 			}
 			& a {
 				@media (any-hover: hover) {
@@ -55,11 +85,17 @@
 	}
 	// .footer__contacts
 	&__contacts {
-		font-size: 1.125rem;
 		display: flex;
 		flex-direction: column;
 		gap: 1rem;
 		max-width: 14.625rem;
+		font-size: 0.75rem;
+		@media (min-width: $md5) {
+			font-size: 1rem;
+		}
+		@media (min-width: $md2) {
+			font-size: 1.125rem;
+		}
 	}
 	// .footer__contacts-link
 	&__contacts-link {
@@ -136,11 +172,21 @@
 	}
 	// .footer__side
 	&__side {
+		display: contents;
+		@media (min-width: $md3) {
+			display: block;
+		}
 	}
 	// .footer__schelude
 	&__schelude {
-		font-size: 1.125rem;
 		max-width: 12rem;
+		font-size: 0.75rem;
+		@media (min-width: $md5) {
+			font-size: 1rem;
+		}
+		@media (min-width: $md2) {
+			font-size: 1.125rem;
+		}
 	}
 	// .footer__schelude-title
 	&__schelude-title {
@@ -152,5 +198,6 @@
 	// .footer__callback
 	&__callback {
 		margin-top: 1rem;
+		white-space: nowrap;
 	}
 }
