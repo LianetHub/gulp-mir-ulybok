@@ -37,51 +37,262 @@
 	<link rel="manifest" href="/site.webmanifest" />
 	<!-- favicon -->
 	<!-- plugins -->
-	<link rel="stylesheet" href="css/libs/input-tel.css?_v=20250302204608">
-	<link rel="stylesheet" href="css/libs/swiper-bundle.min.css?_v=20250302204608">
-	<link rel="stylesheet" href="css/libs/fancybox.min.css?_v=20250302204608">
+	<link rel="stylesheet" href="css/libs/input-tel.css?_v=20250304153957">
+	<link rel="stylesheet" href="css/libs/swiper-bundle.min.css?_v=20250304153957">
+	<link rel="stylesheet" href="css/libs/fancybox.min.css?_v=20250304153957">
 	<!-- plugins -->
-	<link rel="stylesheet" href="css/reset.min.css?_v=20250302204608">
-	<link rel="stylesheet" href="css/style.min.css?_v=20250302204608">
+	<link rel="stylesheet" href="css/reset.min.css?_v=20250304153957">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250304153957">
 </head>
 
 <body>
 	<div class="wrapper">
 		<header class="header">
-			<div class="header__container">
-				<div class="header__top">
-					<a href="/" class="header__logo">
-						<img src="img/logo.png" alt="Логотип">
-					</a>
-					<address class="header__location icon-location">г. Москва, мкрн. Кожухово, ул. Руднёвка, д.3</address>
-					<div class="header__time icon-clock">пн-пт: с 9:00 до 21:00</div>
-					<a href="tel:+74991107705" class="header__phone">+7(499) 110-77-05</a>
-					<div class="header__search search">
-						<button type="button" aria-label="Открыть форму поиска" class="search__btn icon-search"></button>
-						<form action="#" class="search__form">
-							<input type="text" autocomplete="off" name="form-search" class="search__form-input" placeholder="Поиск по сайту">
-							<button class="search__form-icon icon-search"></button>
-						</form>
+			<div class="header__wrapper">
+				<div class="header__container">
+					<div class="header__top">
+						<a href="/" class="header__logo">
+							<img src="img/logo.png" alt="Логотип">
+						</a>
+						<address class="header__location icon-location">г. Москва, мкрн. Кожухово, ул. Руднёвка, д.3</address>
+						<div class="header__time icon-clock">пн-пт: с 9:00 до 21:00</div>
+						<a href="tel:+74991107705" class="header__phone icon-phone">+7(499) 110-77-05</a>
+						<div class="header__actions">
+							<button type="button" class="header__menu-toggler icon-menu">
+								<span></span>
+								<span></span>
+								<span></span>
+							</button>
+							<div class="header__search search">
+								<button type="button" aria-label="Открыть форму поиска" class="search__btn icon-search"></button>
+								<form action="#" class="search__form">
+									<input type="text" autocomplete="off" name="form-search" class="search__form-input" placeholder="Поиск по сайту">
+									<div class="search__form-btns">
+										<button type="reset" class="search__form-reset icon-close" aria-label="Очистить форму поиска"></button>
+										<button type="submit" class="search__form-submit icon-search" aria-label="Искать"></button>
+									</div>
+								</form>
+							</div>
+							<a href="" class="header__btn btn btn-primary btn-sm">Запись на прием</a>
+						</div>
 					</div>
-					<a href="" class="header__btn btn btn-primary">Запись на прием</a>
-					<button type="button" class="menu__icon icon-menu">
-						<span></span>
-						<span></span>
-						<span></span>
-					</button>
+					<nav class="header__menu menu">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a href="" class="menu__link">Пациентам</a>
+							</li>
+							<li class="menu__item has-child">
+								<a href="" class="menu__link">Услуги</a>
+								<div class="submenu">
+									<ul class="submenu__list">
+										<li class="submenu__item">
+											<a href="" class="submenu__item-link">
+												<span class="submenu__item-icon">
+													<img src="img/icons/dentistry.svg" alt="Иконка">
+												</span> Лечение зубов </a>
+											<ul class="submenu__categories">
+												<li class="submenu__categories-item">
+													<a href="" class="submenu__categories-link">Кариес</a>
+												</li>
+												<li class="submenu__categories-item">
+													<a href="" class="submenu__categories-link">Пульпит</a>
+												</li>
+												<li class="submenu__categories-item">
+													<a href="" class="submenu__categories-link">Периодонтит</a>
+												</li>
+											</ul>
+										</li>
+										<li class="submenu__item">
+											<a href="" class="submenu__item-link">
+												<span class="submenu__item-icon">
+													<img src="img/icons/prosthetics.svg" alt="Иконка">
+												</span> Протезирование </a>
+											<ul class="submenu__categories">
+												<li class="submenu__categories-item">
+													<a href="" class="submenu__categories-link color-blue">Съемное протезирование</a>
+												</li>
+												<li class="submenu__categories-item">
+													<a href="" class="submenu__categories-link">Полный акриловый <br> протез Acry-Free</a>
+												</li>
+												<li class="submenu__categories-item">
+													<a href="" class="submenu__categories-link">Акриловый протез</a>
+												</li>
+												<li class="submenu__categories-item">
+													<a href="" class="submenu__categories-link">Квадротти протезы</a>
+												</li>
+												<li class="submenu__categories-item">
+													<a href="" class="submenu__categories-link">Бюгельные протезы</a>
+												</li>
+												<li class="submenu__categories-item">
+													<a href="" class="submenu__categories-link">Протез на 4 имплантах <br> (Балка)</a>
+												</li>
+												<li class="submenu__categories-item">
+													<a href="" class="submenu__categories-link color-blue">Протезирование на имплантах</a>
+												</li>
+												<li class="submenu__categories-item">
+													<a href="" class="submenu__categories-link">Все на 6 имплантах</a>
+												</li>
+												<li class="submenu__categories-item">
+													<a href="" class="submenu__categories-link">Все на 4 имплантах <br> (Прикручиваемый)</a>
+												</li>
+												<li class="submenu__categories-item">
+													<a href="" class="submenu__categories-link color-blue">Виниры</a>
+												</li>
+												<li class="submenu__categories-item">
+													<a href="" class="submenu__categories-link color-blue">Коронки</a>
+												</li>
+											</ul>
+										</li>
+										<li class="submenu__item">
+											<a href="" class="submenu__item-link">
+												<span class="submenu__item-icon">
+													<img src="img/icons/surgical-dentistry.svg" alt="Иконка">
+												</span> Хирургическая стоматология </a>
+											<ul class="submenu__categories">
+												<li class="submenu__categories-item">
+													<a href="" class="submenu__categories-link">Атравматичное удаление зуба</a>
+												</li>
+												<li class="submenu__categories-item">
+													<a href="" class="submenu__categories-link">Лечение кисты зуба</a>
+												</li>
+												<li class="submenu__categories-item">
+													<a href="" class="submenu__categories-link">Синус-лифтинг</a>
+												</li>
+												<li class="submenu__categories-item">
+													<a href="" class="submenu__categories-link">Направленная костная регенерация</a>
+												</li>
+												<li class="submenu__categories-item">
+													<a href="" class="submenu__categories-link">Резекция верхушки корня</a>
+												</li>
+											</ul>
+										</li>
+										<li class="submenu__item">
+											<a href="" class="submenu__item-link">
+												<span class="submenu__item-icon">
+													<img src="img/icons/dental-implantology.svg" alt="Иконка">
+												</span> Дентальная имплантология </a>
+											<ul class="submenu__categories">
+												<li class="submenu__categories-item">
+													<a href="" class="submenu__categories-link">Импланты IMPLANTIUM (Корея)</a>
+												</li>
+												<li class="submenu__categories-item">
+													<a href="" class="submenu__categories-link">Импланты DENTIUM SUPERLINE (Корея)</a>
+												</li>
+												<li class="submenu__categories-item">
+													<a href="" class="submenu__categories-link">Импланты NEODENT (Бразилия)</a>
+												</li>
+												<li class="submenu__categories-item">
+													<a href="" class="submenu__categories-link">Импланты Nobel Biocare (Швейцария)</a>
+												</li>
+											</ul>
+										</li>
+										<li class="submenu__item">
+											<a href="" class="submenu__item-link">
+												<span class="submenu__item-icon">
+													<img src="img/icons/braces.svg" alt="Иконка">
+												</span> Брекеты </a>
+											<ul class="submenu__categories">
+												<li class="submenu__categories-item">
+													<a href="" class="submenu__categories-link">Керамические</a>
+												</li>
+												<li class="submenu__categories-item">
+													<a href="" class="submenu__categories-link">Металлические</a>
+												</li>
+												<li class="submenu__categories-item">
+													<a href="" class="submenu__categories-link">Лигатурные</a>
+												</li>
+												<li class="submenu__categories-item">
+													<a href="" class="submenu__categories-link">Самолигирующие</a>
+												</li>
+											</ul>
+										</li>
+										<li class="submenu__item">
+											<a href="" class="submenu__item-link">
+												<span class="submenu__item-icon">
+													<img src="img/icons/brushing-teeth.svg" alt="Иконка">
+												</span> Профессиональная чистка зубов </a>
+											<ul class="submenu__categories">
+												<li class="submenu__categories-item">
+													<a href="" class="submenu__categories-link">Ультразвуковая чистка</a>
+												</li>
+												<li class="submenu__categories-item">
+													<a href="" class="submenu__categories-link">Чистка методом Air Flow</a>
+												</li>
+												<li class="submenu__categories-item">
+													<a href="" class="submenu__categories-link">Механическая чистка</a>
+												</li>
+												<li class="submenu__categories-item">
+													<a href="" class="submenu__categories-link">Полировка зубов</a>
+												</li>
+											</ul>
+										</li>
+										<li class="submenu__item">
+											<a href="" class="submenu__item-link">
+												<span class="submenu__item-icon">
+													<img src="img/icons/x-ray-diagnostics.svg" alt="Иконка">
+												</span> Рентгенодиагностика </a>
+											<ul class="submenu__categories">
+												<li class="submenu__categories-item">
+													<a href="" class="submenu__categories-link">Рентген (прицельный снимок)</a>
+												</li>
+												<li class="submenu__categories-item">
+													<a href="" class="submenu__categories-link">Ортопантомография (панорамный снимок)</a>
+												</li>
+											</ul>
+										</li>
+										<li class="submenu__item">
+											<a href="" class="submenu__item-link">
+												<span class="submenu__item-icon">
+													<img src="img/icons/pediatric-dentistry.svg" alt="Иконка">
+												</span> Детская стоматология </a>
+											<ul class="submenu__categories">
+												<li class="submenu__categories-item">
+													<a href="" class="submenu__categories-link">Восстановление зуба пломбой</a>
+												</li>
+												<li class="submenu__categories-item">
+													<a href="" class="submenu__categories-link">Обработка корневого канала</a>
+												</li>
+												<li class="submenu__categories-item">
+													<a href="" class="submenu__categories-link">Удаление подвижного молочного зуба</a>
+												</li>
+												<li class="submenu__categories-item">
+													<a href="" class="submenu__categories-link">Удаление неподвижного молочного зуба</a>
+												</li>
+												<li class="submenu__categories-item">
+													<a href="" class="submenu__categories-link">Профессиональная гигиена полости рта</a>
+												</li>
+												<li class="submenu__categories-item">
+													<a href="" class="submenu__categories-link">Восстановление молочного зуба металлической коронкой</a>
+												</li>
+												<li class="submenu__categories-item">
+													<a href="" class="submenu__categories-link">Серебрение зубов</a>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">Врачи</a>
+							</li>
+							<li class="menu__item">
+								<a href="/about.html" class="menu__link">О нас</a>
+							</li>
+							<li class="menu__item">
+								<a href="/promotions.html" class="menu__link">Акции</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">Наши работы</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">Отзывы</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">Контакты</a>
+							</li>
+						</ul>
+					</nav>
 				</div>
-				<nav class="header__menu menu">
-					<ul class="menu__list">
-						<li class="menu__item"><a href="" class="menu__link">Пациентам</a></li>
-						<li class="menu__item"><a href="" class="menu__link">Услуги</a></li>
-						<li class="menu__item"><a href="" class="menu__link">Врачи</a></li>
-						<li class="menu__item"><a href="" class="menu__link">О нас</a></li>
-						<li class="menu__item"><a href="" class="menu__link">Акции</a></li>
-						<li class="menu__item"><a href="" class="menu__link">Наши работы</a></li>
-						<li class="menu__item"><a href="" class="menu__link">Отзывы</a></li>
-						<li class="menu__item"><a href="" class="menu__link">Контакты</a></li>
-					</ul>
-				</nav>
 			</div>
 		</header>
 		<main class="page">
@@ -104,7 +315,7 @@
 							<p class="promo__desc">Процесс исправления неправильного прикуса и выравнивания зубов с помощью специальных аппаратов, таких как брекеты и элайнеры, для улучшения функциональности и эстетики зубочелюстной системы.</p>
 							<a href="" class="promo__btn btn btn-primary">Записаться на прием</a>
 						</div>
-						<div class="promo__background" style="background-image: url(img/promo/orthodontic-treatment.png);"></div>
+						<div class="promo__background promo__background-gradient" style="background-image: url(img/promo/orthodontic-treatment.png);"></div>
 					</div>
 				</div>
 			</section>
@@ -139,7 +350,7 @@
 								<span class="reviews__item-rate">
 									<span class="reviews__item-star icon-star"></span><span class="reviews__item-star icon-star"></span><span class="reviews__item-star icon-star"></span><span class="reviews__item-star icon-star"></span><span class="reviews__item-star icon-star"></span>
 								</span>
-								<span class="reviews__item-quantity">117 отзывов</span>
+								<span class="reviews__item-quantity">24 отзыва</span>
 							</a>
 						</li>
 						<li class="reviews__item">
@@ -150,7 +361,7 @@
 								<span class="reviews__item-rate">
 									<span class="reviews__item-star icon-star"></span><span class="reviews__item-star icon-star"></span><span class="reviews__item-star icon-star"></span><span class="reviews__item-star icon-star"></span><span class="reviews__item-star icon-star-outline"></span>
 								</span>
-								<span class="reviews__item-quantity">117 отзывов</span>
+								<span class="reviews__item-quantity">8 отзывов</span>
 							</a>
 						</li>
 					</ul>
@@ -162,50 +373,51 @@
 			</section>
 		</main>
 		<footer class="footer">
-			<div class="footer__content">
-				<div class="footer__container">
-					<div class="footer__content-top">
+			<div class="footer__container">
+				<div class="footer__body">
+					<div class="footer__column">
 						<a href="/" class="footer__logo">
-							<img src="img/logo.png" alt="logo">
+							<img src="img/logo.png" alt="Логотип">
 						</a>
-						<nav class="footer__menu">
-							<ul class="footer__menu-list">
-								<li class="footer__menu-item"><a href="" class="footer__menu-link">Каталог</a></li>
-								<li class="footer__menu-item"><a href="" class="footer__menu-link">Услуги</a></li>
-								<li class="footer__menu-item"><a href="" class="footer__menu-link">О компании</a></li>
-								<li class="footer__menu-item"><a href="" class="footer__menu-link">Цены</a></li>
-								<li class="footer__menu-item"><a href="" class="footer__menu-link">Акции</a></li>
-								<li class="footer__menu-item"><a href="" class="footer__menu-link">Калькулятор</a></li>
-								<li class="footer__menu-item"><a href="" class="footer__menu-link">Контакты</a></li>
-								<li class="footer__menu-item"><a href="" class="footer__menu-link">Доставка и оплата</a></li>
-							</ul>
-						</nav>
-					</div>
-					<div class="footer__content-body">
-						<div class="footer__contacts">
-							<a href="tel:+74950779777" class="footer__contacts-link icon-phone"><span>+7 (495) 077-97-77</span></a>
-							<a href="mailto:severlesgroup@mail.ru" class="footer__contacts-link icon-envelope"><span>severlesgroup@mail.ru</span></a>
-						</div>
-						<div class="footer__content-rate">
-							<iframe src="https://yandex.ru/sprav/widget/rating-badge/43919519886?type=rating" width="150" height="50" frameborder="0"></iframe>
-						</div>
-						<div class="footer__info">
-							<address class="footer__info-item icon-location">Россия, Самарская область, Тольятти, Офицерская улица, 41с1</address>
-							<div class="footer__info-item icon-clock color-grey">Работаем с 8:00 до 20:00 <br> Без выходных и праздников</div>
+						<div class="footer__license">
+							<div class="footer__license-title">Лицензия:</div>
+							<div class="footer__license-value">№Л041-01137-77/00348564 от 10.04.2020г.</div>
 						</div>
 					</div>
-				</div>
-			</div>
-			<div class="footer__bottom">
-				<div class="footer__container">
-					<div class="footer__bottom-body">
-						<div class="footer__copy">2025 Все права защищены</div>
-						<a href="" class="footer__privacy">Политика обработки персональных данных</a>
+					<nav aria-label="Меню в подвале" class="footer__menu">
+						<ul>
+							<li><a href="">О нас</a></li>
+							<li><a href="">Пациентам</a></li>
+							<li><a href="">Услуги</a></li>
+							<li><a href="">Лицензии и&nbsp;реквизиты</a></li>
+							<li><a href="">Врачи</a></li>
+							<li><a href="">Документы</a></li>
+							<li><a href="">Акции</a></li>
+							<li><a href="">Наши работы</a></li>
+							<li><a href="">Отзывы</a></li>
+							<li><a href="">Новости</a></li>
+						</ul>
+					</nav>
+					<div class="footer__contacts">
+						<a href="" class="footer__contacts-link">Контакты</a>
+						<address class="footer__contacts-address">г. Москва, мкрн. Кожухово, ул. Руднёвка, д.3</address>
+						<a href="tel:+74991107705" class="footer__contacts-phone">+7(499) 110-77-05</a>
+						<div class="footer__contacts-socials">
+							<a href="" class="footer__contacts-social icon-whatsapp"></a>
+							<a href="" class="footer__contacts-social icon-vk"></a>
+							<a href="" class="footer__contacts-social icon-youtube"></a>
+						</div>
+					</div>
+					<div class="footer__side">
+						<div class="footer__schelude">
+							<div class="footer__schelude-title">График работы</div>
+							<div class="footer__schelude-time">Пн-пт: с 9:00 до 21:00</div>
+						</div>
+						<a href="" class="footer__callback btn btn-sm btn-white">Заказать звонок</a>
 					</div>
 				</div>
 			</div>
 		</footer>
-		<a href="" class="arrow-top-btn icon-arrow-left hidden">Наверх</a>
 		<div id="callback" class="popup">
 			<button type="button" data-fancybox-close class="popup__close icon-close"></button>
 			<h2 class="popup__title">Заказать звонок</h2>
@@ -260,13 +472,13 @@
 			</form>
 			<div class="form__privacy">Нажимая на кнопку, вы даете согласие на обработку персональных данных</div>
 		</div> <!-- plugins -->
-		<script src="js/libs/jquery-3.7.1.min.js?_v=20250302204608"></script>
-		<script src="js/libs/jquery.inputmask.min.js?_v=20250302204608"></script>
-		<script src="js/libs/intlTelInput.min.js?_v=20250302204608"></script>
-		<script src="js/libs/fancybox.umd.js?_v=20250302204608"></script>
-		<script src="js/libs/swiper-bundle.min.js?_v=20250302204608"></script>
+		<script src="js/libs/jquery-3.7.1.min.js?_v=20250304153957"></script>
+		<script src="js/libs/jquery.inputmask.min.js?_v=20250304153957"></script>
+		<script src="js/libs/intlTelInput.min.js?_v=20250304153957"></script>
+		<script src="js/libs/fancybox.umd.js?_v=20250304153957"></script>
+		<script src="js/libs/swiper-bundle.min.js?_v=20250304153957"></script>
 		<!-- plugins -->
-		<script src="js/app.min.js?_v=20250302204608"></script>
+		<script src="js/app.min.js?_v=20250304153957"></script>
 	</div>
 </body>
 

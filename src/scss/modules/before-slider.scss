@@ -90,25 +90,10 @@
 		left: calc(50% - rem(math.div(36, 2)));
 		top: calc(50% - rem(math.div(36, 2)));
 		display: flex;
-		justify-content: space-between;
+		justify-content: center;
+		color: #fff;
 		align-items: center;
+		font-size: rem(14);
 		cursor: e-resize;
-		@mixin arrow-helper() {
-			content: "";
-			width: 0;
-			height: 0;
-			border-left: 7px solid transparent;
-			border-right: 7px solid transparent;
-			border-bottom: 10.5px solid white;
-			pointer-events: none;
-		}
-		&:after {
-			@include arrow-helper();
-			transform: rotate(90deg);
-		}
-		&:before {
-			@include arrow-helper();
-			transform: rotate(-90deg);
-		}
 	}
 }

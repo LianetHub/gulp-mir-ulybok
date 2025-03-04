@@ -1,37 +1,61 @@
 <header class="header">
-    <div class="header__container">
-        <div class="header__top">
-            <a href="/" class="header__logo">
-                <img src="@img/logo.png" alt="Логотип">
-            </a>
-            <address class="header__location icon-location">г. Москва, мкрн. Кожухово, ул. Руднёвка, д.3</address>
-            <div class="header__time icon-clock">пн-пт: с 9:00 до 21:00</div>
-            <a href="tel:+74991107705" class="header__phone">+7(499) 110-77-05</a>
-            <div class="header__search search">
-                <button type="button" aria-label="Открыть форму поиска" class="search__btn icon-search"></button>
-                <form action="#" class="search__form">
-                    <input type="text" autocomplete="off" name="form-search" class="search__form-input" placeholder="Поиск по сайту">
-                    <button class="search__form-icon icon-search"></button>
-                </form>
+    <div class="header__wrapper">
+        <div class="header__container">
+            <div class="header__top">
+                <a href="/" class="header__logo">
+                    <img src="@img/logo.png" alt="Логотип">
+                </a>
+                <address class="header__location icon-location">г. Москва, мкрн. Кожухово, ул. Руднёвка, д.3</address>
+                <div class="header__time icon-clock">пн-пт: с 9:00 до 21:00</div>
+                <a href="tel:+74991107705" class="header__phone icon-phone">+7(499) 110-77-05</a>
+                <div class="header__actions">
+                    <button type="button" class="header__menu-toggler icon-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <div class="header__search search">
+                        <button type="button" aria-label="Открыть форму поиска" class="search__btn icon-search"></button>
+                        <form action="#" class="search__form">
+                            <input type="text" autocomplete="off" name="form-search" class="search__form-input" placeholder="Поиск по сайту">
+                            <div class="search__form-btns">
+                                <button type="reset" class="search__form-reset icon-close" aria-label="Очистить форму поиска"></button>
+                                <button type="submit" class="search__form-submit icon-search" aria-label="Искать"></button>
+                            </div>
+                        </form>
+                    </div>
+                    <a href="" class="header__btn btn btn-primary btn-sm">Запись на прием</a>
+                </div>
             </div>
-            <a href="" class="header__btn btn btn-primary">Запись на прием</a>
-            <button type="button" class="menu__icon icon-menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+            <nav class="header__menu menu">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a href="" class="menu__link">Пациентам</a>
+                    </li>
+                    <li class="menu__item has-child">
+                        <a href="" class="menu__link">Услуги</a>
+                        @@include('./_submenu.html')
+                    </li>
+                    <li class="menu__item">
+                        <a href="" class="menu__link">Врачи</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="/about.html" class="menu__link">О нас</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="/promotions.html" class="menu__link">Акции</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="" class="menu__link">Наши работы</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="" class="menu__link">Отзывы</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="" class="menu__link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <nav class="header__menu menu">
-            <ul class="menu__list">
-                <li class="menu__item"><a href="" class="menu__link">Пациентам</a></li>
-                <li class="menu__item"><a href="" class="menu__link">Услуги</a></li>
-                <li class="menu__item"><a href="" class="menu__link">Врачи</a></li>
-                <li class="menu__item"><a href="" class="menu__link">О нас</a></li>
-                <li class="menu__item"><a href="" class="menu__link">Акции</a></li>
-                <li class="menu__item"><a href="" class="menu__link">Наши работы</a></li>
-                <li class="menu__item"><a href="" class="menu__link">Отзывы</a></li>
-                <li class="menu__item"><a href="" class="menu__link">Контакты</a></li>
-            </ul>
-        </nav>
     </div>
 </header>

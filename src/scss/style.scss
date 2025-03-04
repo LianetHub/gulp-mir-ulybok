@@ -11,8 +11,7 @@
 // ======================================ШРИФТЫ===============================================
 
 // Шрифт по умолчанию
-$fontfamily: "MontserratAlternates";
-$font-gilroy: "Gilroy";
+$fontfamily: "Gilroy";
 $font-manrope: "Manrope";
 // Шрифт по умолчанию
 
@@ -27,17 +26,21 @@ $md6: 389.98px;
 
 $minWidth: 320; // Минимальная ширина страницы
 $maxWidth: 1920; // Ширина макета
-$maxWidthContainer: rem(1320); // Максимальная ширина ограничивающего контейнера
+$maxWidthContainer: rem(1316); // Максимальная ширина ограничивающего контейнера
 $containerPadding: 30;
 
 // ЦВЕТА
 
 $white: #fff;
+$bg-color: #edfcfd;
 $text: #171717;
+$grey: #666a71;
 
 $accent: #3fc1c9;
 $blue: #106fae;
 $red: #ce0000;
+
+$header: var(--header-height, 11.375rem);
 
 // Z-Index
 
@@ -61,5 +64,6 @@ $ui-index-6: 6; // Для элементов, перекрывающих все
 // СТИЛИ СТРАНИЦ
 
 @import "pages/home";
+@import "pages/promotions";
 @import "pages/catalog";
 @import "pages/product";

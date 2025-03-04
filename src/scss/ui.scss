@@ -2,6 +2,14 @@
 	color: $accent;
 }
 
+.color-blue {
+	color: $blue;
+}
+
+.color-grey {
+	color: $grey;
+}
+
 .more-link {
 	color: $blue;
 	font-size: 1.375rem;
@@ -16,14 +24,12 @@
 
 .title {
 	color: $blue;
-	font-family: $font-gilroy;
 	font-size: 2.5rem;
 	font-weight: 500;
 }
 
 .title-sm {
 	color: $blue;
-	font-family: $font-gilroy;
 	font-size: 1.625rem;
 	font-weight: 500;
 }
@@ -90,21 +96,20 @@
 .swiper-button-next,
 .swiper-button-prev {
 	&::after {
-		display: none;
+		font-size: 1.5rem;
+		font-weight: 300;
 	}
 
 	transition: background-color 0.3s ease 0s, color 0.3s ease 0s;
 	z-index: 2;
-	width: 2.25rem;
-	height: 2.25rem;
-	font-size: 0.75rem;
-	border-radius: rem(4);
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	width: 3.4375rem;
+	height: 3.4375rem;
+
+	border-radius: 50%;
+
 	background: $accent;
 	color: $white;
-	box-shadow: 0 0 rem(9) rgba(0, 0, 0, 0.06);
+
 	&:disabled,
 	&.swiper-button-disabled,
 	&[aria-disabled="true"] {
@@ -124,12 +129,12 @@
 	}
 }
 
-// .swiper-button-prev {
-// 	@extend %ic, .icon-chevron-left;
-// }
-// .swiper-button-next {
-// 	@extend %ic, .icon-chevron-right;
-// }
+.swiper-button-prev {
+	left: rem(-20);
+}
+.swiper-button-next {
+	right: rem(-20);
+}
 
 .swiper-pagination {
 	position: static;

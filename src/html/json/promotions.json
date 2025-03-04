@@ -1,0 +1,26 @@
+[
+    {
+        "className": "promotions__item",
+        "tagName": "li",
+        "time": "Акция продлится до 31.12.2024",
+        "name": "Консультация наших специалистов",
+        "oldPrice": "1 000 руб.",
+        "currentPrice": "Бесплатно"
+    },
+    {
+        "className": "promotions__item",
+        "tagName": "li",
+        "time": "Акция продлится до 31.12.2024",
+        "name": "Профессиональная чистка зубов",
+        "oldPrice": "5 250 руб.",
+        "currentPrice": "3 500 ₽"
+    },
+    {
+        "className": "promotions__item",
+        "tagName": "li",
+        "time": "Акция продлится до 31.12.2024",
+        "name": "Установка циркониевой коронки",
+        "oldPrice": "20 490 руб.",
+        "currentPrice": "17 900 ₽"
+    }
+]

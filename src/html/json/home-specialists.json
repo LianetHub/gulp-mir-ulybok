@@ -1,6 +1,6 @@
 [
     {
-        "name": "Елизавета Евгеньевна Тюрина",
+        "name": "Тюрина <br> Елизавета Евгеньевна ",
         "position": "Стоматолог-ортодонт",
         "experience": "4 года",
         "image": "@img/specialists/tyurina-elizaveta-evgenievna.jpg",
@@ -10,7 +10,7 @@
         ]
     },
     {
-        "name": "Михаил Вадимович Юрченко",
+        "name": "Юрченко <br> Михаил Вадимович",
         "position": "Хирург-имплантолог",
         "experience": "11 лет",
         "image": "@img/specialists/yurchenko-mikhail-vadimovich.jpg",
@@ -20,7 +20,7 @@
         ]
     },
     {
-        "name": "Николай Сергеевич Павленко",
+        "name": "Павленко <br> Николай Сергеевич",
         "position": "Врач стоматолог общей практики, ортопед, хирург",
         "experience": "17 лет",
         "image": "@img/specialists/pavlenko-nikolay-sergeevich.jpg",
@@ -30,10 +30,30 @@
         ]
     },
     {
-        "name": "Татьяна Олеговна Кузьмичева",
+        "name": "Кузьмичева <br> Татьяна Олеговна",
         "position": "Стоматолог-терапевт",
         "experience": "5 лет",
         "image": "@img/specialists/kuzmicheva-tatyana-olegovna.jpg",
+        "link": "kuzmicheva-tatyana-olegovna",
+        "btns": [
+            "Записаться"
+        ]
+    },
+    {
+        "name": "Семернина <br> Марина Александровна",
+        "position": "Стоматолог общей практики",
+        "experience": "24 года",
+        "image": "@img/specialists/semernina-marina-aleksandrovna.jpg",
+        "link": "kuzmicheva-tatyana-olegovna",
+        "btns": [
+            "Записаться"
+        ]
+    },
+    {
+        "name": "Раюшкин <br> Игорь Игоревич",
+        "position": "Терапевт-ортопед",
+        "experience": "5 лет",
+        "image": "@img/specialists/rayushkin-igor-igorevich.jpg",
         "link": "kuzmicheva-tatyana-olegovna",
         "btns": [
             "Записаться"

@@ -17,12 +17,37 @@
                 })
                 <section class="promotions">
                     <div class="promotions__container">
-
+                        <h2 class="promotions__title title">Действующие акции</h2>
+                        <ul class="promotions__list">
+                            @@loop('./html/templates/_promotion.html', './html/json/promotions.json')
+                        </ul>
                     </div>
                 </section>
-                <section class="offers">
-                    <div class="offers__container">
-
+                <section class="sales">
+                    <div class="sales__container">
+                        <h2 class="sales__title title">Выгодные предложения</h2>
+                        <div class="sales__banner banner">
+                            <div class="banner__main">
+                                <div class="banner__time">
+                                    <div class="banner__time-icon">
+                                        <img src="@img/icons/clock.svg" alt="Иконка">
+                                    </div>
+                                    Предложение действует бессрочно
+                                </div>
+                                <h3 class="banner__title title">Получите скидку 5% за отзыв</h3>
+                                <p class="banner__desc">Оставьте отзыв на Яндекс.Картах или 2ГИС и&nbsp;получите гарантированную скидку 5% <br> на лечение.</p>
+                                <ul class="banner__list">
+                                    <li>Скидка действует один раз на одну услугу.</li>
+                                    <li>Скидка не суммируется с другими акциями и скидками.</li>
+                                </ul>
+                                <div class="banner__footer">
+                                    <a href="" class="banner__btn btn btn-primary">Записаться</a>
+                                </div>
+                            </div>
+                            <div class="banner__image">
+                                <img src="@img/gifts.png" alt="Фото подарков">
+                            </div>
+                        </div>
                     </div>
                 </section>
                 @@include('html/_feedback.html', {

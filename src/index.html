@@ -8,66 +8,68 @@
             @@include('html/_header.html', {})
             <main class="page">
                 <section class="main">
-                    <div class="main__container">
-                        <div class="main__header">
-                            <div class="main__offter">
-                                <div class="main__caption">Комфортное лечение зубов по доступной цене</div>
-                                <h1 class="main__title">мир улыбок</h1>
-                                <p class="main__tagline">
-                                    Решаем большинство стоматологических проблем за одно посещение !
-                                </p>
-                                <div class="main__btns">
-                                    <a href="" class="main__btn btn btn-primary">Записаться</a>
-                                    <a href="" class="main__btn btn btn-primary-outline">К услугам</a>
-                                </div>
-                            </div>
-                            <div class="main__sale">
-                                <div class="main__sale-header">
-                                    <div class="main__sale-icon">
-                                        <img src="@img/icons/clock.svg" alt="Иконка">
+                    <div class="main__wrapper">
+                        <div class="main__container">
+                            <div class="main__header">
+                                <div class="main__offter">
+                                    <div class="main__caption">Комфортное лечение зубов по доступной цене</div>
+                                    <h1 class="main__title">мир улыбок</h1>
+                                    <p class="main__tagline">
+                                        Решаем большинство стоматологических проблем за одно посещение !
+                                    </p>
+                                    <div class="main__btns">
+                                        <a href="" class="main__btn btn btn-primary">Записаться</a>
+                                        <a href="" class="main__btn btn btn-primary-outline">К услугам</a>
                                     </div>
-                                    <div class="main__sale-time">Акция продлится до 31.12.2024</div>
                                 </div>
-                                <div class="main__sale-name">Консультация наших специалистов</div>
-                                <div class="main__sale-price">
-                                    <div class="main__sale-price-old">1 000 руб. </div>
-                                    <div class="main__sale-price-current">Бесплатно</div>
-                                </div>
+                                @@include('html/templates/_promotion.html', {
+                                "className": "main__promotion",
+                                "tagName": "div",
+                                "time": "Акция продлится до 31.12.2024",
+                                "name": "Консультация наших специалистов",
+                                "oldPrice": "1 000 руб.",
+                                "currentPrice": "Бесплатно"
+                                })
                             </div>
+                            <form action="#" class="main__form form">
+                                <div class="form__row">
+                                    <div class="form__field">
+                                        <label for="problem-field" class="form__label">Что беспокоит</label>
+                                        <input type="text" name="problem" id="problem-field" class="form__control form__control-grey" placeholder="Проблема">
+                                    </div>
+                                    <span class="form__separator"></span>
+                                    <div class="form__field">
+                                        <label for="date-field" class="form__label">Выбрать дату</label>
+                                        <input type="text" name="date" id="date-field" class="form__control form__control-grey" placeholder="Дата">
+                                    </div>
+                                    <span class="form__separator"></span>
+                                    <div class="form__field">
+                                        <label for="name-field" class="form__label">Ваше имя</label>
+                                        <input type="text" name="name" id="name-field" class="form__control form__control-grey" placeholder="Имя">
+                                    </div>
+                                    <span class="form__separator"></span>
+                                    <div class="form__field">
+                                        <label for="phone-field" class="form__label">Ваш телефон</label>
+                                        <input type="tel" name="phone" id="phone-field" class="form__control form__control-grey" placeholder="Телефон">
+                                    </div>
+                                    <span class="form__separator"></span>
+                                    <button type="submit" class="btn btn-primary">Записаться</button>
+                                </div>
+                            </form>
                         </div>
-                        <form action="#" class="main__form form">
-                            <div class="form__row">
-                                <div class="form__field">
-                                    <label for="problem-field" class="form__label">Что беспокоит</label>
-                                    <input type="text" name="problem" id="problem-field" class="form__input" placeholder="Проблема">
-                                </div>
-                                <div class="form__field">
-                                    <label for="date-field" class="form__label">Выбрать дату</label>
-                                    <input type="text" name="date" id="date-field" class="form__input" placeholder="Дата">
-                                </div>
-                                <div class="form__field">
-                                    <label for="name-field" class="form__label">Ваше имя</label>
-                                    <input type="text" name="name" id="name-field" class="form__input" placeholder="Имя">
-                                </div>
-                                <div class="form__field">
-                                    <label for="phone-field" class="form__label">Ваш телефон</label>
-                                    <input type="tel" name="phone" id="phone-field" class="form__input" placeholder="Телефон">
-                                </div>
-                            </div>
-                        </form>
                     </div>
                 </section>
                 <section class="benefits">
                     <div class="benefits__container">
-                        <h2 class="benefits__title title">Ваша улыбка - наша работа</h2>
+                        <h2 class="benefits__title title">Ваша улыбка — наша работа</h2>
                         <ol class="benefits__list">
                             <li class="benefits__item">
                                 <div class="benefits__item-icon">
                                     <img src="@img/icons/shield.svg" alt="Иконка">
                                 </div>
                                 <div class="benefits__item-column">
-                                    <div class="benefits__item-caption title-sm">Качество по доступной цене</div>
-                                    <div class="benefits__item-text">Мы гарантируем высокое качество услуг и оказываем внимательное отношение каждому пациенту</div>
+                                    <div class="benefits__item-caption title-sm">Качество по <br> доступной цене</div>
+                                    <div class="benefits__item-text">Мы гарантируем высокое качество услуг и оказываем&nbsp;внимательное отношение каждому <br> пациенту</div>
                                 </div>
                             </li>
                             <li class="benefits__item">
@@ -76,7 +78,7 @@
                                 </div>
                                 <div class="benefits__item-column">
                                     <div class="benefits__item-caption title-sm">Программа лояльности</div>
-                                    <div class="benefits__item-text">С каждым визитом у вас есть возможность накапливать бонусные баллы и получать скидки</div>
+                                    <div class="benefits__item-text">С каждым визитом у вас есть&nbsp;возможность накапливать бонусные <br> баллы и получать скидки</div>
                                 </div>
                             </li>
                             <li class="benefits__item">
@@ -95,8 +97,8 @@
                                     <img src="@img/icons/health.svg" alt="Иконка">
                                 </div>
                                 <div class="benefits__item-column">
-                                    <div class="benefits__item-caption title-sm">Комплексный подход к лечению</div>
-                                    <div class="benefits__item-text">Осуществляем лечение до 95% известных заболеваний зубов и полости рта</div>
+                                    <div class="benefits__item-caption title-sm">Комплексный подход к&nbsp;лечению</div>
+                                    <div class="benefits__item-text">Осуществляем лечение до 95%&nbsp;известных заболеваний зубов и полости рта</div>
                                 </div>
                             </li>
                             <li class="benefits__item">
@@ -113,8 +115,8 @@
                                     <img src="@img/icons/standart.svg" alt="Иконка">
                                 </div>
                                 <div class="benefits__item-column">
-                                    <div class="benefits__item-caption title-sm">Качество по доступной цене</div>
-                                    <div class="benefits__item-text">Мы гарантируем высокое качество услуг и оказываем внимательное отношение каждому пациенту</div>
+                                    <div class="benefits__item-caption title-sm">Высокий стандарт обслуживания</div>
+                                    <div class="benefits__item-text">Мы соответствуем строгим стандартам качества современной стоматологии – используем только лучшие материалы и новейшее оборудование.</div>
                                 </div>
                             </li>
                         </ol>
@@ -127,7 +129,7 @@
                 "json": "'./html/json/home-services.json'"
                 }, )
                 @@include('html/_specialists.html', {
-                "title": "Наши специалисты - наша гордость",
+                "title": "Наши специалисты — наша гордость",
                 "type": "grid",
                 "json": "'./html/json/home-specialists.json'"
                 })
@@ -161,19 +163,19 @@
                     <div class="sales__container">
                         <h2 class="sales__title title">Акции и скидки</h2>
                         <p class="sales__subtitle">Не пропустите выгодные предложения стоматологии “Мир Улыбок” !</p>
-                        <div class="sales__banner">
-                            <div class="sales__banner-main">
-                                <h3 class="sales__banner-title title">Профессиональная <br> чистка зубов</h3>
-                                <p class="sales__banner-desc">Абсолютно безболезненная процедура, включающая удаление твердых зубных отложений с эмали с использованием ультразвукового скейлера для эффективного очищения и поддержания здоровья полости рта.</p>
-                                <div class="sales__banner-footer">
-                                    <div class="sales__banner-price">
-                                        <span class="sales__banner-price-old">5 250 руб</span>
-                                        <span class="sales__banner-price-new">3 500 руб</span>
+                        <div class="sales__banner banner">
+                            <div class="banner__main">
+                                <h3 class="banner__title title">Профессиональная <br> чистка зубов</h3>
+                                <p class="banner__desc color-grey">Абсолютно безболезненная процедура, включающая удаление твердых зубных отложений с эмали с использованием ультразвукового скейлера для эффективного очищения и поддержания здоровья полости рта.</p>
+                                <div class="banner__footer">
+                                    <div class="banner__price">
+                                        <span class="banner__price-old">5 250 руб</span>
+                                        <span class="banner__price-new">3 500 руб</span>
                                     </div>
-                                    <a href="" class="sales__banner-btn btn btn-primary">Записаться</a>
+                                    <a href="" class="banner__btn btn btn-primary">Записаться</a>
                                 </div>
                             </div>
-                            <div class="sales__banner-image">
+                            <div class="banner__image banner__image-cover">
                                 <img src="@img/banner.png" alt="Фото зубов">
                             </div>
                         </div>
@@ -188,19 +190,48 @@
                 <section class="gallery">
                     <div class="gallery__container">
                         <h2 class="gallery__title title">Фото клиники</h2>
-                        <div class="gallery__slider swiper">
-                            <div class="swiper-wrapper">
-                                <a href="@img/clinic/01.jpg" data-fancybox class="gallery__slide">
-                                    <img src="@img/clinic/01.jpg" alt="">
-                                </a>
+                        <div class="gallery__slider">
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="gallery__slide swiper-slide">
+                                        <a href="@img/clinic/03.jpg" data-fancybox="gallery" class="gallery__photo lg-row lg-column">
+                                            <img src="@img/clinic/03.jpg" class="cover-image" alt="Фото клиники">
+                                        </a>
+                                        <a href="@img/clinic/04.jpg" data-fancybox="gallery" class="gallery__photo lg-row">
+                                            <img src="@img/clinic/04.jpg" class="cover-image" alt="Фото клиники">
+                                        </a>
+                                        <a href="@img/clinic/05.jpg" data-fancybox="gallery" class="gallery__photo">
+                                            <img src="@img/clinic/05.jpg" class="cover-image" alt="Фото клиники">
+                                        </a>
+                                        <a href="@img/clinic/06.jpg" data-fancybox="gallery" class="gallery__photo">
+                                            <img src="@img/clinic/06.jpg" class="cover-image" alt="Фото клиники">
+                                        </a>
+                                    </div>
+                                    <div class="gallery__slide swiper-slide">
+                                        <a href="@img/clinic/02.jpg" data-fancybox="gallery" class="gallery__photo lg-row lg-column">
+                                            <img src="@img/clinic/02.jpg" class="cover-image" alt="Фото клиники">
+                                        </a>
+                                        <a href="@img/clinic/01.jpg" data-fancybox="gallery" class="gallery__photo lg-row">
+                                            <img src="@img/clinic/01.jpg" class="cover-image" alt="Фото клиники">
+                                        </a>
+                                        <a href="@img/clinic/03.jpg" data-fancybox="gallery" class="gallery__photo">
+                                            <img src="@img/clinic/03.jpg" class="cover-image" alt="Фото клиники">
+                                        </a>
+                                        <a href="@img/clinic/04.jpg" data-fancybox="gallery" class="gallery__photo">
+                                            <img src="@img/clinic/04.jpg" class="cover-image" alt="Фото клиники">
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
+                            <button type="button" class="gallery__prev swiper-button-prev"></button>
+                            <button type="button" class="gallery__next swiper-button-next"></button>
                         </div>
                         <a href="" class="gallery__more more-link icon-arrow-circle">Все фото</a>
                     </div>
                 </section>
                 @@include('html/_contacts.html', {
                 "hasTitle": false
-                })'
+                })
             </main>
             @@include('html/_footer.html', {})
             @@include('html/_modal.html', {})

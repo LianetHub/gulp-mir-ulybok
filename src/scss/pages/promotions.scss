@@ -1,0 +1,76 @@
+.promotions {
+	// .promotions__container
+	&__container {
+	}
+	// .promotions__title
+	&__title {
+	}
+	// .promotions__list
+	&__list {
+		margin-top: 4.5rem;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 1.25rem;
+	}
+}
+
+.promotion {
+	&__card {
+		border-radius: 0.9375rem;
+		background: #fff;
+		padding: 1.5rem 2.5rem;
+		max-width: 25.8125rem;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		min-height: 100%;
+		transition: background-color 0.3s ease;
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: darken($color: #fff, $amount: 5);
+			}
+		}
+	}
+	// .promotion__header
+	&__header {
+		display: flex;
+		align-items: center;
+		gap: 0.38rem;
+		color: #3fc1c9;
+		font-size: 1.125rem;
+	}
+	// .promotion__icon
+	&__icon {
+		width: 2.5rem;
+		height: 2.5rem;
+		flex-shrink: 0;
+	}
+	// .promotion__time
+	&__time {
+		max-width: 11rem;
+	}
+	// .promotion__name
+	&__name {
+		margin-top: 0.5rem;
+		color: #106fae;
+		font-size: 1.625rem;
+		font-weight: 500;
+	}
+	// .promotion__price
+	&__price {
+		margin-top: 1.37rem;
+		display: flex;
+		flex-direction: column;
+	}
+	// .promotion__price-old
+	&__price-old {
+		color: #979797;
+		font-size: 1.125rem;
+		text-decoration: line-through;
+	}
+	// .promotion__price-current
+	&__price-current {
+		color: #106fae;
+		font-size: 1.375rem;
+	}
+}
