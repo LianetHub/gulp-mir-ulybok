@@ -1,24 +1,26 @@
 <section class="contacts">
     <div class="contacts__wrapper">
         <div class="contacts__container">
+            @@if(typeof title !== 'undefined'){<h2 class="contacts__title title">@@title</h2>}
             <div class="contacts__body">
+                @@if(typeof hasSide !== 'undefined' && hasSide === true) {
                 <div class="contacts__side">
                     <h2 class="contacts__title title">Контакты</h2>
                     <ul class="contacts__list">
                         <li class="contacts__item">
-                            <div class="contacts__item-caption">Адрес</div>
+                            <div class="contacts__item-caption title-sm">Адрес</div>
                             <address class="contacts__item-value">г. Москва, мкрн. Кожухово, ул.&nbsp;Руднёвка, д.3</address>
                         </li>
                         <li class="contacts__item">
-                            <div class="contacts__item-caption">Часы работы</div>
+                            <div class="contacts__item-caption title-sm">Часы работы</div>
                             <div class="contacts__item-value">Пн-Вс: 9:00-21:00</div>
                         </li>
                         <li class="contacts__item">
-                            <div class="contacts__item-caption">E-mail</div>
+                            <div class="contacts__item-caption title-sm">E-mail</div>
                             <a href="mailto:DobroDent.stom@yandex.ru" class="contacts__item-value">DobroDent.stom@yandex.ru</a>
                         </li>
                         <li class="contacts__item">
-                            <div class="contacts__item-caption">Телефон</div>
+                            <div class="contacts__item-caption title-sm">Телефон</div>
                             <a href="tel:+74991107705" class="contacts__item-value">+ 7 (499) 110-77-05</a>
                         </li>
                     </ul>
@@ -28,12 +30,39 @@
                         <a href="" class="contacts__social icon-youtube"></a>
                     </div>
                 </div>
+                }
+                @@if(typeof hasQuestion !== 'undefined' && hasQuestion === true){
+                <div class="contacts__side">
+                    <h2 class="contacts__title title">Задайте вопрос <br> врачу—стоматологу</h2>
+                    <p class="contacts__subtitle">Получите консультацию по телефону или через популярные мессенджеры. Это удобно!</p>
+                    <ul class="contacts__list">
+                        <li class="contacts__row">
+                            Звоните: <a href="tel:+74991107705" class="contacts__link">+7 (499) 110-77-05</a>
+                        </li>
+                        <li class="contacts__row">
+                            Пишите: <a href="mailto:DobroDent.stom@yandex.ru" class="contacts__link">DobroDent.stom@yandex.ru</a>
+                        </li>
+                    </ul>
+                </div>
+                }
                 @@include('./templates/_question-form.html', {
                 "className": "contacts__form",
-                "title": "Остались вопросы ?",
-                "subtitle": "Оставьте заявку и получите бесплатную консультацию наших специалистов."
+                "title": "@@formTitle",
+                "subtitle": "@@formSubtitle",
+                "hasQuestion": "@@if(typeof formMessage !== 'undefined' && formMessage === true){true}",
+                "hasReview": "@@if(typeof formReview !== 'undefined' && formReview === true){true}"
                 })
+                @@if(inContainer === true && typeof image !== 'undefined') {
+                <div class="contacts__image">
+                    <img src="@@image" alt="Фото">
+                </div>
+                }
             </div>
         </div>
     </div>
+    @@if(inContainer === false && typeof image !== 'undefined') {
+    <div class="contacts__image">
+        <img src="@@image" alt="Фото">
+    </div>
+    }
 </section>

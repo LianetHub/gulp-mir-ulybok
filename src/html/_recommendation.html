@@ -1,5 +1,31 @@
 <section class="recommendation">
-    <div class="recommendation__container">
+    @@if(typeof background !=='undefined') {
 
+    <div class="recommendation__wrapper @@if(typeof background !=='undefined' && background == 'blue') { recommendation__wrapper-blue}" @@if(typeof background !=='undefined' && background !=='blue' ) { style="background: url('@@background') center / cover no-repeat;" }>
+        }
+        <div class="recommendation__container">
+            <h2 class="recommendation__title title">@@title</h2>
+            @@if(typeof subtitle !== 'undefined' && subtitle.length > 0) {
+            <div class="recommendation__subtitle">
+                @@for(var i = 0; i < subtitle.length; i++) { <p>`+subtitle[i]+`</p>}
+            </div>
+            }
+            @@if(typeof list !== 'undefined' && list.length > 0) {
+            <ul class="recommendation__list">
+                @@for(var i = 0; i < list.length; i++) { <li>`+list[i]+`</li>}
+            </ul>
+            }
+            <div class="recommendation__author">
+                <a href="" class="recommendation__author-thumb">
+                    <img src="@@author.image" class="cover-image" alt="Фото доктора">
+                </a>
+                <div class="recommendation__author-body">
+                    <a href="" class="recommendation__author-name title-sm">@@author.name</a>
+                    <p class="recommendation__author-position">@@author.position</p>
+                </div>
+            </div>
+        </div>
+        @@if(typeof background !=='undefined') {
     </div>
+    }
 </section>

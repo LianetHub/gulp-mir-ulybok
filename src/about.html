@@ -5,14 +5,16 @@
     })
     <body>
         <div class="wrapper">
-            @@include('html/_header.html', {})
+            @@include('html/_header.html', {
+            "active": 4
+            })
             <main class="page">
                 @@include('html/_promo.html', {
                 "breads": ["Главная", "О нас"],
                 "hasCover": true,
                 "background": "@img/promo/about.jpg",
-                "title": "Стоматология нового <br> поколения",
-                "desc": "Стоматология «Мир Улыбок» – это современное медицинское учреждение, специализирующееся на решении стоматологических задач любой сложности. Наши пациенты получают полный спектр услуг, начиная от диагностики и профилактики до сложных хирургических процедур.",
+                "title": "Стоматология нового поколения",
+                "desc": "Стоматология «ДоброДент» – это современное медицинское учреждение, специализирующееся на&nbsp;решении стоматологических задач любой сложности. Наши пациенты получают полный спектр услуг, начиная от&nbsp;диагностики и профилактики до сложных хирургических процедур.",
                 "btnText": "Записаться на прием"
                 })
                 <section class="desc">
@@ -29,7 +31,7 @@
                     </div>
                 </section>
                 @@include('html/_guidelines.html', {
-                "title": "Почему выбирают нас ?",
+                "title": "Почему выбирают нас?",
                 "image": "@img/guidelines/01.png",
                 "backgroundColor": "blue",
                 "list": [
@@ -43,7 +45,7 @@
                 },
                 {
                 "title": "Прозрачность и доступность цен",
-                "text": "Стоимость лечения рассчитывается до его начала. Мы предлагаем разные варианты планов лечения, что позволяет пациенту выбрать наиболее удобный и доступный."
+                "text": "Стоимость лечения рассчитывается до его начала. Мы&nbsp;предлагаем разные варианты планов лечения, что позволяет пациенту выбрать наиболее удобный и доступный."
                 },
                 {
                 "title": "Комфортная обстановка",
@@ -58,32 +60,44 @@
                 @@include('html/_services.html', {
                 "title": "Спектр наших услуг",
                 "grid": false,
-                "hasBtn": true,
+                "btnText": "Перейти к прайсу",
                 "json": "'./html/json/about-services.json'"
                 })
                 @@include('html/_specialists.html', {
                 "title": "Мы гордимся нашими специалистами !",
-                "type": "grid"
+                "type": "grid",
+                "json": "'./html/json/about-specialists.json'",
+                "hasMore": false
                 })
-                <section class="diploms">
-                    <div class="diploms__container">
+                <section class="desc">
+                    <div class="desc__container">
+                        <h2 class="desc__title title">Дипломы и сертификаты</h2>
+                        <p class="desc__text">Все врачи стоматологии «ДоброДент» имеют профильное образование и регулярно подтверждают свою квалификацию, участвуя в семинарах и мастер—классах.</p>
                     </div>
                 </section>
                 <section class="desc">
                     <div class="desc__container">
-                        <h2 class="desc__title title"></h2>
+                        <h2 class="desc__title title">Стремимся только к отличному результату !</h2>
+                        <p class="desc__text">Наша миссия — дарить здоровые и красивые улыбки. Мы применяем индивидуальный подход к каждому пациенту, внимательно анализируем ситуацию и разрабатываем оптимальный план лечения. Специалисты стоматологии «ДоброДент» всегда готовы предложить решение даже для самых сложных стоматологических случаев.</p>
                     </div>
                 </section>
                 @@include('html/_license.html', {})
                 <section class="video">
                     <div class="video__container">
-
+                        <h2 class="video__title title">Посмотрите видео о нашей клинике !</h2>
+                        <div class="video__content">
+                            <iframe src="https://www.youtube.com/embed/LzoRvJiEYGU?si=6ZLUlIhUVwCk7Eb4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
                     </div>
                 </section>
                 @@include('html/_reviews.html', {})
                 @@include('html/_contacts.html', {
-                "hasTitle": true
-                })'
+                "title": "Ждем вас в стоматологии “ДоброДент”!",
+                "formTitle": "Остались вопросы?",
+                "formSubtitle": "Оставьте заявку и получите бесплатную консультацию наших специалистов.",
+                "hasSide": true,
+                "inContainer": true
+                })
             </main>
             @@include('html/_footer.html', {})
             @@include('html/_modal.html', {})

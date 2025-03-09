@@ -18,6 +18,14 @@
 }
 
 </div>
+@@if(typeof description !== 'undefined') {
 <p class="service__desc">@@description</p>
+}
+@@if(typeof list !== 'undefined' && list.length > 0) {
+<ul class="service__list">
+    @@for(var i = 0; i < list.length; i++) { <li class="service__list-item">`+list[i]+`</li>
+        }
+</ul>
+}
 @@if(hasMore===true){<a href="" class="service__link more-link icon-arrow-circle">Подробнее</a>}
 </li>

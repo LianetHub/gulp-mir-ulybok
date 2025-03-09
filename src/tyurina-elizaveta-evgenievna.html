@@ -7,6 +7,16 @@
         <div class="wrapper">
             @@include('html/_header.html', {})
             <main class="page">
+                @@include('html/_promo.html', {
+                "breads": ["Главная", "Врачи", "Тюрина Елизавета Евгеньевна"],
+                "hasCover": false,
+                "image": "@img/specialists/tyurina-elizaveta-evgenievna-2.png",
+                "title": "Тюрина Елизавета Евгеньевна",
+                "position": "Стоматолог-ортодонт",
+                "expirience": "4 года",
+                "desc": "Специализируется на коррекции прикуса <br> с использованием современных ортодонтических систем, таких как брекеты и элайнеры.",
+                "btns": ["Записаться", "Видео о враче"]
+                })
                 <section class="desc">
                     <div class="desc__container">
                         <h2 class="desc__title">Основные направления деятельности</h2>
@@ -20,7 +30,8 @@
                 </section>
                 @@include('html/_specialists.html', {
                 "title": "Другие специалисты",
-                "type": "row"
+                "type": "row",
+                "hasMore": false
                 })
                 @@include('html/_feedback.html', {
                 "image": "@img/feedback/07.png",

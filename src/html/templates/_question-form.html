@@ -2,12 +2,18 @@
     @@if(typeof title !== 'undefined'){
     <h2 class="form__title title">@@title</h2>
     }
-    @@if(typeof subtitle !== 'undefined'){
+    @@if(typeof subtitle !== 'undefined' && subtitle.length > 0){
     <p class="form__subtitle">@@subtitle</p>
     }
     <div class="form__fields">
         <input type="text" name="name" placeholder="Ваше имя" class="form__control">
         <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" class="form__control">
+        @@if(typeof hasQuestion !== 'undefined' && hasQuestion === 'true'){
+        <input type="text" name="message" placeholder="Задайте вопрос" class="form__control">
+        }
+        @@if(typeof hasReview !== 'undefined' && hasReview === 'true'){
+        <input type="text" name="review" placeholder="Ваш отзыв" class="form__control">
+        }
         <button type="submit" class="form__btn btn btn-xl btn-primary btn-fullwidth">Перезвоните мне</button>
     </div>
     <label class="form__checkbox">

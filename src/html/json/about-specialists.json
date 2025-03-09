@@ -1,0 +1,74 @@
+[
+    {
+        "className": "specialist-white swiper-slide",
+        "name": "Тюрина <br> Елизавета Евгеньевна ",
+        "position": "Стоматолог-ортодонт",
+        "experience": "4 года",
+        "image": "@img/specialists/tyurina-elizaveta-evgenievna.jpg",
+        "link": "tyurina-elizaveta-evgenievna",
+        "btns": [
+            "О враче",
+            "Видеовизитка"
+        ]
+    },
+    {
+        "className": "specialist-white swiper-slide",
+        "name": "Павленко <br> Николай Сергеевич",
+        "position": "Врач стоматолог общей практики, ортопед, хирург",
+        "experience": "17 лет",
+        "image": "@img/specialists/pavlenko-nikolay-sergeevich.jpg",
+        "link": "pavlenko-nikolay-sergeevich",
+        "btns": [
+            "О враче",
+            "Видеовизитка"
+        ]
+    },
+    {
+        "className": "specialist-white swiper-slide",
+        "name": "Юрченко <br> Михаил Вадимович",
+        "position": "Хирург-имплантолог",
+        "experience": "11 лет",
+        "image": "@img/specialists/yurchenko-mikhail-vadimovich.jpg",
+        "link": "urchenko-mikhail-vadimovich",
+        "btns": [
+            "О враче",
+            "Видеовизитка"
+        ]
+    },
+    {
+        "className": "specialist-white swiper-slide",
+        "name": "Кузьмичева <br> Татьяна Олеговна",
+        "position": "Стоматолог-терапевт",
+        "experience": "5 лет",
+        "image": "@img/specialists/kuzmicheva-tatyana-olegovna.jpg",
+        "link": "kuzmicheva-tatyana-olegovna",
+        "btns": [
+            "О враче",
+            "Видеовизитка"
+        ]
+    },
+    {
+        "className": "specialist-white swiper-slide",
+        "name": "Семернина <br> Марина Александровна",
+        "position": "Стоматолог <br> общей практики",
+        "experience": "24 года",
+        "image": "@img/specialists/semernina-marina-aleksandrovna.jpg",
+        "link": "kuzmicheva-tatyana-olegovna",
+        "btns": [
+            "О враче",
+            "Видеовизитка"
+        ]
+    },
+    {
+        "className": "specialist-white swiper-slide",
+        "name": "Раюшкин <br> Игорь Игоревич",
+        "position": "Терапевт-ортопед",
+        "experience": "5 лет",
+        "image": "@img/specialists/rayushkin-igor-igorevich.jpg",
+        "link": "kuzmicheva-tatyana-olegovna",
+        "btns": [
+            "О враче",
+            "Видеовизитка"
+        ]
+    }
+]

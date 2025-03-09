@@ -7,6 +7,16 @@
         <div class="wrapper">
             @@include('html/_header.html', {})
             <main class="page">
+                @@include('html/_promo.html', {
+                "breads": ["Главная", "Врачи", "Юрченко Михаил Вадимович"],
+                "hasCover": false,
+                "image": "@img/specialists/yurchenko-mikhail-vadimovich-2.png",
+                "title": "Юрченко Михаил Вадимович",
+                "position": "Хирург-имплантолог",
+                "expirience": "11 лет",
+                "desc": "В совершенстве владеет методиками костной пластики и&nbsp;имплантации, успешно восстанавливая утраченные зубы даже в самых сложных клинических случаях. Выполняет удаление зубов любой сложности.",
+                "btns": ["Записаться", "Видео о враче"]
+                })
                 <section class="desc">
                     <div class="desc__container">
                         <h2 class="desc__title">Основные направления деятельности</h2>
@@ -21,7 +31,8 @@
                 </section>
                 @@include('html/_specialists.html', {
                 "title": "Другие специалисты",
-                "type": "row"
+                "type": "row",
+                "hasMore": false
                 })
                 @@include('html/_feedback.html', {
                 "image": "@img/feedback/07.png",

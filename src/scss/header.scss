@@ -220,7 +220,7 @@
 							display: block;
 						}
 						.menu__link {
-							color: $blue;
+							text-decoration: underline;
 						}
 						.menu__arrow {
 							transform: rotate(180deg);
@@ -233,14 +233,14 @@
 	// .menu__link
 	&__link {
 		font-size: 1.25rem;
-		transition: color 0.3s ease;
+		text-underline-offset: 25%;
 		@media (any-hover: hover) {
 			&:hover {
-				color: $blue;
+				text-decoration: underline;
 			}
 		}
 		&.active {
-			color: $blue;
+			text-decoration: underline;
 		}
 	}
 }

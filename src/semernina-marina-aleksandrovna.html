@@ -7,9 +7,19 @@
         <div class="wrapper">
             @@include('html/_header.html', {})
             <main class="page">
+                @@include('html/_promo.html', {
+                "breads": ["Главная", "Врачи", "Семернина Марина Александровна"],
+                "hasCover": false,
+                "image": "@img/specialists/semernina-marina-aleksandrovna-2.png",
+                "title": "Семернина Марина Александровна",
+                "position": "Стоматолог общей практики",
+                "expirience": "24 года",
+                "desc": "Проводит терапевтическое и эстетическое лечение, включая реставрацию зубов, лечение кариеса и пульпита.",
+                "btns": ["Записаться", "Видео о враче"]
+                })
                 <section class="desc">
                     <div class="desc__container">
-                        <h2 class="desc__title">Основные направления деятельности</h2>
+                        <h2 class="desc__title title">Основные направления деятельности</h2>
                         <ul class="desc__list">
                             <li>Лечение кариеса, пульпита, периодонтита;</li>
                             <li>Эстетическая стоматология и реставрация зубов;</li>
@@ -22,7 +32,8 @@
                 </section>
                 @@include('html/_specialists.html', {
                 "title": "Другие специалисты",
-                "type": "row"
+                "type": "row",
+                "hasMore": false
                 })
                 @@include('html/_feedback.html', {
                 "image": "@img/feedback/07.png",

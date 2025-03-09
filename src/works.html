@@ -5,8 +5,116 @@
     })
     <body>
         <div class="wrapper">
-            @@include('html/_header.html', {})
+            @@include('html/_header.html', {
+            "active": 6
+            })
             <main class="page">
+                <section class="heading">
+                    <div class="heading__container">
+                        <ul class="breadcrumbs">
+                            <li class="breadcrumbs__item">
+                                <a href="#" class="breadcrumbs__link">Главная</a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <a href="#" class="breadcrumbs__link">Наши работы</a>
+                            </li>
+                        </ul>
+                        <h1 class="heading__title title">Наши работы</h1>
+                        <p class="heading__subtitle">Ничто так не говорит о профессионализме врачей стоматологии «ДоброДент», как реальные примеры успешного лечения. Ознакомьтесь с фотографиями до и после, чтобы увидеть разницу!</p>
+                        <a href="" class="heading__btn btn btn-primary">Записаться на прием</a>
+                    </div>
+                </section>
+                <section class="works">
+                    <div class="works__container">
+                        <h2 class="works__title title">Оцените результаты наших процедур!</h2>
+                        <div class="works__categories">
+                            <a href="" class="works__category active">Лечение зубов</a>
+                            <a href="" class="works__category">Лечение десен</a>
+                            <a href="" class="works__category">Протезирование</a>
+                            <a href="" class="works__category">Имплантация</a>
+                            <a href="" class="works__category">Удаление зубов</a>
+                            <a href="" class="works__category">Коронки</a>
+                            <a href="" class="works__category">Профессиональная чистка</a>
+                            <a href="" class="works__category">Виниры</a>
+                            <a href="" class="works__category">Каппы</a>
+                            <a href="" class="works__category">Брекеты</a>
+                            <a href="" class="works__category">Удаление зубов</a>
+                            <a href="" class="works__category">Зубы за 1 день</a>
+                        </div>
+                        <ul class="works__grid">
+                            <li class="works__row">
+                                @@include('./html/templates/_before-slider.html', {
+                                "className": "works__row-before-slider",
+                                "before": "@img/before-slider/01-before.jpg",
+                                "after": "@img/before-slider/01-after.jpg"
+                                })
+                                <div class="works__row-body">
+                                    <div class="works__row-title">Профессиональная гигиена полости рта</div>
+                                    <div class="works__row-desc">
+                                        Врач: <br> Павленко Н.С.
+                                    </div>
+                                    <a href="" class="works__row-link more-link icon-arrow-circle">Смотреть работу</a>
+                                </div>
+                            </li>
+                            <li class="works__row">
+                                @@include('./html/templates/_before-slider.html', {
+                                "className": "works__row-before-slider",
+                                "before": "@img/before-slider/02-before.jpg",
+                                "after": "@img/before-slider/02-after.jpg"
+                                })
+                                <div class="works__row-body">
+                                    <div class="works__row-title">Сужение верхнего зубного ряда, дефицит места для прорезывания постоянных резцов</div>
+                                    <div class="works__row-desc">
+                                        Врач: <br> Тюрина Е.Е.
+                                    </div>
+                                    <a href="" class="works__row-link more-link icon-arrow-circle">Смотреть работу</a>
+                                </div>
+                            </li>
+                            <li class="works__row">
+                                @@include('./html/templates/_before-slider.html', {
+                                "className": "works__row-before-slider",
+                                "before": "@img/before-slider/03-before.jpg",
+                                "after": "@img/before-slider/03-after.jpg"
+                                })
+                                <div class="works__row-body">
+                                    <div class="works__row-title">Восстановление зубного ряда с помощью циркониевых коронок</div>
+                                    <div class="works__row-desc">
+                                        Врач: <br> Павленко Н.С.
+                                    </div>
+                                    <a href="" class="works__row-link more-link icon-arrow-circle">Смотреть работу</a>
+                                </div>
+                            </li>
+                            <li class="works__row">
+                                @@include('./html/templates/_before-slider.html', {
+                                "className": "works__row-before-slider",
+                                "before": "@img/before-slider/02-before.jpg",
+                                "after": "@img/before-slider/02-after.jpg"
+                                })
+                                <div class="works__row-body">
+                                    <div class="works__row-title">Сужение верхнего зубного ряда, скученность резцов верхней челюсти</div>
+                                    <div class="works__row-desc">
+                                        Врач: <br> Тюрина Е.Е.
+                                    </div>
+                                    <a href="" class="works__row-link more-link icon-arrow-circle">Смотреть работу</a>
+                                </div>
+                            </li>
+                            <li class="works__row">
+                                @@include('./html/templates/_before-slider.html', {
+                                "className": "works__row-before-slider",
+                                "before": "@img/before-slider/03-before.jpg",
+                                "after": "@img/before-slider/03-after.jpg"
+                                })
+                                <div class="works__row-body">
+                                    <div class="works__row-title">Лечение с использованием керамических виниров</div>
+                                    <div class="works__row-desc">
+                                        Врач: <br> Павленко Н.С.
+                                    </div>
+                                    <a href="" class="works__row-link more-link icon-arrow-circle">Смотреть работу</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
                 @@include('html/_reviews.html', {})
             </main>
             @@include('html/_footer.html', {})

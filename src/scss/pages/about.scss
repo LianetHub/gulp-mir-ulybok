@@ -1,0 +1,17 @@
+.video {
+	// .video__container
+	&__container {
+	}
+	// .video__title
+	&__title {
+	}
+	// .video__content
+	&__content {
+		margin-top: rem(72);
+		max-width: 73rem;
+		& iframe {
+			width: 100%;
+			aspect-ratio: math.div(73, 44.6875);
+		}
+	}
+}

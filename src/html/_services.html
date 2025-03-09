@@ -6,8 +6,8 @@
             @@loop('./templates/_service.html', @@json)
             }
         </ul>
-        @@if(hasBtn===true){
-        <a href="#" class="services__btn btn btn-primary">Перейти к прайсу</a>
+        @@if(typeof btnText !== 'undefined') {
+        <a href="#" class="services__btn btn btn-primary">@@btnText</a>
         }
     </div>
 </section>

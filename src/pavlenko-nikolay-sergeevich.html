@@ -7,6 +7,16 @@
         <div class="wrapper">
             @@include('html/_header.html', {})
             <main class="page">
+                @@include('html/_promo.html', {
+                "breads": ["Главная", "Врачи", "Павленко Николай Сергеевич"],
+                "hasCover": false,
+                "image": "@img/specialists/pavlenko-nikolay-sergeevich-2.png",
+                "title": "Павленко Николай Сергеевич",
+                "position": "Главный врач <br> Врач стоматолог общей практики, ортопед, хирург",
+                "expirience": "17 лет",
+                "desc": "Специализируется на комплексной диагностике и лечении стоматологических заболеваний, владеет современными методами ортопедической реабилитации и хирургического лечения.",
+                "btns": ["Записаться", "Видео о враче"]
+                })
                 <section class="desc">
                     <div class="desc__container">
                         <h2 class="desc__title">Основные направления деятельности</h2>
@@ -21,7 +31,8 @@
                 </section>
                 @@include('html/_specialists.html', {
                 "title": "Другие специалисты",
-                "type": "row"
+                "type": "row",
+                "hasMore": false
                 })
                 @@include('html/_feedback.html', {
                 "image": "@img/feedback/07.png",

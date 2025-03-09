@@ -42,13 +42,28 @@
                 ]
                 })
                 <div class="separator">
-                    <img src="@img/instuments/03.jpg" class="cover-image" alt="Инстурменты стоматологии">
-                </div>
-                <section class="desc">
-                    <div class="desc__container">
-
+                    <div class="separator__image">
+                        <img src="@img/instuments/03.jpg" class="cover-image" alt="Инстурменты стоматологии">
                     </div>
-                </section>
+                </div>
+                @@include('html/_recommendation.html',{
+                "title": "Наши врачи о винирах",
+                "subtitle": [
+                "Виниры — это отличное решение для тех, кто хочет улучшить эстетику своей улыбки. Они помогают скрыть дефекты зубов, такие как пожелтение, потемнение или неправильная форма.",
+                "Показаниями к установке виниров могут служить:"
+                ],
+                "list": [
+                "Пожелтение или потемнение эмали;",
+                "Наличие пломб на фронтальных зубах;",
+                "Непропорциональная форма зубов."
+                ],
+                "author": {
+                "image": "@img/specialists/pavlenko-nikolay-sergeevich.jpg",
+                "name": "Павленко <br> Николай Сергеевич",
+                "position": "Стаж 17 лет <br> Главный врач, врач стоматолог общей практики, ортопед, хирург",
+                "btn": true
+                }
+                })
                 @@include('./html/_price.html', {
                 "title": "Сколько стоят виниры с установкой",
                 "table": [
@@ -67,8 +82,11 @@
                 ]
                 })
                 @@include('html/_reviews.html', {})
-                @@include('html/_feedback.html', {
-                "image": "@img/feedback/03.jpg",
+                @@include('html/_contacts.html', {
+                "formTitle": "Запишитесь на прием",
+                "formSubtitle": "Оставьте заявку и получите бесплатную консультацию наших специалистов.",
+                "formMessage": true,
+                "image": "@img/feedback/03.png",
                 "inContainer": false
                 })
             </main>

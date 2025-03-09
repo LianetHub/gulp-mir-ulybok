@@ -1,5 +1,37 @@
 <section class="price">
     <div class="price__container">
-
+        @@if(typeof title !== 'undefined' && title.length > 0) {
+        <h2 class="price__title title">@@title</h2>
+        }
+        @@if(typeof subtitle !== 'undefined' && subtitle.length > 0) {
+        <div class="price__subtitle">
+            @@for(var i = 0; i < subtitle.length; i++) { <p>`+subtitle[i]+`</p>}
+        </div>
+        }
+        @@if(typeof btn !== 'undefined' && btn.length > 0) {
+        <a href="" class="price__btn btn btn-primary">@@btn</a>
+        }
+        @@if(typeof table !== 'undefined' && table.length > 0) {
+        <div class="price__table table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Название процедуры</th>
+                        <th>Стоимость, <br> руб</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @@for(var i = 0; i < table.length; i++) { <tr>
+                        <td>`+table[i].name+`</td>
+                        <td>`+table[i].price+`</td>
+                        </tr>
+                        }
+                </tbody>
+            </table>
+        </div>
+        }
+        @@if(typeof moreBtn !== 'undefined' ) {
+        <a href="" class="price__more more-link icon-arrow-circle">Все цены</a>
+        }
     </div>
 </section>

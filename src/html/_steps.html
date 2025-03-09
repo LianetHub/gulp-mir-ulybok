@@ -1,0 +1,25 @@
+<section class="steps">
+    <div class="steps__wrapper" style="background: url('@@background') center / cover no-repeat;">
+        <div class="steps__container">
+            <h2 class="steps__title title">@@title</h2>
+            @@if(typeof subtitle !== 'undefined') {
+            <p class="steps__subtitle">@@subtitle</p>
+            }
+            @@if(typeof btn !== 'undefined') {
+            <a href="#" class="steps__btn btn btn-primary">@@btn</a>
+            }
+            @@if(typeof list !== 'undefined' && list.length > 0) {
+            <ol class="steps__list">
+                @@for(var i = 0; i < list.length; i++) { <li class="steps__item">
+                    <div class="steps__item-caption">`+list[i].title+`</div>
+                    <div class="steps__item-desc">`+list[i].desc+`</div>
+                    <div class="steps__item-image">
+                        <img src="`+list[i].image+`" class="cover-image" alt="Фото процедуры">
+                    </div>
+                    </li>
+                    }
+            </ol>
+            }
+        </div>
+    </div>
+</section>

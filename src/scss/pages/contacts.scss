@@ -1,0 +1,134 @@
+.heading {
+	padding-top: $header !important;
+	.breadcrumbs {
+		padding: rem(32) 0;
+	}
+	// .heading__container
+	&__container {
+	}
+	// .heading__title
+	&__title {
+		margin-top: 2.35rem;
+	}
+	// .heading__subtitle
+	&__subtitle {
+		margin-top: 3.5rem;
+		font-size: 1.375rem;
+	}
+	// .heading__contacts
+	&__contacts {
+		margin-top: 4.5rem;
+		border-radius: 0.75rem;
+		background: #fff;
+		box-shadow: rem(6) rem(7) rem(6.3) 0 rgba(0, 0, 0, 0.15);
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0.63rem 1.5rem;
+	}
+	// .heading__contacts-block
+	&__contacts-block {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		padding: 0.63rem 1.12rem;
+	}
+	// .heading__contacts-icon
+	&__contacts-icon {
+		width: 2.5rem;
+		height: 2.5rem;
+		flex-shrink: 0;
+	}
+	// .heading__contacts-body
+	&__contacts-body {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	// .heading__contacts-caption
+	&__contacts-caption {
+	}
+	// .heading__contacts-link
+	&__contacts-link {
+		margin-top: 0.5rem;
+		font-size: 1.25rem;
+		transition: color 0.3s ease;
+		@media (any-hover: hover) {
+			&:hover {
+				color: $accent;
+			}
+		}
+	}
+	// .heading__contacts-worktime
+	&__contacts-worktime {
+		margin-top: 0.5rem;
+		font-size: 1.25rem;
+	}
+	// .heading__btn
+	&__btn {
+		margin-top: 2rem;
+		min-width: 19.0625rem;
+	}
+	// .heading__list
+	&__list {
+		margin-top: 3.5rem;
+		font-size: 1.375rem;
+	}
+	// .heading__list-item
+	&__list-item {
+		& strong {
+			font-weight: 500;
+			margin-right: 1rem;
+		}
+		& a {
+			color: #106fae;
+			text-decoration-line: underline;
+			text-decoration-style: solid;
+			text-decoration-skip-ink: none;
+			text-decoration-thickness: auto;
+			text-underline-offset: auto;
+			text-underline-position: from-font;
+			@media (any-hover: hover) {
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
+		&:not(:last-child) {
+			margin-bottom: 1.5rem;
+		}
+	}
+}
+
+.location {
+	// .location__container
+	&__container {
+	}
+	// .location__title
+	&__title {
+	}
+	// .location__body
+	&__body {
+		margin-top: 4.5rem;
+		position: relative;
+		z-index: 1;
+		padding: 4.5rem 0 5.25rem;
+	}
+	// .location__content
+	&__content {
+		border-radius: 0.9375rem;
+		background: #fff;
+		max-width: 25.8125rem;
+		padding: 2rem 2.5rem;
+	}
+	// .location__map
+	&__map {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 100vw;
+		z-index: -1;
+	}
+}

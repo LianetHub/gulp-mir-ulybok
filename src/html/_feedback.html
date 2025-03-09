@@ -1,5 +1,16 @@
-<section class="feedback">
-    <div class="feedback__container">
-
+<section class="contacts">
+    <div class="contacts__wrapper">
+        <div class="contacts__container">
+            <div class="contacts__body">
+                @@include('./templates/_question-form.html', {
+                "className": "contacts__form",
+                "title": "Запишитесь на прием",
+                "subtitle": "Оставьте заявку, чтобы получить бесплатную консультацию и записаться на прием к специалисту."
+                })
+                <div class="contacts__image">
+                    <img src="@@image" alt="Фото">
+                </div>
+            </div>
+        </div>
     </div>
 </section>

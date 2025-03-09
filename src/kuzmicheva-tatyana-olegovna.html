@@ -7,9 +7,19 @@
         <div class="wrapper">
             @@include('html/_header.html', {})
             <main class="page">
+                @@include('html/_promo.html', {
+                "breads": ["Главная", "Врачи", "Кузьмичева Татьяна Олеговна"],
+                "hasCover": false,
+                "image": "@img/specialists/kuzmicheva-tatyana-olegovna-2.png",
+                "title": "Кузьмичева Татьяна Олеговна",
+                "position": "Стоматолог-терапевт",
+                "expirience": "5 лет",
+                "desc": "Специализируется на лечении кариеса и заболеваний пульпы зуба с использованием современных методов и материалов. Проводит гигиеническую чистку зубов.",
+                "btns": ["Записаться", "Видео о враче"]
+                })
                 <section class="desc">
                     <div class="desc__container">
-                        <h2 class="desc__title">Основные направления деятельности</h2>
+                        <h2 class="desc__title title">Основные направления деятельности</h2>
                         <ul class="desc__list">
                             <li>Лечение кариеса, пульпита и периодонтита с использованием современных технологий;</li>
                             <li>Проведение профессиональной гигиенической чистки зубов;</li>
@@ -21,7 +31,14 @@
                 </section>
                 @@include('html/_specialists.html', {
                 "title": "Другие специалисты",
-                "type": "row"
+                "type": "row",
+                "hasMore": false
+                })
+                @@include('html/_contacts.html', {
+                "formTitle": "Запишитесь на прием",
+                "formSubtitle": "Оставьте заявку, чтобы получить бесплатную консультацию и записаться на прием к специалисту.",
+                "image": "@img/feedback/07.png",
+                "inContainer": false
                 })
             </main>
             @@include('html/_footer.html', {})

@@ -7,6 +7,16 @@
         <div class="wrapper">
             @@include('html/_header.html', {})
             <main class="page">
+                @@include('html/_promo.html', {
+                "breads": ["Главная", "Врачи", "Раюшкин Игорь Игоревич"],
+                "hasCover": false,
+                "image": "@img/specialists//rayushkin-igor-igorevich-2.png",
+                "title": "Раюшкин Игорь Игоревич",
+                "position": "Терапевт-ортопед",
+                "expirience": "5 лет",
+                "desc": "Специализируется на ортопедическом лечении зубов, восстановлении утраченных функций жевательного аппарата и эстетической реабилитации.",
+                "btns": ["Записаться", "Видео о враче"]
+                })
                 <section class="desc">
                     <div class="desc__container">
                         <h2 class="desc__title">Основные направления деятельности</h2>
@@ -21,7 +31,8 @@
                 </section>
                 @@include('html/_specialists.html', {
                 "title": "Другие специалисты",
-                "type": "row"
+                "type": "row",
+                "hasMore": false
                 })
                 @@include('html/_feedback.html', {
                 "image": "@img/feedback/07.png",
