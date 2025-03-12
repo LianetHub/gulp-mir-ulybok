@@ -13,7 +13,7 @@
                 "background": "@img/promo/orthodontic-treatment.jpg",
                 "title": "Ортодонтическое лечение",
                 "desc": "Процесс исправления неправильного прикуса и выравнивания зубов с помощью специальных аппаратов, таких как брекеты и элайнеры, для улучшения функциональности и эстетики зубочелюстной системы.",
-                "btnText": "Записаться на прием"
+                "btns": ["Записаться на прием"]
                 })
                 @@include('./html/_price.html', {
                 "title": "Цены",
@@ -124,11 +124,7 @@
                 "Проблемы с речью.",
                 "Длительное и дорогостоящее лечение."
                 ],
-                "author": {
-                "image": "@img/specialists/tyurina-elizaveta-evgenievna.jpg",
-                "name": "Тюрина <br> Елизавета Евгеньевна",
-                "position": "Стоматолог—ортодонт"
-                }
+                "json": "'./html/json/orthodontic-rec.json'"
                 })
                 @@include('html/_reviews.html', {})
                 @@include('html/_contacts.html', {

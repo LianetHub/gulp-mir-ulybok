@@ -15,6 +15,14 @@
 }
 
 @font-face {
+  font-family: "icons";
+  font-display: swap;
+  src: url("../fonts/icons.woff2") format("woff2"), url("../fonts/icons.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "Gilroy";
   font-display: swap;
   src: url("../fonts/Gilroy-Regular.woff2") format("woff2"), url("../fonts/Gilroy-Regular.woff") format("woff");
@@ -23,9 +31,9 @@
 }
 
 @font-face {
-  font-family: "icons";
+  font-family: "Manrope";
   font-display: swap;
-  src: url("../fonts/icons.woff2") format("woff2"), url("../fonts/icons.woff") format("woff");
+  src: url("../fonts/Manrope-Regular.woff2") format("woff2"), url("../fonts/Manrope-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -35,14 +43,6 @@
   font-display: swap;
   src: url("../fonts/Manrope-Medium.woff2") format("woff2"), url("../fonts/Manrope-Medium.woff") format("woff");
   font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Manrope";
-  font-display: swap;
-  src: url("../fonts/Manrope-Regular.woff2") format("woff2"), url("../fonts/Manrope-Regular.woff") format("woff");
-  font-weight: 400;
   font-style: normal;
 }
 
@@ -1166,6 +1166,11 @@ body {
   margin-bottom: 1rem;
 }
 
+.services__subtitle {
+  margin-top: 3.5rem;
+  font-size: 1.375rem;
+}
+
 .services__grid {
   margin-top: 4.5rem;
   display: -ms-grid;
@@ -2167,11 +2172,15 @@ body {
   display: none;
 }
 
-.recommendation__wrapper:not(.recommendation__wrapper-blue) .recommendation__title {
+.recommendation__wrapper.recommendation__wrapper-blue .specialist__name {
+  color: #106fae;
+}
+
+.recommendation__wrapper.recommendation__wrapper-blue .specialist__info {
   color: inherit;
 }
 
-.recommendation__wrapper:not(.recommendation__wrapper-blue) .recommendation__author-name {
+.recommendation__wrapper:not(.recommendation__wrapper-blue) .recommendation__title {
   color: inherit;
 }
 
@@ -2195,47 +2204,17 @@ body {
   margin-bottom: 1rem;
 }
 
-.recommendation__author {
+.recommendation__specialists {
   margin-top: 3.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.25rem;
 }
 
-.recommendation__author-thumb {
-  width: 18.625rem;
-  height: 20.0625rem;
-  background: #fff;
-  border-radius: 1.25rem;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
-
-.recommendation__author-thumb img {
-  -webkit-transition: -webkit-transform 0.15s ease;
-  transition: -webkit-transform 0.15s ease;
-  transition: transform 0.15s ease;
-  transition: transform 0.15s ease, -webkit-transform 0.15s ease;
-  -webkit-transform-origin: bottom center;
-      -ms-transform-origin: bottom center;
-          transform-origin: bottom center;
-  -o-object-position: center 40%;
-     object-position: center 40%;
-  will-change: transform;
-}
-
-.recommendation__author-position {
-  margin-top: 1rem;
-  font-size: 1.375rem;
+.recommendation__specialists .specialist__info {
+  color: #fff;
 }
 
 .header {
@@ -3875,14 +3854,12 @@ body {
     color: #ff0000;
   }
 
-  .recommendation__author-thumb:hover img {
-    -webkit-transform: scale(1.025);
-        -ms-transform: scale(1.025);
-            transform: scale(1.025);
+  .recommendation__wrapper.recommendation__wrapper-blue .specialist__name:hover {
+    color: #3fc1c9;
   }
 
-  .recommendation__author-name:hover {
-    text-decoration: underline;
+  .recommendation__specialists .specialist__name:hover {
+    color: #106fae;
   }
 
   .header__phone:hover {

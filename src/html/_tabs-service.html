@@ -1,0 +1,24 @@
+<section class="services">
+    <div class="services__container">
+        <h2 class="services__title title">@@title</h2>
+        <p class="services__subtitle">@@subtitle</p>
+        <div class="services__tabs">
+            @@if(typeof btns !== 'undefined' && btns.length > 0) {
+            <div class="services__tabs-btns">
+                @@for(var i = 0; i < btns.length; i++) { <button type="button" class="services__tabs-btn `+btns[i].active+`">`+btns[i].text+`</button>}
+            </div>
+            }
+            <div class="services__tabs-content">
+                <div class="services__tabs-item">
+                    <ul class="services__list">
+                        @@if(typeof json !== 'undefined') {
+                        @@loop('./templates/_service.html', @@json)
+                        }
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</section>

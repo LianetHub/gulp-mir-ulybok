@@ -1,6 +1,7 @@
 <form action="#" class="@@className form">
+
     @@if(typeof title !== 'undefined'){
-    <h2 class="form__title title">@@title</h2>
+    <h2 class="form__title title @@isFormTitleCenter">@@title</h2>
     }
     @@if(typeof subtitle !== 'undefined' && subtitle.length > 0){
     <p class="form__subtitle">@@subtitle</p>

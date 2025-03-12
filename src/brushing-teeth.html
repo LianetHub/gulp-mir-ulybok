@@ -13,7 +13,7 @@
                 "background": "@img/promo/brushing-teeth.jpg",
                 "title": "Профессиональная чистка зубов",
                 "desc": "Стоматология «ДоброДент» предлагает широкий спектр профилактических услуг, которые помогут сохранить здоровье зубов и десен на долгие годы!",
-                "btnText": "Записаться на прием"
+                "btns": ["Записаться на прием"]
                 })
                 @@include('html/_services.html', {
                 "title": "Виды профессиональной чистки зубов",
@@ -143,14 +143,11 @@
                 "Курильщикам — 3-4 раза в год.",
                 "Людям с брекетами — до 4 раз в год."
                 ],
-                "author": {
-                "image": "@img/specialists/kuzmicheva-tatyana-olegovna-2.png",
-                "name": "Кузьмичева <br> Татьяна Олеговна",
-                "position": "Стоматолог—терапевт"
-                }
+                "json": "'./html/json/brushing-teeth-rec.json'"
                 })
                 @@include('html/_contacts.html', {
                 "formTitle": "Оставить заявку",
+                "formTitleCenter": true,
                 "formSubtitle": "",
                 "formMessage": true,
                 "hasQuestion": true,

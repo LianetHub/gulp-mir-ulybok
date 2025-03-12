@@ -15,15 +15,11 @@
                 @@for(var i = 0; i < list.length; i++) { <li>`+list[i]+`</li>}
             </ul>
             }
-            <div class="recommendation__author">
-                <a href="" class="recommendation__author-thumb">
-                    <img src="@@author.image" class="cover-image" alt="Фото доктора">
-                </a>
-                <div class="recommendation__author-body">
-                    <a href="" class="recommendation__author-name title-sm">@@author.name</a>
-                    <p class="recommendation__author-position">@@author.position</p>
-                </div>
-            </div>
+            @@if(typeof json !== 'undefined') {
+            <ul class="recommendation__specialists">
+                @@loop('./templates/_specialist.html', @@json)
+            </ul>
+            }
         </div>
         @@if(typeof background !=='undefined') {
     </div>

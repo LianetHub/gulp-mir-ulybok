@@ -48,6 +48,7 @@
                 @@include('./templates/_question-form.html', {
                 "className": "contacts__form",
                 "title": "@@formTitle",
+                "isFormTitleCenter": "@@if(typeof formTitleCenter !== 'undefined' && formTitleCenter === true){text-center}",
                 "subtitle": "@@formSubtitle",
                 "hasQuestion": "@@if(typeof formMessage !== 'undefined' && formMessage === true){true}",
                 "hasReview": "@@if(typeof formReview !== 'undefined' && formReview === true){true}"

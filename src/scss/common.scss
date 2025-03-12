@@ -229,6 +229,11 @@ body {
 	// .services__title
 	&__title {
 	}
+	// .services__subtitle
+	&__subtitle {
+		margin-top: 3.5rem;
+		font-size: 1.375rem;
+	}
 	// .services__grid
 	&__grid {
 		margin-top: 4.5rem;
@@ -1123,13 +1128,21 @@ body {
 			&::before {
 				display: none;
 			}
+			.specialist__name {
+				color: $blue;
+				@media (any-hover: hover) {
+					&:hover {
+						color: $accent;
+					}
+				}
+			}
+			.specialist__info {
+				color: inherit;
+			}
 		}
 
 		&:not(.recommendation__wrapper-blue) {
 			.recommendation__title {
-				color: inherit;
-			}
-			.recommendation__author-name {
 				color: inherit;
 			}
 		}
@@ -1163,51 +1176,21 @@ body {
 			}
 		}
 	}
-	// .recommendation__author
-	&__author {
+	//  .recommendation__specialists
+	&__specialists {
 		margin-top: 3.5rem;
-		display: flex;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
 		gap: 1.25rem;
-	}
-	// .recommendation__author-thumb
-	&__author-thumb {
-		width: 18.625rem;
-		height: 20.0625rem;
-		background: #fff;
-		border-radius: 1.25rem;
-		overflow: hidden;
-		display: flex;
-		justify-content: center;
-		align-items: flex-end;
-
-		& img {
-			transition: transform 0.15s ease;
-			transform-origin: bottom center;
-			object-position: center 40%;
-			will-change: transform;
-		}
-		@media (any-hover: hover) {
-			&:hover {
-				& img {
-					transform: scale(1.025);
+		.specialist__name {
+			@media (any-hover: hover) {
+				&:hover {
+					color: $blue;
 				}
 			}
 		}
-	}
-	// .recommendation__author-body
-	&__author-body {
-	}
-	// .recommendation__author-name
-	&__author-name {
-		@media (any-hover: hover) {
-			&:hover {
-				text-decoration: underline;
-			}
+		.specialist__info {
+			color: #fff;
 		}
-	}
-	// .recommendation__author-position
-	&__author-position {
-		margin-top: 1rem;
-		font-size: 1.375rem;
 	}
 }
