@@ -1,0 +1,35 @@
+[
+    {
+        "className": "swiper-slide",
+        "name": "Павленко <br> Николай Сергеевич",
+        "position": "Главный врач, врач стоматолог общей практики, ортопед, хирург",
+        "experience": "17 лет",
+        "image": "@img/specialists/pavlenko-nikolay-sergeevich.jpg",
+        "link": "pavlenko-nikolay-sergeevich.html",
+        "btns": [
+            "Записаться"
+        ]
+    },
+    {
+        "className": "swiper-slide",
+        "name": "Кузьмичева <br> Татьяна Олеговна",
+        "position": "Стоматолог-терапевт",
+        "experience": "5 лет",
+        "image": "@img/specialists/kuzmicheva-tatyana-olegovna.jpg",
+        "link": "kuzmicheva-tatyana-olegovna.html",
+        "btns": [
+            "Записаться"
+        ]
+    },
+    {
+        "className": "swiper-slide",
+        "name": "Юрченко <br> Михаил Вадимович",
+        "position": "Хирург-имплантолог",
+        "experience": "11 лет",
+        "image": "@img/specialists/yurchenko-mikhail-vadimovich.jpg",
+        "link": "yurchenko-mikhail-vadimovich.html",
+        "btns": [
+            "Записаться"
+        ]
+    }
+]

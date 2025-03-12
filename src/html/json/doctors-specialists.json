@@ -1,0 +1,68 @@
+[
+    {
+        "className": "specialist-white",
+        "name": "Павленко <br> Николай Сергеевич",
+        "position": "Главный врач <br> Врач стоматолог общей практики, ортопед, хирург",
+        "image": "@img/specialists/pavlenko-nikolay-sergeevich.jpg",
+        "link": "pavlenko-nikolay-sergeevich.html",
+        "btns": [
+            "О враче",
+            "Видеовизитка"
+        ]
+    },
+    {
+        "className": "specialist-white",
+        "name": "Тюрина <br> Елизавета Евгеньевна ",
+        "position": "Стоматолог-ортодонт",
+        "image": "@img/specialists/tyurina-elizaveta-evgenievna.jpg",
+        "link": "tyurina-elizaveta-evgenievna.html",
+        "btns": [
+            "О враче",
+            "Видеовизитка"
+        ]
+    },
+    {
+        "className": "specialist-white",
+        "name": "Юрченко <br> Михаил Вадимович",
+        "position": "Хирург-имплантолог",
+        "image": "@img/specialists/yurchenko-mikhail-vadimovich.jpg",
+        "link": "yurchenko-mikhail-vadimovich.html",
+        "btns": [
+            "О враче",
+            "Видеовизитка"
+        ]
+    },
+    {
+        "className": "specialist-white",
+        "name": "Кузьмичева <br> Татьяна Олеговна",
+        "position": "Стоматолог-терапевт",
+        "image": "@img/specialists/kuzmicheva-tatyana-olegovna.jpg",
+        "link": "kuzmicheva-tatyana-olegovna.html",
+        "btns": [
+            "О враче",
+            "Видеовизитка"
+        ]
+    },
+    {
+        "className": "specialist-white",
+        "name": "Раюшкин <br> Игорь Игоревич",
+        "position": "Терапевт-ортопед",
+        "image": "@img/specialists/rayushkin-igor-igorevich.jpg",
+        "link": "rayushkin-igor-igorevich.html",
+        "btns": [
+            "О враче",
+            "Видеовизитка"
+        ]
+    },
+    {
+        "className": "specialist-white",
+        "name": "Семернина <br> Марина Александровна",
+        "position": "Стоматолог <br> общей практики",
+        "image": "@img/specialists/semernina-marina-aleksandrovna.jpg",
+        "link": "semernina-marina-aleksandrovna.html",
+        "btns": [
+            "О враче",
+            "Видеовизитка"
+        ]
+    }
+]

@@ -1,0 +1,34 @@
+<section class="doctor-info">
+    <div class="doctor-info__wrapper" style="background-image: url('@@background');">
+        <div class="doctor-info__container">
+
+            @@if(typeof desc !== 'undefined' && desc.length > 0) {
+            <div class="doctor-info__block">
+                <h2 class="doctor-info__title title">О враче</h2>
+                <div class="doctor-info__desc">
+                    @@for(var i = 0; i < desc.length; i++) { <p>`+desc[i]+`</p>
+                        }
+                </div>
+            </div>
+            }
+            @@if(typeof education !== 'undefined' && education.length > 0) {
+            <div class="doctor-info__block">
+                <h3 class="doctor-info__title title">Образование</h3>
+                <ul class="doctor-info__list">
+                    @@for(var i = 0; i < education.length; i++) { <li class="doctor-info__list-item">`+education[i]+`</li>
+                        }
+                </ul>
+            </div>
+            }
+            @@if(typeof extras !== 'undefined' && extras.length > 0) {
+            <div class="doctor-info__block">
+                <h3 class="doctor-info__title title">Дополнительные курсы</h3>
+                <ul class="doctor-info__list">
+                    @@for(var i = 0; i < extras.length; i++) { <li class="doctor-info__list-item">`+extras[i]+`</li>
+                        }
+                </ul>
+            </div>
+            }
+        </div>
+    </div>
+</section>

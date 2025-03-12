@@ -86,7 +86,21 @@ document.addEventListener("DOMContentLoaded", () => {
         })
     }
 
+    if (document.querySelector('.specialists__carousel')) {
+
+        new Swiper('.specialists__carousel', {
+            slidesPerView: 3,
+            spaceBetween: 27,
+            watchSlidesProgress: true,
+            pagination: {
+                el: '.specialists__pagination',
+                clickable: true,
+            },
+        })
+    }
+
     if (document.querySelector('.specialists__slider')) {
+
         getMobileSlider('.specialists__slider', {
             slidesPerView: 1,
             spaceBetween: 27,

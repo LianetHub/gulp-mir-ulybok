@@ -1,0 +1,35 @@
+[
+    {
+        "className": "swiper-slide",
+        "name": "Тюрина <br> Елизавета Евгеньевна ",
+        "position": "Стоматолог-ортодонт",
+        "experience": "4 года",
+        "image": "@img/specialists/tyurina-elizaveta-evgenievna.jpg",
+        "link": "tyurina-elizaveta-evgenievna.html",
+        "btns": [
+            "Записаться"
+        ]
+    },
+    {
+        "className": "swiper-slide",
+        "name": "Юрченко <br> Михаил Вадимович",
+        "position": "Хирург-имплантолог",
+        "experience": "11 лет",
+        "image": "@img/specialists/yurchenko-mikhail-vadimovich.jpg",
+        "link": "yurchenko-mikhail-vadimovich.html",
+        "btns": [
+            "Записаться"
+        ]
+    },
+    {
+        "className": "swiper-slide",
+        "name": "Семернина <br> Марина Александровна",
+        "position": "Стоматолог общей практики",
+        "experience": "24 года",
+        "image": "@img/specialists/semernina-marina-aleksandrovna.jpg",
+        "link": "semernina-marina-aleksandrovna.html",
+        "btns": [
+            "Записаться"
+        ]
+    }
+]

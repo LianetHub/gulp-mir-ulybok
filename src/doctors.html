@@ -5,7 +5,9 @@
     })
     <body>
         <div class="wrapper">
-            @@include('html/_header.html', {})
+            @@include('html/_header.html', {
+            "active": 3
+            })
             <main class="page">
                 @@include('html/_promo.html', {
                 "breads": ["Главная", "Врачи"],
@@ -13,16 +15,13 @@
                 "background": "@img/promo/doctors.jpg",
                 "title": "Наши врачи",
                 "desc": "В стоматологии «ДоброДент» работают опытные и внимательные специалисты, которые помогут вернуть здоровье и красоту вашей улыбке. Мы стремимся к идеальному результату и делаем всё, чтобы ваше посещение было комфортным и приятным.",
-                "btnText": "Смотреть врачей"
+                "btns": ["Смотреть врачей"]
                 })
                 @@include('html/_specialists.html', {
                 "title": "Мы гордимся нашими специалистами !",
                 "type": "column",
-                "hasMore": false
-                })
-                @@include('html/_specialists.html', {
-                "type": "grid",
-                "hasMore": false
+                "hasMore": false,
+                "json": "'./html/json/doctors-specialists.json'",
                 })
                 @@include('html/_reviews.html', {})
             </main>

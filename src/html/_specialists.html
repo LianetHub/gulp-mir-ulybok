@@ -7,6 +7,7 @@
                 @@loop('./templates/_specialist.html', @@json)
                 }
             </ul> -->
+
             @@if(type==='grid'){
             <div class="specialists__slider swiper">
                 <ul class="swiper-wrapper">
@@ -19,6 +20,24 @@
             @@if (hasMore === true){
             <a href="" class="specialists__more more-link icon-arrow-circle">Все врачи</a>
             }
+            }
+
+            @@if(type==='column'){
+            <ul class="specialists__column">
+                @@if(typeof json !== 'undefined') {
+                @@loop('./templates/_specialist.html', @@json)
+                }
+            </ul>
+            }
+            @@if(type==='row'){
+            <div class="specialists__carousel swiper">
+                <ul class="swiper-wrapper">
+                    @@if(typeof json !== 'undefined') {
+                    @@loop('./templates/_specialist.html', @@json)
+                    }
+                </ul>
+                <div class="specialists__pagination swiper-pagination"></div>
+            </div>
             }
         </div>
         @@if(typeof title !== 'undefined'){</section>}

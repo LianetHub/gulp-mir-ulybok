@@ -1,0 +1,10 @@
+<section class="reviews">
+    <div class="reviews__wrapper">
+        <div class="reviews__container">
+            <h2 class="reviews__title title">Отзывы о враче</h2>
+            <ul class="reviews__grid">
+                @@loop('./templates/_review.html', @@json)
+            </ul>
+        </div>
+    </div>
+</section>

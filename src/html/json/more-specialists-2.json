@@ -1,0 +1,35 @@
+[
+    {
+        "className": "swiper-slide",
+        "name": "Кузьмичева <br> Татьяна Олеговна",
+        "position": "Стоматолог-терапевт",
+        "experience": "5 лет",
+        "image": "@img/specialists/kuzmicheva-tatyana-olegovna.jpg",
+        "link": "kuzmicheva-tatyana-olegovna.html",
+        "btns": [
+            "Записаться"
+        ]
+    },
+    {
+        "className": "swiper-slide",
+        "name": "Раюшкин <br> Игорь Игоревич",
+        "position": "Терапевт-ортопед",
+        "experience": "5 лет",
+        "image": "@img/specialists/rayushkin-igor-igorevich.jpg",
+        "link": "rayushkin-igor-igorevich.html",
+        "btns": [
+            "Записаться"
+        ]
+    },
+    {
+        "className": "swiper-slide",
+        "name": "Юрченко <br> Михаил Вадимович",
+        "position": "Хирург-имплантолог",
+        "experience": "11 лет",
+        "image": "@img/specialists/yurchenko-mikhail-vadimovich.jpg",
+        "link": "yurchenko-mikhail-vadimovich.html",
+        "btns": [
+            "Записаться"
+        ]
+    }
+]

@@ -5,7 +5,7 @@
         "position": "Стоматолог-ортодонт",
         "experience": "4 года",
         "image": "@img/specialists/tyurina-elizaveta-evgenievna.jpg",
-        "link": "tyurina-elizaveta-evgenievna",
+        "link": "tyurina-elizaveta-evgenievna.html",
         "btns": [
             "О враче",
             "Видеовизитка"
@@ -17,7 +17,7 @@
         "position": "Врач стоматолог общей практики, ортопед, хирург",
         "experience": "17 лет",
         "image": "@img/specialists/pavlenko-nikolay-sergeevich.jpg",
-        "link": "pavlenko-nikolay-sergeevich",
+        "link": "pavlenko-nikolay-sergeevich.html",
         "btns": [
             "О враче",
             "Видеовизитка"
@@ -29,7 +29,7 @@
         "position": "Хирург-имплантолог",
         "experience": "11 лет",
         "image": "@img/specialists/yurchenko-mikhail-vadimovich.jpg",
-        "link": "urchenko-mikhail-vadimovich",
+        "link": "yurchenko-mikhail-vadimovich.html",
         "btns": [
             "О враче",
             "Видеовизитка"
@@ -41,7 +41,7 @@
         "position": "Стоматолог-терапевт",
         "experience": "5 лет",
         "image": "@img/specialists/kuzmicheva-tatyana-olegovna.jpg",
-        "link": "kuzmicheva-tatyana-olegovna",
+        "link": "kuzmicheva-tatyana-olegovna.html",
         "btns": [
             "О враче",
             "Видеовизитка"
@@ -53,7 +53,7 @@
         "position": "Стоматолог <br> общей практики",
         "experience": "24 года",
         "image": "@img/specialists/semernina-marina-aleksandrovna.jpg",
-        "link": "kuzmicheva-tatyana-olegovna",
+        "link": "semernina-marina-aleksandrovna.html",
         "btns": [
             "О враче",
             "Видеовизитка"
@@ -65,7 +65,7 @@
         "position": "Терапевт-ортопед",
         "experience": "5 лет",
         "image": "@img/specialists/rayushkin-igor-igorevich.jpg",
-        "link": "kuzmicheva-tatyana-olegovna",
+        "link": "rayushkin-igor-igorevich.html",
         "btns": [
             "О враче",
             "Видеовизитка"

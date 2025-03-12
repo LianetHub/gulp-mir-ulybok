@@ -12,17 +12,6 @@
     },
     {
         "className": "swiper-slide",
-        "name": "Юрченко <br> Михаил Вадимович",
-        "position": "Хирург-имплантолог",
-        "experience": "11 лет",
-        "image": "@img/specialists/yurchenko-mikhail-vadimovich.jpg",
-        "link": "yurchenko-mikhail-vadimovich.html",
-        "btns": [
-            "Записаться"
-        ]
-    },
-    {
-        "className": "swiper-slide",
         "name": "Павленко <br> Николай Сергеевич",
         "position": "Главный врач, врач стоматолог общей практики, ортопед, хирург",
         "experience": "17 лет",
@@ -34,33 +23,11 @@
     },
     {
         "className": "swiper-slide",
-        "name": "Кузьмичева <br> Татьяна Олеговна",
-        "position": "Стоматолог-терапевт",
-        "experience": "5 лет",
-        "image": "@img/specialists/kuzmicheva-tatyana-olegovna.jpg",
-        "link": "kuzmicheva-tatyana-olegovna.html",
-        "btns": [
-            "Записаться"
-        ]
-    },
-    {
-        "className": "swiper-slide",
         "name": "Семернина <br> Марина Александровна",
         "position": "Стоматолог общей практики",
         "experience": "24 года",
         "image": "@img/specialists/semernina-marina-aleksandrovna.jpg",
         "link": "semernina-marina-aleksandrovna.html",
-        "btns": [
-            "Записаться"
-        ]
-    },
-    {
-        "className": "swiper-slide",
-        "name": "Раюшкин <br> Игорь Игоревич",
-        "position": "Терапевт-ортопед",
-        "experience": "5 лет",
-        "image": "@img/specialists/rayushkin-igor-igorevich.jpg",
-        "link": "kuzmicheva-tatyana-olegovna.html",
         "btns": [
             "Записаться"
         ]
