@@ -15,6 +15,21 @@
                 @@for(var i = 0; i < list.length; i++) { <li>`+list[i]+`</li>}
             </ul>
             }
+            @@if(typeof subtitle2 !== 'undefined' && subtitle2.length > 0) {
+            <div class="recommendation__subtitle">
+                @@for(var i = 0; i < subtitle2.length; i++) { <p>`+subtitle2[i]+`</p>}
+            </div>
+            }
+            @@if(typeof list2 !== 'undefined' && list2.length > 0) {
+            <ul class="recommendation__list">
+                @@for(var i = 0; i < list2.length; i++) { <li>`+list2[i]+`</li>}
+            </ul>
+            }
+            @@if(typeof subtitle3 !== 'undefined' && subtitle3.length > 0) {
+            <div class="recommendation__subtitle">
+                @@for(var i = 0; i < subtitle3.length; i++) { <p>`+subtitle3[i]+`</p>}
+            </div>
+            }
             @@if(typeof json !== 'undefined') {
             <ul class="recommendation__specialists">
                 @@loop('./templates/_specialist.html', @@json)

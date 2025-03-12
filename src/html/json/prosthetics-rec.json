@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Павленко <br> Николай Сергеевич",
+        "position": "Главный врач <br> Врач стоматолог общей практики, ортопед, хирург",
+        "image": "@img/specialists/pavlenko-nikolay-sergeevich.jpg",
+        "link": "pavlenko-nikolay-sergeevich.html"
+    },
+    {
+        "name": "Раюшкин <br> Игорь Игоревич",
+        "position": "Терапевт-ортопед",
+        "image": "@img/specialists/rayushkin-igor-igorevich.jpg",
+        "link": "rayushkin-igor-igorevich.html"
+    }
+]

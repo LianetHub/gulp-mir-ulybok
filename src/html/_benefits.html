@@ -1,0 +1,29 @@
+<section class="benefits">
+    <div class="benefits__wrapper@@if(typeof hasBlur !== 'undefined' && hasBlur === true){ has-blur}" style="background-image: url('@@background');">
+        <div class="benefits__container">
+            <h2 class="benefits__title title">@@title</h2>
+            @@if(typeof subtitle !== 'undefined') {
+            <p class="benefits__subtitle">@@subtitle</p>
+            }
+            @@if(typeof list !== 'undefined' && list.length > 0) {
+            <ul class="benefits__list">
+                @@for(var i = 0; i < list.length; i++) { <li class="benefits__block">
+                    <div class="benefits__block-icon">
+                        <img src="@img/icons/check.svg" alt="Иконка">
+                    </div>
+                    <div class="benefits__block-text">
+                        `+list[i]+`
+                    </div>
+                    </li>
+                    }
+            </ul>
+            }
+            @@if(typeof hint !== 'undefined') {
+            <p class="benefits__hint">@@hint</p>
+            }
+            @@if(typeof btn !== 'undefined') {
+            <a href="" class="benefits__btn btn btn-primary">Узнать стоимость</a>
+            }
+        </div>
+    </div>
+</section>

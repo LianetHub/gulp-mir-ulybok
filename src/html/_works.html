@@ -1,6 +1,9 @@
 <section class="works">
     <div class="works__container">
         <h2 class="works__title title">@@title</h2>
+        @@if(typeof subtitle !== 'undefined') {
+        <p class="works__subtitle">@@subtitle</p>
+        }
         <div class="works__slider swiper">
             <ul class="swiper-wrapper">
                 <li class="works__item swiper-slide">
@@ -30,6 +33,8 @@
             </ul>
             <div class="works__pagination swiper-pagination"></div>
         </div>
+        @@if(hasMore === true) {
         <a href="/works.html" class="works__more more-link icon-arrow-circle">Все работы</a>
+        }
     </div>
 </section>

@@ -40,6 +40,21 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
 
+        if (target.matches('.services__tabs-btn')) {
+            const tabsContainer = target.closest('.services__tabs');
+            const tabs = tabsContainer.querySelectorAll('.services__tabs-btn');
+            const contents = document.querySelectorAll('.services__tabs-item');
+
+            const tabIndex = [...tabs].indexOf(target);
+
+            tabs.forEach(tab => tab.classList.remove('active'));
+            target.classList.add('active');
+
+            contents.forEach((content, index) => {
+                content.classList.toggle('active', index === tabIndex);
+            });
+        }
+
     });
 
 
