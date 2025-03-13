@@ -17,7 +17,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     devFunctions.isWebp();
     devFunctions.OS();
-    // devFunctions.spollers();
     devFunctions.mask();
     devFunctions.beforeSlider()
 
