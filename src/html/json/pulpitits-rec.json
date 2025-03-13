@@ -1,0 +1,12 @@
+[
+    {
+        "name": "Семернина <br> Марина Александровна",
+        "experience": "24 года",
+        "position": "Стоматолог общей практики",
+        "image": "@img/specialists/semernina-marina-aleksandrovna.jpg",
+        "link": "semernina-marina-aleksandrovna.html",
+        "btns": [
+            "Получить консультацию"
+        ]
+    }
+]

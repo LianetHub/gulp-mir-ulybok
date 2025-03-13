@@ -188,7 +188,9 @@
 	}
 	// .benefits__list
 	&__list {
-		margin-top: 4.5rem;
+		&:not(:first-child) {
+			margin-top: 4.5rem;
+		}
 		display: flex;
 		gap: 3.31rem;
 	}
@@ -199,6 +201,7 @@
 		padding: 1.25rem;
 		color: #106fae;
 		font-size: 1.5rem;
+		min-height: rem(122);
 		font-weight: 500;
 		display: flex;
 		align-items: center;

@@ -7,14 +7,6 @@
 }
 
 @font-face {
-  font-family: "icons";
-  font-display: swap;
-  src: url("../fonts/icons.woff2") format("woff2"), url("../fonts/icons.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
   font-family: "Gilroy";
   font-display: swap;
   src: url("../fonts/Gilroy-Medium.woff2") format("woff2"), url("../fonts/Gilroy-Medium.woff") format("woff");
@@ -33,7 +25,15 @@
 @font-face {
   font-family: "Manrope";
   font-display: swap;
-  src: url("../fonts/Manrope-Regular.woff2") format("woff2"), url("../fonts/Manrope-Regular.woff") format("woff");
+  src: url("../fonts/Manrope-Medium.woff2") format("woff2"), url("../fonts/Manrope-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "icons";
+  font-display: swap;
+  src: url("../fonts/icons.woff2") format("woff2"), url("../fonts/icons.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -41,8 +41,8 @@
 @font-face {
   font-family: "Manrope";
   font-display: swap;
-  src: url("../fonts/Manrope-Medium.woff2") format("woff2"), url("../fonts/Manrope-Medium.woff") format("woff");
-  font-weight: 500;
+  src: url("../fonts/Manrope-Regular.woff2") format("woff2"), url("../fonts/Manrope-Regular.woff") format("woff");
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -1258,6 +1258,11 @@ body {
   margin-top: 0;
 }
 
+.services__tabs-item .services__list .service {
+  -ms-grid-columns: 1.5fr 1fr;
+  grid-template-columns: 1.5fr 1fr;
+}
+
 .services__tabs-item.active {
   display: block;
 }
@@ -1667,6 +1672,12 @@ body {
   -webkit-transform: translateX(-100%);
       -ms-transform: translateX(-100%);
           transform: translateX(-100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .contacts > .contacts__image img {
@@ -1674,6 +1685,8 @@ body {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: 100% center;
+     object-position: 100% center;
 }
 
 .contacts__wrapper {
@@ -2271,6 +2284,7 @@ body {
   padding-left: 1em;
   font-size: 1.375rem;
   list-style: disc;
+  max-width: 57rem;
 }
 
 .recommendation__list li:not(:last-child) {
@@ -2288,6 +2302,10 @@ body {
   -ms-grid-columns: (1fr)[2];
   grid-template-columns: repeat(2, 1fr);
   gap: 1.25rem;
+}
+
+.recommendation__btn {
+  margin-top: 2rem;
 }
 
 .header {
@@ -2893,11 +2911,14 @@ body {
 }
 
 .benefits__list {
-  margin-top: 4.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 3.31rem;
+}
+
+.benefits__list:not(:first-child) {
+  margin-top: 4.5rem;
 }
 
 .benefits__block {
@@ -2906,6 +2927,7 @@ body {
   padding: 1.25rem;
   color: #106fae;
   font-size: 1.5rem;
+  min-height: 7.625rem;
   font-weight: 500;
   display: -webkit-box;
   display: -ms-flexbox;

@@ -298,6 +298,9 @@ body {
 	&__tabs-item {
 		.services__list {
 			margin-top: 0;
+			.service {
+				grid-template-columns: 1.5fr 1fr;
+			}
 		}
 		display: none;
 		&.active {
@@ -650,10 +653,13 @@ body {
 		margin: 0;
 		align-self: stretch;
 		transform: translateX(-100%);
+		display: flex;
+		justify-content: flex-end;
 		& img {
 			width: auto;
 			height: 100%;
 			object-fit: cover;
+			object-position: 100% center;
 		}
 	}
 	&__wrapper {
@@ -1229,6 +1235,7 @@ body {
 		padding-left: 1em;
 		font-size: 1.375rem;
 		list-style: disc;
+		max-width: 57rem;
 		& li {
 			&:not(:last-child) {
 				margin-bottom: 1rem;
@@ -1251,5 +1258,9 @@ body {
 				}
 			}
 		}
+	}
+	//  .recommendation__btn
+	&__btn {
+		margin-top: 2rem;
 	}
 }

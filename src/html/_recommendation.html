@@ -35,6 +35,9 @@
                 @@loop('./templates/_specialist.html', @@json)
             </ul>
             }
+            @@if(typeof btn !== 'undefined') {
+            <a href="" class="recommendation__btn btn btn-primary">Записаться на прием</a>
+            }
         </div>
         @@if(typeof background !=='undefined') {
     </div>
