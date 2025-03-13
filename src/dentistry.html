@@ -13,26 +13,140 @@
                 "background": "@img/promo/dentistry.jpg",
                 "title": "Лечение зубов",
                 "desc": "Лечение зубов включает в себя диагностику и терапию различных стоматологических проблем для восстановления здоровья и функций зубов и полости рта.",
-                "btnText": "Записаться на прием"
+                "btns": ["Записаться на прием"]
                 })
-                @@include('html/_guidelines.html', {
-                "title": "Установка протезов в 3 шага",
-                "image": "@img/guidelines/04.png",
-                "backgroundColor": "blue",
-                "list": [
+
+                <section class="services">
+                    <div class="services__container">
+                        <h2 class="services__title title">Виды заболеваний зубов</h2>
+                        <div class="services__tabs">
+                            <div class="services__tabs-btns">
+                                <button type="button" class="services__tabs-btn active">Кариес</button>
+                                <button type="button" class="services__tabs-btn">Пульпит</button>
+                                <button type="button" class="services__tabs-btn">Периодонтит</button>
+                            </div>
+                            <div class="services__tabs-content">
+                                <div class="services__tabs-item active">
+                                    <ul class="services__list">
+                                        <li class="service">
+                                            <div class="service__main">
+                                                <div class="service__header">
+                                                    <div class="service__icon">
+                                                        <img src="img/icons/caries.svg" alt="Иконка">
+                                                    </div>
+                                                    <a href="" class="service__caption title-sm">Кариес</a>
+                                                </div>
+                                                <ul class="service__price">
+                                                    <li class="service__price-item">
+                                                        <div class="service__price-caption">Заболевание зубов, характеризующееся разрушением твердых тканей зуба (эмали, дентина) под воздействием кислот, образующихся в результате метаболизма бактерий, которые живут в зубном налете. Симптомы.</div>
+                                                        <div class="service__price-value">от 4200 ₽ </div>
+                                                    </li>
+                                                </ul>
+                                                <a href="" class="service__link more-link icon-arrow-circle">Подробнее</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="services__tabs-item ">
+                                    <ul class="services__list">
+                                        <li class="service">
+                                            <div class="service__main">
+                                                <div class="service__header">
+                                                    <div class="service__icon">
+                                                        <img src="img/icons/caries.svg" alt="Иконка">
+                                                    </div>
+                                                    <a href="" class="service__caption title-sm">Пульпит</a>
+                                                </div>
+                                                <ul class="service__price">
+                                                    <li class="service__price-item">
+                                                        <div class="service__price-caption">Заболевание зубов, характеризующееся разрушением твердых тканей зуба (эмали, дентина) под воздействием кислот, образующихся в результате метаболизма бактерий, которые живут в зубном налете. Симптомы.</div>
+                                                        <div class="service__price-value">от 4200 ₽ </div>
+                                                    </li>
+                                                </ul>
+                                                <a href="" class="service__link more-link icon-arrow-circle">Подробнее</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="services__tabs-item">
+                                    <ul class="services__list">
+                                        <li class="service">
+                                            <div class="service__main">
+                                                <div class="service__header">
+                                                    <div class="service__icon">
+                                                        <img src="img/icons/caries.svg" alt="Иконка">
+                                                    </div>
+                                                    <a href="" class="service__caption title-sm">Периодонтит</a>
+                                                </div>
+                                                <ul class="service__price">
+                                                    <li class="service__price-item">
+                                                        <div class="service__price-caption">Заболевание зубов, характеризующееся разрушением твердых тканей зуба (эмали, дентина) под воздействием кислот, образующихся в результате метаболизма бактерий, которые живут в зубном налете. Симптомы.</div>
+                                                        <div class="service__price-value">от 4200 ₽ </div>
+                                                    </li>
+                                                </ul>
+                                                <a href="" class="service__link more-link icon-arrow-circle">Подробнее</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                @@include('./html/_price.html', {
+                "title": "Стоимость",
+                "table": [
                 {
-                "title": "Диагностика и подготовка",
-                "text": "На первом этапе проводится обследование ротовой полости, в том числе рентген для оценки состояния зубов и костной ткани. При необходимости лечатся оставшиеся зубы или удаляются разрушенные."
+                "name": "Прием (осмотр, консультация) врача-стоматолога первичный",
+                "price": "500 ₽"
                 },
                 {
-                "title": "Изготовление протеза",
-                "text": "После подготовки снимаются слепки челюсти, которые отправляются в лабораторию. Техники изготавливают индивидуальный протез, идеально соответствующий анатомии пациента."
+                "name": "Восстановление зуба пломбой из гелиокомпозита: препарирование, мед.обработка, коррекция, полировка",
+                "price": "4 700 ₽"
                 },
                 {
-                "title": "Примерка и фиксация",
-                "text": "Готовый протез примеряется для проверки комфорта и точности посадки. При необходимости проводится коррекция. После этого протез устанавливается на место и пациент получает рекомендации по уходу."
+                "name": "Восстановление зуба пломбой из стеклополимерного цемента при отсроченном лечении кариеса: препарирование, мед.обработка, коррекция, полировка",
+                "price": "3 200 ₽"
+                },
+                {
+                "name": "Восстановление зуба пломбой под коронку",
+                "price": "4 500 ₽"
+                },
+                {
+                "name": "Эстетико-функциональное восстановление зуба пломбой: препарирование, мед.обработка, коррекция, полировка",
+                "price": "7 000 ₽"
                 }
                 ]
+                ,
+                "moreBtn": true
+                })
+
+                @@include('html/_recommendation.html',{
+                "title": "Чем опасно промедление с лечением ?",
+                "background": "@img/recommendations/10.jpg",
+                "subtitle": [
+                "Чем опасно промедление с лечением ?",
+                ],
+                "list": [
+                "Ухудшение состояния зуба.",
+                "Инфекции.",
+                "Пульпит.",
+                "Проблемы с деснами.",
+                "Боли и дискомфорт.",
+                "Проблемы с жеванием.",
+                "Высокие затраты на лечение."
+                ],
+                "json": "'./html/json/caries-rec.json'"
+                })
+
+                @@include('html/_contacts.html', {
+                "formTitle": "Оставить заявку",
+                "formTitleCenter": true,
+                "formSubtitle": "",
+                "formMessage": true,
+                "hasQuestion": true,
+                "inContainer": true
                 })
             </main>
             @@include('html/_footer.html', {})

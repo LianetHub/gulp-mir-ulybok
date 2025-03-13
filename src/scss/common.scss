@@ -220,6 +220,15 @@ body {
 			}
 		}
 	}
+	// .desc__btn
+	&__btn {
+		margin-top: 1rem;
+	}
+	// .desc__image
+	&__image {
+		max-width: 53.125rem;
+		margin: 4.5rem auto 0;
+	}
 }
 
 .services {
@@ -876,6 +885,28 @@ body {
 			top: 0;
 			left: 0;
 		}
+		&:has(.guidelines__item-icon) {
+			@for $i from 1 through 9 {
+				&::before {
+					content: "0" counter(num);
+				}
+			}
+			&::before {
+				top: -2rem;
+				left: -3rem;
+				font-size: 5.375rem;
+				color: rgba(63, 193, 201, 0.15);
+			}
+		}
+	}
+	// .guidelines__item-icon
+	&__item-icon {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		transform: translateY(-50%);
+		width: 3.125rem;
+		height: 3.125rem;
 	}
 	// .guidelines__item-caption
 	&__item-caption {

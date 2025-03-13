@@ -1,0 +1,32 @@
+.braces {
+	// .braces__wrapper
+	&__wrapper {
+		padding: rem(72) 0;
+
+		background: linear-gradient(rgba($color: #3fc1c9, $alpha: 0.25), rgba($color: #3fc1c9, $alpha: 0.25)), url("@img/braces.png") 100% 0 / cover no-repeat;
+	}
+	// .braces__container
+	&__container {
+	}
+	// .braces__title
+	&__title {
+	}
+	// .braces__subtitle
+	&__subtitle {
+		margin-top: 3.5rem;
+		color: #000;
+		font-size: 1.375rem;
+	}
+	// .braces__list
+	&__list {
+		margin-top: 4.5rem;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 2.5rem;
+		.service {
+			flex: 0 0 25.8125rem;
+			min-height: 13.875rem;
+		}
+	}
+}

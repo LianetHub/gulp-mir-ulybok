@@ -15,6 +15,96 @@
                 "desc": "Процесс исправления неправильного прикуса и выравнивания зубов с помощью специальных аппаратов, таких как брекеты и элайнеры, для улучшения функциональности и эстетики зубочелюстной системы.",
                 "btns": ["Записаться на прием"]
                 })
+
+                <section class="services">
+                    <div class="services__container">
+                        <h2 class="services__title title">Как выбрать брекеты</h2>
+                        <div class="services__tabs">
+                            <div class="services__tabs-btns">
+                                <button type="button" class="services__tabs-btn active">Керамические</button>
+                                <button type="button" class="services__tabs-btn">Металлические</button>
+                            </div>
+                            <div class="services__tabs-content">
+                                <div class="services__tabs-item active">
+                                    <ul class="services__list">
+                                        @@include('html/templates/_service.html', {
+                                        "name": "Керамические брекеты",
+                                        "list": [
+                                        "Эстетика",
+                                        "Сопротивляемость пятнам",
+                                        "Прочность",
+                                        "Практически незаметны"
+                                        ],
+                                        "price": [
+                                        {
+                                        "title": "Подходят для взрослых и подростков, которые стремятся к эстетическому ортодонтическому лечению.",
+                                        "value": "от ₽"
+                                        }
+                                        ],
+                                        "hasMore": false,
+                                        "icon": "@img/icons/braces.svg"
+                                        })
+                                    </ul>
+                                </div>
+                                <div class="services__tabs-item ">
+                                    <ul class="services__list">
+                                        @@include('html/templates/_service.html', {
+                                        "name": "Металлические брекеты",
+                                        "list": [
+                                        "Эстетика",
+                                        "Сопротивляемость пятнам",
+                                        "Прочность",
+                                        "Практически незаметны"
+                                        ],
+                                        "price": [
+                                        {
+                                        "title": "Подходят для взрослых и подростков, которые стремятся к эстетическому ортодонтическому лечению.",
+                                        "value": "от ₽"
+                                        }
+                                        ],
+                                        "hasMore": false,
+                                        "icon": "@img/icons/braces.svg"
+                                        })
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="braces">
+                    <div class="braces__wrapper">
+                        <div class="braces__container">
+                            <h2 class="braces__title title">Виды брекетов по типу конструкций</h2>
+                            <p class="braces__subtitle">По типу конструкции брекеты делятся на:</p>
+                            <ul class="braces__list">
+                                <li class="service">
+                                    <div class="service__main">
+                                        <div class="service__header">
+                                            <div class="service__icon">
+                                                <img src="img/icons/braces.svg" alt="Иконка">
+                                            </div>
+                                            <a href="" class="service__caption title-sm">Лигатурные</a>
+                                        </div>
+                                    </div>
+                                    <p class="service__desc">Классические системы для исправления дефектов прикуса, в которых силовая дуга крепится к замочкам резиновыми или металлическими лигатурами</p>
+                                </li>
+                                <li class="service">
+                                    <div class="service__main">
+                                        <div class="service__header">
+                                            <div class="service__icon">
+                                                <img src="img/icons/braces.svg" alt="Иконка">
+                                            </div>
+                                            <a href="" class="service__caption title-sm">Самолигирующие</a>
+                                        </div>
+                                    </div>
+                                    <p class="service__desc">В такой конструкции дуга фиксируется с помощью специальных замочков и свободно перемещается в пазах брекетов.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
                 @@include('./html/_price.html', {
                 "title": "Цены",
                 "subtitle": ["Стоматологи учитывают индивидуальные потребности пациентов, обеспечивая доступное и качественное ортодонтическое лечение."],
@@ -71,11 +161,24 @@
                 }
                 ]
                 })
+
                 <div class="separator">
                     <div class="separator__image">
                         <img src="@img/instuments/02.jpg" class="cover-image" alt="Инстурменты стоматологии">
                     </div>
                 </div>
+
+                <section class="desc">
+                    <div class="desc__container">
+                        <h2 class="desc__title title">Что входит в стоимость лечения</h2>
+                        <p class="desc__text">Уточнить план лечения и цену установки ортодонтических скоб можно во время консультации у ортодонта.</p>
+                        <a href="" class="desc__btn btn btn-primary">Записаться</a>
+                        <div class="desc__image">
+                            <img src="@img/included.svg" alt="Диаграмма">
+                        </div>
+                    </div>
+                </section>
+
                 @@include('html/_steps.html', {
                 "title": "Этапы",
                 "background": "@img/steps/steps-bg-2.jpg",
@@ -107,8 +210,9 @@
                 }
                 ]
                 })
+
                 @@include('html/_recommendation.html',{
-                "title": "Рекомендации специалиста",
+                "title": "Советы врача",
                 "background": "blue",
                 "subtitle": [
                 "Заботьтесь о зубах сегодня, чтобы избежать проблем завтра!",
@@ -126,6 +230,7 @@
                 ],
                 "json": "'./html/json/orthodontic-rec.json'"
                 })
+
                 @@include('html/_reviews.html', {})
                 @@include('html/_contacts.html', {
                 "formTitle": "Запишитесь на прием",

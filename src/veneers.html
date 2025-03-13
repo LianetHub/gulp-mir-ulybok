@@ -93,6 +93,7 @@
                         </div>
                     </div>
                 </section>
+
                 @@include('html/_steps.html', {
                 "title": "Этапы проведения процедуры",
                 "background": "@img/steps/steps-bg-3.jpg",
@@ -119,11 +120,13 @@
                 }
                 ]
                 })
+
                 @@include('html/_works.html', {
                 "title": "Фото до и после установки винир",
                 "subtitle": "Установка винир — эффективный метод эстетической реставрации. Они отлично подходят для быстрого устранения дефектов в зоне улыбки — наиболее заметной области.",
                 "hasMore": false
                 })
+
                 <div class="separator">
                     <div class="separator__image">
                         <img src="@img/instuments/03.jpg" class="cover-image" alt="Инстурменты стоматологии">
@@ -155,6 +158,31 @@
                 ],
                 "json": "'./html/json/veneers-rec.json'"
                 })
+
+                @@include('html/_guidelines-icon.html', {
+                "title": "Преимущества керамических и&nbsp;композитных винир",
+                "image": "@img/guidelines/11.png",
+                "backgroundColor": "blue",
+                "list":[
+                {
+                "title": "Ровный прикус без ортодонтов",
+                "text": "После установки виниров пациент сразу получает красивые и&nbsp;ровные зубы в&nbsp;зоне улыбки",
+                "icon": "@img/icons/jaw.svg"
+                },
+                {
+                "title": "Защита эмали",
+                "text": "Виниры дополнительно защищают эмаль зубов от&nbsp;разрушения",
+                "icon": "@img/icons/enamel.svg"
+                },
+                {
+                "title": "Здоровый оттенок",
+                "text": "Виниры устраняют потемнения и&nbsp;желтизну эмали, а&nbsp;заметить их&nbsp;на&nbsp;зубах при этом непросто",
+                "icon": "@img/icons/shade.svg"
+                },
+
+                ]
+                })
+
                 @@include('./html/_price.html', {
                 "title": "Сколько стоят виниры с установкой",
                 "table": [

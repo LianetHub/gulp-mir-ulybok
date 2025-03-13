@@ -10,11 +10,172 @@
                 @@include('html/_promo.html', {
                 "breads": ["Главная", "Услуги", "Лечение зубов", "Лечение кариеса"],
                 "hasCover": true,
-                "background": "@img/promo/dentistry.jpg",
+                "background": "@img/promo/treatment-of-caries.jpg",
                 "title": "Лечение кариеса",
                 "desc": "Кариес – это разрушение зубной эмали и дентина под воздействием кислот, которые выделяются бактериями при переработке сахаров. Без своевременного лечения он может проникнуть глубже, вызывая боль и воспаление.",
-                "btnText": "Записаться на прием"
+                "btns": ["Записаться на прием"]
                 })
+
+                <section class="services">
+                    <div class="services__container">
+                        <h2 class="services__title title">Виды коронок</h2>
+                        <p class="services__subtitle">Кариес бывает нескольких видов:</p>
+                        <div class="services__tabs">
+                            <div class="services__tabs-btns">
+                                <button type="button" class="services__tabs-btn">Поверхностный</button>
+                                <button type="button" class="services__tabs-btn active">Средний</button>
+                                <button type="button" class="services__tabs-btn">Глубокий</button>
+                                <button type="button" class="services__tabs-btn">Пульпит</button>
+                            </div>
+                            <div class="services__tabs-content">
+                                <div class="services__tabs-item">
+                                    <ul class="services__list">
+                                        @@include('html/templates/_service.html', {
+                                        "name": "Поверхностный кариес",
+                                        "price": [
+                                        {
+                                        "title": "Затрагивает эмаль и верхний слой дентина, вызывает дискомфорт при приеме пищи.",
+                                        "value": "от ₽ "
+                                        }
+                                        ],
+                                        "hasMore": false,
+                                        "icon": "@img/icons/caries.svg"
+                                        })
+                                    </ul>
+                                </div>
+                                <div class="services__tabs-item active">
+                                    <ul class="services__list">
+                                        @@include('html/templates/_service.html', {
+                                        "name": "Средний кариес",
+                                        "price": [
+                                        {
+                                        "title": "Затрагивает эмаль и верхний слой дентина, вызывает дискомфорт при приеме пищи.",
+                                        "value": "от ₽ "
+                                        }
+                                        ],
+                                        "hasMore": false,
+                                        "icon": "@img/icons/caries.svg"
+                                        })
+                                    </ul>
+                                </div>
+                                <div class="services__tabs-item">
+                                    <ul class="services__list">
+                                        @@include('html/templates/_service.html', {
+                                        "name": "Глубокий кариес",
+                                        "price": [
+                                        {
+                                        "title": "Затрагивает эмаль и верхний слой дентина, вызывает дискомфорт при приеме пищи.",
+                                        "value": "от ₽ "
+                                        }
+                                        ],
+                                        "hasMore": false,
+                                        "icon": "@img/icons/caries.svg"
+                                        })
+                                    </ul>
+                                </div>
+                                <div class="services__tabs-item">
+                                    <ul class="services__list">
+                                        @@include('html/templates/_service.html', {
+                                        "name": "Пульпит",
+                                        "price": [
+                                        {
+                                        "title": "Затрагивает эмаль и верхний слой дентина, вызывает дискомфорт при приеме пищи.",
+                                        "value": "от ₽ "
+                                        }
+                                        ],
+                                        "hasMore": false,
+                                        "icon": "@img/icons/caries.svg"
+                                        })
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                @@include('html/_recommendation.html',{
+                "title": "Наши врачи о кариесе",
+                "subtitle": [
+                "Кариес — это разрушение твердых тканей зуба, вызванное действием бактерий и кислот. Он может развиваться на разных стадиях, начиная с поверхностных поражений эмали и заканчивая более глубокими повреждениями, которые могут привести к воспалению пульпы.",
+                "Симптомы кариеса:"
+                ],
+                "list": [
+                "Боль при воздействии горячего, холодного или сладкого;",
+                "Изменение цвета эмали;",
+                "Воспаление и кровоточивость десен;",
+                "Неприятный запах изо рта."
+                ],
+                "subtitle2": [
+                "Врачи стоматологии «ДоброДент» постоянно совершенствуют свои знания и навыки, посещая курсы повышения квалификации и специализированные стоматологические форумы. Это позволяет нам эффективно выявлять и лечить кариес на разных стадиях, помогая пациентам сохранять здоровье зубов."
+                ],
+                "json": "'./html/json/caries-rec.json'"
+                })
+
+                @@include('./html/_price.html', {
+                "title": "Цены на лечение кариеса",
+                "table": [
+                {
+                "name": "Прием (осмотр, консультация) врача-стоматолога первичный",
+                "price": "500 ₽"
+                },
+                {
+                "name": "Восстановление зуба пломбой из гелиокомпозита: препарирование, мед.обработка, коррекция, полировка",
+                "price": "4 700 ₽"
+                },
+                {
+                "name": "Восстановление зуба пломбой из стеклополимерного цемента при отсроченном лечении кариеса: препарирование, мед.обработка, коррекция, полировка",
+                "price": "3 200 ₽"
+                },
+                {
+                "name": "Восстановление зуба пломбой под коронку",
+                "price": "4 500 ₽"
+                },
+                {
+                "name": "Эстетико-функциональное восстановление зуба пломбой: препарирование, мед.обработка, коррекция, полировка",
+                "price": "7 000 ₽"
+                },
+                {
+                "name": "Эстетико-функциональное восстановление фронтальных зубов пломбой",
+                "price": "9 600 ₽"
+                },
+                {
+                "name": "Восстановление зуба пломбой из гелиокомпозита при лечении клиновидного дефекта: анестезия, препарирование, мед.обработка, коррекция, полировка",
+                "price": "4 900 ₽"
+                }
+                ]
+                })
+
+                <div class="benefits">
+                    <div class="benefits__container">
+                        <ul class="benefits__list">
+                            <li class="benefits__block">
+                                <div class="benefits__block-icon">
+                                    <img src="@img/icons/check.svg" alt="Иконка">
+                                </div>
+                                <div class="benefits__block-text">
+                                    Платите частями на каждом этапе лечения
+                                </div>
+                            </li>
+                            <li class="benefits__block">
+                                <div class="benefits__block-icon">
+                                    <img src="@img/icons/check.svg" alt="Иконка">
+                                </div>
+                                <div class="benefits__block-text">
+                                    Возвращайте 13% через налоговый вычет
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                @@include('./html/_benefits.html', {
+                "background": "@img/benefits/05.jpg",
+                "hasBlur": true,
+                "title": "Пломбирование кариозной полости",
+                "subtitle": "Точный расчёт стоимости материалов и работы высококвалифицированного стоматолога-терапевта выполняется до начала лечения. Поверхностный кариес лечится за 2 часа. Глубокий устраняется за 2 визита к врачу. Особо сложные случаи требуют от трёх посещений.",
+                "btn": true
+                })
+
                 @@include('html/_guidelines.html', {
                 "title": "Почему лечение нельзя откладывать",
                 "image": "@img/guidelines/03.png",
@@ -42,8 +203,25 @@
                 }
                 ]
                 })
+
+                <section class="desc">
+                    <div class="desc__container">
+                        <h2 class="desc__title title">Рекомендации специалиста</h2>
+                        <p class="desc__text">Вот несколько рекомендаций, которые врачи-стоматологи часто дают для профилактики и лечения кариеса:</p>
+                        <ul class="desc__list">
+                            <li>Регулярная гигиена полости рта.</li>
+                            <li>Регулярные стоматологические осмотры.</li>
+                            <li>Реминерализация зубов.</li>
+                        </ul>
+                        <p class="desc__text">Следуя этим рекомендациям, вы можете значительно снизить риск развития кариеса и сохранить здоровье зубов.</p>
+                    </div>
+                </section>
+
                 @@include('html/_reviews.html', {})
-                @@include('html/_feedback.html', {
+                @@include('html/_contacts.html', {
+                "formTitle": "Запишитесь на прием",
+                "formSubtitle": "Оставьте заявку и получите бесплатную консультацию наших специалистов.",
+                "formMessage": true,
                 "image": "@img/feedback/04.png",
                 "inContainer": false
                 })
