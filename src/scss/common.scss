@@ -1257,7 +1257,14 @@ body {
 	border-radius: 1.875rem;
 	overflow: hidden;
 	padding: 2.75rem 3rem 2rem 3rem;
+	@media (max-width: $md3) {
+		gap: 2rem;
+		flex-wrap: wrap;
+	}
 	&:has(.banner__image-cover) {
+		@media (max-width: $md3) {
+			flex-wrap: nowrap;
+		}
 		padding: 1.31rem 0rem 1.31rem 1.6rem;
 		@media (min-width: $md3) {
 			padding: 3rem 1rem 7.5rem 6.5rem;
@@ -1301,8 +1308,10 @@ body {
 	&__list {
 		margin-top: 1.5rem;
 		color: #666a71;
-		font-size: 1.25rem;
 		line-height: 1.2;
+		@media (min-width: $md3) {
+			font-size: 1.25rem;
+		}
 		li {
 			&::before {
 				content: "*";
@@ -1363,8 +1372,11 @@ body {
 	&__image {
 		flex-shrink: 0;
 		pointer-events: none;
-		width: 20.5rem;
 		margin-left: auto;
+		width: 100%;
+		@media (min-width: $md3) {
+			width: 20.5rem;
+		}
 		&.banner__image-cover {
 			margin: -1.31rem 0rem -1.31rem -3rem;
 			width: 10rem;

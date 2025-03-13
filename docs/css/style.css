@@ -25,14 +25,6 @@
 @font-face {
   font-family: "Manrope";
   font-display: swap;
-  src: url("../fonts/Manrope-Medium.woff2") format("woff2"), url("../fonts/Manrope-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Manrope";
-  font-display: swap;
   src: url("../fonts/Manrope-Regular.woff2") format("woff2"), url("../fonts/Manrope-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
@@ -43,6 +35,14 @@
   font-display: swap;
   src: url("../fonts/icons.woff2") format("woff2"), url("../fonts/icons.woff") format("woff");
   font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-display: swap;
+  src: url("../fonts/Manrope-Medium.woff2") format("woff2"), url("../fonts/Manrope-Medium.woff") format("woff");
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -1982,7 +1982,6 @@ body {
 .banner__list {
   margin-top: 1.5rem;
   color: #666a71;
-  font-size: 1.25rem;
   line-height: 1.2;
 }
 
@@ -2038,8 +2037,8 @@ body {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   pointer-events: none;
-  width: 20.5rem;
   margin-left: auto;
+  width: 100%;
 }
 
 .banner__image.banner__image-cover {
@@ -3135,12 +3134,10 @@ body {
 }
 
 .promotions__list {
-  margin-top: 4.5rem;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-  grid-template-columns: repeat(3, 1fr);
   gap: 1.25rem;
+  margin-top: 2.5rem;
 }
 
 .promotion__card {
@@ -4385,6 +4382,12 @@ body {
     margin-top: 4.5rem;
   }
 
+  .promotions__list {
+    margin-top: 3.5rem;
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .reviews__grid {
     margin-top: 3.5rem;
     -ms-grid-columns: (1fr)[2];
@@ -4714,6 +4717,10 @@ body {
     font-size: 1.375rem;
   }
 
+  .banner__list {
+    font-size: 1.25rem;
+  }
+
   .banner__footer {
     gap: 2rem;
     margin-top: 2.62rem;
@@ -4725,6 +4732,10 @@ body {
 
   .banner__price-new {
     font-size: 2rem;
+  }
+
+  .banner__image {
+    width: 20.5rem;
   }
 
   .banner__image.banner__image-cover {
@@ -4968,6 +4979,12 @@ body {
 
   .video__content {
     margin-top: 4.5rem;
+  }
+
+  .promotions__list {
+    margin-top: 4.5rem;
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .promotion__price-current {
@@ -5338,6 +5355,17 @@ body {
   .contacts__form:first-child:last-child {
     -ms-grid-column-span: 2;
     grid-column: span 2;
+  }
+
+  .banner {
+    gap: 2rem;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .banner:has(.banner__image-cover) {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
 
   .header__container {
