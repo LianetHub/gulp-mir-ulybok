@@ -37,12 +37,12 @@
 	<link rel="manifest" href="/site.webmanifest" />
 	<!-- favicon -->
 	<!-- plugins -->
-	<link rel="stylesheet" href="css/libs/input-tel.css?_v=20250313105814">
-	<link rel="stylesheet" href="css/libs/swiper-bundle.min.css?_v=20250313105814">
-	<link rel="stylesheet" href="css/libs/fancybox.min.css?_v=20250313105814">
+	<link rel="stylesheet" href="css/libs/input-tel.css?_v=20250313133542">
+	<link rel="stylesheet" href="css/libs/swiper-bundle.min.css?_v=20250313133542">
+	<link rel="stylesheet" href="css/libs/fancybox.min.css?_v=20250313133542">
 	<!-- plugins -->
-	<link rel="stylesheet" href="css/reset.min.css?_v=20250313105814">
-	<link rel="stylesheet" href="css/style.min.css?_v=20250313105814">
+	<link rel="stylesheet" href="css/reset.min.css?_v=20250313133542">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250313133542">
 </head>
 
 <body>
@@ -54,9 +54,11 @@
 						<a href="/" class="header__logo">
 							<img src="img/logo.png" alt="Логотип">
 						</a>
-						<address class="header__location icon-location">г. Москва, мкрн. Кожухово, ул. Руднёвка, д.3</address>
-						<div class="header__time icon-clock">пн-пт: с 9:00 до 21:00</div>
-						<a href="tel:+74991107705" class="header__phone icon-phone">+7(499) 110-77-05</a>
+						<div class="header__info">
+							<address class="header__location icon-location">г.&nbsp;Москва, мкрн.&nbsp;Кожухово, ул.&nbsp;Руднёвка, д.3</address>
+							<div class="header__time icon-clock">пн-пт: с 9:00 до&nbsp;21:00</div>
+							<a href="tel:+74991107705" class="header__phone icon-phone">+7(499) 110-77-05</a>
+						</div>
 						<div class="header__actions">
 							<button type="button" class="header__menu-toggler icon-menu">
 								<span></span>
@@ -76,13 +78,14 @@
 							<a href="" class="header__btn btn btn-primary btn-sm">Запись на прием</a>
 						</div>
 					</div>
-					<nav class="header__menu menu">
+					<nav class="header__menu menu" aria-label="Меню в шапке">
+						<button type="button" aria-label="Закрыть меню" class="menu__close icon-close"></button>
 						<ul class="menu__list">
 							<li class="menu__item">
 								<a href="/for-patients.html" class="menu__link">Пациентам</a>
 							</li>
 							<li class="menu__item has-child">
-								<a href="" class="menu__link">Услуги</a>
+								<button type="button" class="menu__btn">Услуги</button>
 								<div class="submenu">
 									<ul class="submenu__list">
 										<li class="submenu__item">
@@ -481,35 +484,35 @@
 						<a href="#" class="steps__btn btn btn-primary">Получить консультацию</a>
 						<ol class="steps__list">
 							<li class="steps__item">
-								<div class="steps__item-caption">Первичная консультация и диагностика</div>
+								<div class="steps__item-caption title-sm">Первичная консультация и диагностика</div>
 								<div class="steps__item-desc">Врач осматривает полость рта, делает необходимые снимки и оценивает состояние зубов. Проводится профессиональная гигиена полости рта и обучение ребенка правильной чистке зубов.</div>
 								<div class="steps__item-image">
 									<img src="img/steps/21.jpg" class="cover-image" alt="Фото процедуры">
 								</div>
 							</li>
 							<li class="steps__item">
-								<div class="steps__item-caption">Профилактика и подготовка к лечению</div>
+								<div class="steps__item-caption title-sm">Профилактика и подготовка к лечению</div>
 								<div class="steps__item-desc">Проводится профилактическая работа для предотвращения заболеваний и подготовки к лечению. Врач дает рекомендации по уходу за зубами.</div>
 								<div class="steps__item-image">
 									<img src="img/steps/22.jpg" class="cover-image" alt="Фото процедуры">
 								</div>
 							</li>
 							<li class="steps__item">
-								<div class="steps__item-caption">Лечение зубов</div>
+								<div class="steps__item-caption title-sm">Лечение зубов</div>
 								<div class="steps__item-desc">Использование современных методов и материалов для устранения кариеса и других проблем. Регулярные визиты к стоматологу для оценки результатов лечения и профилактики осложнений.</div>
 								<div class="steps__item-image">
 									<img src="img/steps/23.jpg" class="cover-image" alt="Фото процедуры">
 								</div>
 							</li>
 							<li class="steps__item">
-								<div class="steps__item-caption">Контрольные осмотры</div>
+								<div class="steps__item-caption title-sm">Контрольные осмотры</div>
 								<div class="steps__item-desc">Регулярные контрольные осмотры, чтобы убедиться, что лечение прошло успешно и предотвращены осложнения.</div>
 								<div class="steps__item-image">
 									<img src="img/steps/24.jpg" class="cover-image" alt="Фото процедуры">
 								</div>
 							</li>
 							<li class="steps__item">
-								<div class="steps__item-caption">Рекомендации по уходу</div>
+								<div class="steps__item-caption title-sm">Рекомендации по уходу</div>
 								<div class="steps__item-desc">Врач дает советы по ежедневному уходу за зубами и подбирает подходящие средства гигиены.</div>
 								<div class="steps__item-image">
 									<img src="img/steps/25.jpg" class="cover-image" alt="Фото процедуры">
@@ -535,13 +538,13 @@
 								<div class="benefits__block-icon">
 									<img src="img/icons/check.svg" alt="Иконка">
 								</div>
-								<div class="benefits__block-text"> Платите частями на каждом этапе лечения </div>
+								<div class="benefits__block-text title-sm"> Платите частями на каждом этапе лечения </div>
 							</li>
 							<li class="benefits__block">
 								<div class="benefits__block-icon">
 									<img src="img/icons/check.svg" alt="Иконка">
 								</div>
-								<div class="benefits__block-text"> Возвращайте 13% через налоговый вычет </div>
+								<div class="benefits__block-text title-sm"> Возвращайте 13% через налоговый вычет </div>
 							</li>
 						</ul>
 						<p class="benefits__hint">Оставьте заявку, и наши специалисты произведут точный расчет стоимости процедуры.</p>
@@ -607,23 +610,23 @@
 						<h2 class="guidelines__title title">Часто задаваемые вопросы о детской стоматологии</h2>
 						<ol class="guidelines__list">
 							<li class="guidelines__item">
-								<div class="guidelines__item-caption">Когда лучше всего начинать водить ребенка к стоматологу?</div>
+								<div class="guidelines__item-caption title-sm">Когда лучше всего начинать водить ребенка к стоматологу?</div>
 								<div class="guidelines__item-desc">Мы рекомендуем первый визит к стоматологу уже в возрасте 1 года для оценки состояния зубов и десен.</div>
 							</li>
 							<li class="guidelines__item">
-								<div class="guidelines__item-caption">Как подготовить ребенка к визиту к стоматологу?</div>
+								<div class="guidelines__item-caption title-sm">Как подготовить ребенка к визиту к стоматологу?</div>
 								<div class="guidelines__item-desc">Расскажите ребенку о визите как о чем-то положительном и интересном. Не используйте пугающие фразы и не говорите, что будет больно.</div>
 							</li>
 							<li class="guidelines__item">
-								<div class="guidelines__item-caption">Нужно ли лечить кариес на молочных зубах?</div>
+								<div class="guidelines__item-caption title-sm">Нужно ли лечить кариес на молочных зубах?</div>
 								<div class="guidelines__item-desc">Да, кариес может прогрессировать и вызвать воспаление, затронув зачатки постоянных зубов.</div>
 							</li>
 							<li class="guidelines__item">
-								<div class="guidelines__item-caption">Какие методы обезболивания используются для детей?</div>
+								<div class="guidelines__item-caption title-sm">Какие методы обезболивания используются для детей?</div>
 								<div class="guidelines__item-desc">Мы применяем современные анестетики, которые обеспечивают полное отсутствие боли во время лечения.</div>
 							</li>
 							<li class="guidelines__item">
-								<div class="guidelines__item-caption">Можно ли предотвратить кариес у детей?</div>
+								<div class="guidelines__item-caption title-sm">Можно ли предотвратить кариес у детей?</div>
 								<div class="guidelines__item-desc">Да, регулярная гигиена, использование фторсодержащих паст и профессиональная чистка у стоматолога помогают избежать развития кариеса.</div>
 							</li>
 						</ol>
@@ -648,7 +651,7 @@
 									<img src="img/specialists/rayushkin-igor-igorevich.jpg" class="cover-image" alt="Фото доктора">
 								</a>
 								<div class="specialist__body">
-									<a href="rayushkin-igor-igorevich.html" class="specialist__name">Раюшкин <br> Игорь Игоревич</a>
+									<a href="rayushkin-igor-igorevich.html" class="specialist__name title-sm">Раюшкин <br> Игорь Игоревич</a>
 									<div class="specialist__info">
 										<div class="specialist__position">Терапевт—ортопед</div>
 									</div>
@@ -662,7 +665,7 @@
 				<div class="contacts__wrapper">
 					<div class="contacts__container">
 						<div class="contacts__body">
-							<div class="contacts__side">
+							<div class="contacts__question">
 								<h2 class="contacts__title title">Задайте вопрос <br> врачу—стоматологу</h2>
 								<p class="contacts__subtitle">Получите консультацию по телефону или через популярные мессенджеры. Это удобно!</p>
 								<ul class="contacts__list">
@@ -839,13 +842,13 @@
 			</form>
 			<div class="form__privacy">Нажимая на кнопку, вы даете согласие на обработку персональных данных</div>
 		</div> <!-- plugins -->
-		<script src="js/libs/jquery-3.7.1.min.js?_v=20250313105814"></script>
-		<script src="js/libs/jquery.inputmask.min.js?_v=20250313105814"></script>
-		<script src="js/libs/intlTelInput.min.js?_v=20250313105814"></script>
-		<script src="js/libs/fancybox.umd.js?_v=20250313105814"></script>
-		<script src="js/libs/swiper-bundle.min.js?_v=20250313105814"></script>
+		<script src="js/libs/jquery-3.7.1.min.js?_v=20250313133542"></script>
+		<script src="js/libs/jquery.inputmask.min.js?_v=20250313133542"></script>
+		<script src="js/libs/intlTelInput.min.js?_v=20250313133542"></script>
+		<script src="js/libs/fancybox.umd.js?_v=20250313133542"></script>
+		<script src="js/libs/swiper-bundle.min.js?_v=20250313133542"></script>
 		<!-- plugins -->
-		<script src="js/app.min.js?_v=20250313105814"></script>
+		<script src="js/app.min.js?_v=20250313133542"></script>
 	</div>
 </body>
 

@@ -37,12 +37,12 @@
 	<link rel="manifest" href="/site.webmanifest" />
 	<!-- favicon -->
 	<!-- plugins -->
-	<link rel="stylesheet" href="css/libs/input-tel.css?_v=20250313105814">
-	<link rel="stylesheet" href="css/libs/swiper-bundle.min.css?_v=20250313105814">
-	<link rel="stylesheet" href="css/libs/fancybox.min.css?_v=20250313105814">
+	<link rel="stylesheet" href="css/libs/input-tel.css?_v=20250313133542">
+	<link rel="stylesheet" href="css/libs/swiper-bundle.min.css?_v=20250313133542">
+	<link rel="stylesheet" href="css/libs/fancybox.min.css?_v=20250313133542">
 	<!-- plugins -->
-	<link rel="stylesheet" href="css/reset.min.css?_v=20250313105814">
-	<link rel="stylesheet" href="css/style.min.css?_v=20250313105814">
+	<link rel="stylesheet" href="css/reset.min.css?_v=20250313133542">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250313133542">
 </head>
 
 <body>
@@ -54,9 +54,11 @@
 						<a href="/" class="header__logo">
 							<img src="img/logo.png" alt="Логотип">
 						</a>
-						<address class="header__location icon-location">г. Москва, мкрн. Кожухово, ул. Руднёвка, д.3</address>
-						<div class="header__time icon-clock">пн-пт: с 9:00 до 21:00</div>
-						<a href="tel:+74991107705" class="header__phone icon-phone">+7(499) 110-77-05</a>
+						<div class="header__info">
+							<address class="header__location icon-location">г.&nbsp;Москва, мкрн.&nbsp;Кожухово, ул.&nbsp;Руднёвка, д.3</address>
+							<div class="header__time icon-clock">пн-пт: с 9:00 до&nbsp;21:00</div>
+							<a href="tel:+74991107705" class="header__phone icon-phone">+7(499) 110-77-05</a>
+						</div>
 						<div class="header__actions">
 							<button type="button" class="header__menu-toggler icon-menu">
 								<span></span>
@@ -76,13 +78,14 @@
 							<a href="" class="header__btn btn btn-primary btn-sm">Запись на прием</a>
 						</div>
 					</div>
-					<nav class="header__menu menu">
+					<nav class="header__menu menu" aria-label="Меню в шапке">
+						<button type="button" aria-label="Закрыть меню" class="menu__close icon-close"></button>
 						<ul class="menu__list">
 							<li class="menu__item">
 								<a href="/for-patients.html" class="menu__link">Пациентам</a>
 							</li>
 							<li class="menu__item has-child">
-								<a href="" class="menu__link">Услуги</a>
+								<button type="button" class="menu__btn">Услуги</button>
 								<div class="submenu">
 									<ul class="submenu__list">
 										<li class="submenu__item">
@@ -439,35 +442,35 @@
 						<a href="#" class="steps__btn btn btn-primary">Получить консультацию</a>
 						<ol class="steps__list">
 							<li class="steps__item">
-								<div class="steps__item-caption">Первичная консультация и диагностика</div>
+								<div class="steps__item-caption title-sm">Первичная консультация и диагностика</div>
 								<div class="steps__item-desc">Проведение осмотра и диагностики (рентген, ортопантомография, КТ) для определения состояния зубов и костной ткани. Подбор индивидуального плана лечения, обезболивание и подготовка пациента к хирургическому вмешательству.</div>
 								<div class="steps__item-image">
 									<img src="img/steps/16.jpg" class="cover-image" alt="Фото процедуры">
 								</div>
 							</li>
 							<li class="steps__item">
-								<div class="steps__item-caption">Подготовка к операции</div>
+								<div class="steps__item-caption title-sm">Подготовка к операции</div>
 								<div class="steps__item-desc">Подготовка пациента к операции, включая обезболивание и другие необходимые процедуры, чтобы обеспечить безопасное проведение хирургического вмешательства.</div>
 								<div class="steps__item-image">
 									<img src="img/steps/26.jpg" class="cover-image" alt="Фото процедуры">
 								</div>
 							</li>
 							<li class="steps__item">
-								<div class="steps__item-caption">Проведение операции</div>
+								<div class="steps__item-caption title-sm">Проведение операции</div>
 								<div class="steps__item-desc">Выполнение операции с использованием современных методов и инструментов, минимизирующих травматичность. Наблюдение за пациентом в первые часы после процедуры для оценки состояния и профилактики осложнений.</div>
 								<div class="steps__item-image">
 									<img src="img/steps/03.jpg" class="cover-image" alt="Фото процедуры">
 								</div>
 							</li>
 							<li class="steps__item">
-								<div class="steps__item-caption">Послеоперационное наблюдение</div>
+								<div class="steps__item-caption title-sm">Послеоперационное наблюдение</div>
 								<div class="steps__item-desc">Наблюдение за пациентом после операции, чтобы контролировать его состояние и предотвратить возможные осложнения.</div>
 								<div class="steps__item-image">
 									<img src="img/steps/27.jpg" class="cover-image" alt="Фото процедуры">
 								</div>
 							</li>
 							<li class="steps__item">
-								<div class="steps__item-caption">Реабилитация и контрольные вызовы</div>
+								<div class="steps__item-caption title-sm">Реабилитация и контрольные вызовы</div>
 								<div class="steps__item-desc">Составление плана реабилитации и регулярные осмотры для контроля процесса заживления.</div>
 								<div class="steps__item-image">
 									<img src="img/steps/28.jpg" class="cover-image" alt="Фото процедуры">
@@ -493,19 +496,19 @@
 								<div class="benefits__block-icon">
 									<img src="img/icons/check.svg" alt="Иконка">
 								</div>
-								<div class="benefits__block-text"> Платите частями на каждом этапе лечения </div>
+								<div class="benefits__block-text title-sm"> Платите частями на каждом этапе лечения </div>
 							</li>
 							<li class="benefits__block">
 								<div class="benefits__block-icon">
 									<img src="img/icons/check.svg" alt="Иконка">
 								</div>
-								<div class="benefits__block-text"> Возвращайте 13% через налоговый вычет </div>
+								<div class="benefits__block-text title-sm"> Возвращайте 13% через налоговый вычет </div>
 							</li>
 							<li class="benefits__block">
 								<div class="benefits__block-icon">
 									<img src="img/icons/check.svg" alt="Иконка">
 								</div>
-								<div class="benefits__block-text"> Воспользуйтесь рассрочкой на выгодных условиях </div>
+								<div class="benefits__block-text title-sm"> Воспользуйтесь рассрочкой на выгодных условиях </div>
 							</li>
 						</ul>
 						<p class="benefits__hint">Оставьте заявку, и наши специалисты произведут точный расчет стоимости процедуры.</p>
@@ -594,19 +597,19 @@
 						<h2 class="guidelines__title title">Когда еще требуется хирургическое вмешательство ?</h2>
 						<ol class="guidelines__list">
 							<li class="guidelines__item">
-								<div class="guidelines__item-caption">Глубокие кариозные поражения и разрушенные зубы</div>
+								<div class="guidelines__item-caption title-sm">Глубокие кариозные поражения и разрушенные зубы</div>
 								<div class="guidelines__item-desc">Если зуб сильно разрушен кариесом или травмой и восстановление пломбой невозможно, хирургическое удаление становится единственным вариантом. Это помогает избежать развития инфекций и воспалений.</div>
 							</li>
 							<li class="guidelines__item">
-								<div class="guidelines__item-caption">Образование кисты или гранулемы</div>
+								<div class="guidelines__item-caption title-sm">Образование кисты или гранулемы</div>
 								<div class="guidelines__item-desc">Киста или гранулема на корне зуба часто остаются незамеченными на ранних стадиях. Их своевременное удаление необходимо, чтобы предотвратить распространение инфекции на соседние зубы и ткани.</div>
 							</li>
 							<li class="guidelines__item">
-								<div class="guidelines__item-caption">Перикоронарит (воспаление капюшона зуба мудрости)</div>
+								<div class="guidelines__item-caption title-sm">Перикоронарит (воспаление капюшона зуба мудрости)</div>
 								<div class="guidelines__item-desc">Воспаление мягких тканей вокруг зуба мудрости часто требует хирургического вмешательства. Это состояние вызывает боль и отечность, а также может привести к абсцессу, если его не лечить.</div>
 							</li>
 							<li class="guidelines__item">
-								<div class="guidelines__item-caption">Нарушение прикуса и скученность зубов</div>
+								<div class="guidelines__item-caption title-sm">Нарушение прикуса и скученность зубов</div>
 								<div class="guidelines__item-desc">В случае неправильного расположения зубов, особенно при подготовке к ортодонтическому лечению, может потребоваться удаление отдельных зубов для создания пространства и выравнивания прикуса.</div>
 							</li>
 						</ol>
@@ -634,7 +637,7 @@
 									<img src="img/specialists/yurchenko-mikhail-vadimovich.jpg" class="cover-image" alt="Фото доктора">
 								</a>
 								<div class="specialist__body">
-									<a href="yurchenko-mikhail-vadimovich.html" class="specialist__name">Юрченко <br> Михаил Вадимович</a>
+									<a href="yurchenko-mikhail-vadimovich.html" class="specialist__name title-sm">Юрченко <br> Михаил Вадимович</a>
 									<div class="specialist__info">
 										<div class="specialist__position">Хирург-имплантолог</div>
 									</div>
@@ -648,7 +651,7 @@
 				<div class="contacts__wrapper">
 					<div class="contacts__container">
 						<div class="contacts__body">
-							<div class="contacts__side">
+							<div class="contacts__question">
 								<h2 class="contacts__title title">Задайте вопрос <br> врачу—стоматологу</h2>
 								<p class="contacts__subtitle">Получите консультацию по телефону или через популярные мессенджеры. Это удобно!</p>
 								<ul class="contacts__list">
@@ -825,13 +828,13 @@
 			</form>
 			<div class="form__privacy">Нажимая на кнопку, вы даете согласие на обработку персональных данных</div>
 		</div> <!-- plugins -->
-		<script src="js/libs/jquery-3.7.1.min.js?_v=20250313105814"></script>
-		<script src="js/libs/jquery.inputmask.min.js?_v=20250313105814"></script>
-		<script src="js/libs/intlTelInput.min.js?_v=20250313105814"></script>
-		<script src="js/libs/fancybox.umd.js?_v=20250313105814"></script>
-		<script src="js/libs/swiper-bundle.min.js?_v=20250313105814"></script>
+		<script src="js/libs/jquery-3.7.1.min.js?_v=20250313133542"></script>
+		<script src="js/libs/jquery.inputmask.min.js?_v=20250313133542"></script>
+		<script src="js/libs/intlTelInput.min.js?_v=20250313133542"></script>
+		<script src="js/libs/fancybox.umd.js?_v=20250313133542"></script>
+		<script src="js/libs/swiper-bundle.min.js?_v=20250313133542"></script>
 		<!-- plugins -->
-		<script src="js/app.min.js?_v=20250313105814"></script>
+		<script src="js/app.min.js?_v=20250313133542"></script>
 	</div>
 </body>
 

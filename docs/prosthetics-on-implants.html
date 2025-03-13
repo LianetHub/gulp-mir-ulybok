@@ -37,12 +37,12 @@
 	<link rel="manifest" href="/site.webmanifest" />
 	<!-- favicon -->
 	<!-- plugins -->
-	<link rel="stylesheet" href="css/libs/input-tel.css?_v=20250313105814">
-	<link rel="stylesheet" href="css/libs/swiper-bundle.min.css?_v=20250313105814">
-	<link rel="stylesheet" href="css/libs/fancybox.min.css?_v=20250313105814">
+	<link rel="stylesheet" href="css/libs/input-tel.css?_v=20250313133542">
+	<link rel="stylesheet" href="css/libs/swiper-bundle.min.css?_v=20250313133542">
+	<link rel="stylesheet" href="css/libs/fancybox.min.css?_v=20250313133542">
 	<!-- plugins -->
-	<link rel="stylesheet" href="css/reset.min.css?_v=20250313105814">
-	<link rel="stylesheet" href="css/style.min.css?_v=20250313105814">
+	<link rel="stylesheet" href="css/reset.min.css?_v=20250313133542">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250313133542">
 </head>
 
 <body>
@@ -54,9 +54,11 @@
 						<a href="/" class="header__logo">
 							<img src="img/logo.png" alt="Логотип">
 						</a>
-						<address class="header__location icon-location">г. Москва, мкрн. Кожухово, ул. Руднёвка, д.3</address>
-						<div class="header__time icon-clock">пн-пт: с 9:00 до 21:00</div>
-						<a href="tel:+74991107705" class="header__phone icon-phone">+7(499) 110-77-05</a>
+						<div class="header__info">
+							<address class="header__location icon-location">г.&nbsp;Москва, мкрн.&nbsp;Кожухово, ул.&nbsp;Руднёвка, д.3</address>
+							<div class="header__time icon-clock">пн-пт: с 9:00 до&nbsp;21:00</div>
+							<a href="tel:+74991107705" class="header__phone icon-phone">+7(499) 110-77-05</a>
+						</div>
 						<div class="header__actions">
 							<button type="button" class="header__menu-toggler icon-menu">
 								<span></span>
@@ -76,13 +78,14 @@
 							<a href="" class="header__btn btn btn-primary btn-sm">Запись на прием</a>
 						</div>
 					</div>
-					<nav class="header__menu menu">
+					<nav class="header__menu menu" aria-label="Меню в шапке">
+						<button type="button" aria-label="Закрыть меню" class="menu__close icon-close"></button>
 						<ul class="menu__list">
 							<li class="menu__item">
 								<a href="/for-patients.html" class="menu__link">Пациентам</a>
 							</li>
 							<li class="menu__item has-child">
-								<a href="" class="menu__link">Услуги</a>
+								<button type="button" class="menu__btn">Услуги</button>
 								<div class="submenu">
 									<ul class="submenu__list">
 										<li class="submenu__item">
@@ -380,15 +383,15 @@
 						<h2 class="guidelines__title title">Установка протезов на имплантах в 3 шага</h2>
 						<ol class="guidelines__list">
 							<li class="guidelines__item">
-								<div class="guidelines__item-caption">Диагностика и подготовка</div>
+								<div class="guidelines__item-caption title-sm">Диагностика и подготовка</div>
 								<div class="guidelines__item-desc">На этом этапе выполняется комплексное обследование полости рта: рентген, КТ или другие исследования. Если зубы требуют лечения или удаления, процедура проводится до начала протезирования.</div>
 							</li>
 							<li class="guidelines__item">
-								<div class="guidelines__item-caption">Установка имплантов и подготовка к протезированию</div>
+								<div class="guidelines__item-caption title-sm">Установка имплантов и подготовка к протезированию</div>
 								<div class="guidelines__item-desc">Стоматолог устанавливает импланты в костную ткань челюсти. После их приживления снимаются слепки для создания индивидуального несъемного протеза.</div>
 							</li>
 							<li class="guidelines__item">
-								<div class="guidelines__item-caption">Фиксация конструкции</div>
+								<div class="guidelines__item-caption title-sm">Фиксация конструкции</div>
 								<div class="guidelines__item-desc">После изготовления протеза он примеряется, проверяется его посадка и комфорт. Конструкция прочно фиксируется на имплантах, обеспечивая естественный вид и функциональность зубов.</div>
 							</li>
 						</ol>
@@ -448,7 +451,7 @@
 									<img src="img/specialists/pavlenko-nikolay-sergeevich.jpg" class="cover-image" alt="Фото доктора">
 								</a>
 								<div class="specialist__body">
-									<a href="pavlenko-nikolay-sergeevich.html" class="specialist__name">Павленко <br> Николай Сергеевич</a>
+									<a href="pavlenko-nikolay-sergeevich.html" class="specialist__name title-sm">Павленко <br> Николай Сергеевич</a>
 									<div class="specialist__info">
 										<div class="specialist__position">Главный врач <br> Врач стоматолог общей практики, ортопед, хирург</div>
 									</div>
@@ -459,7 +462,7 @@
 									<img src="img/specialists/rayushkin-igor-igorevich.jpg" class="cover-image" alt="Фото доктора">
 								</a>
 								<div class="specialist__body">
-									<a href="rayushkin-igor-igorevich.html" class="specialist__name">Раюшкин <br> Игорь Игоревич</a>
+									<a href="rayushkin-igor-igorevich.html" class="specialist__name title-sm">Раюшкин <br> Игорь Игоревич</a>
 									<div class="specialist__info">
 										<div class="specialist__position">Терапевт-ортопед</div>
 									</div>
@@ -644,13 +647,13 @@
 			</form>
 			<div class="form__privacy">Нажимая на кнопку, вы даете согласие на обработку персональных данных</div>
 		</div> <!-- plugins -->
-		<script src="js/libs/jquery-3.7.1.min.js?_v=20250313105814"></script>
-		<script src="js/libs/jquery.inputmask.min.js?_v=20250313105814"></script>
-		<script src="js/libs/intlTelInput.min.js?_v=20250313105814"></script>
-		<script src="js/libs/fancybox.umd.js?_v=20250313105814"></script>
-		<script src="js/libs/swiper-bundle.min.js?_v=20250313105814"></script>
+		<script src="js/libs/jquery-3.7.1.min.js?_v=20250313133542"></script>
+		<script src="js/libs/jquery.inputmask.min.js?_v=20250313133542"></script>
+		<script src="js/libs/intlTelInput.min.js?_v=20250313133542"></script>
+		<script src="js/libs/fancybox.umd.js?_v=20250313133542"></script>
+		<script src="js/libs/swiper-bundle.min.js?_v=20250313133542"></script>
 		<!-- plugins -->
-		<script src="js/app.min.js?_v=20250313105814"></script>
+		<script src="js/app.min.js?_v=20250313133542"></script>
 	</div>
 </body>
 

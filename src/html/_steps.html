@@ -11,7 +11,7 @@
             @@if(typeof list !== 'undefined' && list.length > 0) {
             <ol class="steps__list">
                 @@for(var i = 0; i < list.length; i++) { <li class="steps__item">
-                    <div class="steps__item-caption">`+list[i].title+`</div>
+                    <div class="steps__item-caption title-sm">`+list[i].title+`</div>
                     <div class="steps__item-desc">`+list[i].desc+`</div>
                     <div class="steps__item-image">
                         <img src="`+list[i].image+`" class="cover-image" alt="Фото процедуры">

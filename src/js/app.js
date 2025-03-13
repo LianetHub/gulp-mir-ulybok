@@ -28,6 +28,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const target = e.target;
 
+        if (target.closest('.header__menu-toggler')) {
+            document.querySelector('.header')?.classList.add('open-menu')
+        }
+
+        if (target.closest('.menu__close')) {
+            document.querySelector('.header')?.classList.remove('open-menu')
+        }
+
+        if (target.matches('.menu__btn')) {
+            target.classList.toggle('active')
+            target.nextElementSibling?.classList.toggle('active')
+        }
+
         if (target.matches('.search__btn')) {
             document.querySelector('.search').classList.add('active');
             setTimeout(() => {
@@ -104,13 +117,21 @@ document.addEventListener("DOMContentLoaded", () => {
     if (document.querySelector('.specialists__carousel')) {
 
         new Swiper('.specialists__carousel', {
-            slidesPerView: 3,
+
             spaceBetween: 27,
             watchSlidesProgress: true,
             pagination: {
                 el: '.specialists__pagination',
                 clickable: true,
             },
+            breakpoints: {
+                767.98: {
+                    slidesPerView: 2,
+                },
+                991.98: {
+                    slidesPerView: 3,
+                }
+            }
         })
     }
 
@@ -138,7 +159,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 clickable: true,
             },
             breakpoints: {
-                768: {
+                767.98: {
                     spaceBetween: 46,
                 }
             }
@@ -147,13 +168,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (document.querySelector('.works__slider')) {
         new Swiper('.works__slider', {
-            slidesPerView: 3,
+            slidesPerView: 1,
             spaceBetween: 21,
             watchOverflow: true,
             pagination: {
                 el: '.works__pagination',
                 clickable: true,
             },
+            breakpoints: {
+                767.98: {
+                    slidesPerView: 2,
+                },
+                991.98: {
+                    slidesPerView: 3,
+                }
+            }
 
         })
     }

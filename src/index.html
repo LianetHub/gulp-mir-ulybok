@@ -11,7 +11,7 @@
                     <div class="main__wrapper">
                         <div class="main__container">
                             <div class="main__header">
-                                <div class="main__offter">
+                                <div class="main__offer">
                                     <div class="main__caption">Комфортное лечение зубов по доступной цене</div>
                                     <h1 class="main__title">мир улыбок</h1>
                                     <p class="main__tagline">
@@ -125,12 +125,15 @@
                         </div>
                     </div>
                 </section>
+
                 @@include('html/_services.html', {
                 "title": "Оказываем весь спектр стоматологических услуг",
                 "grid": true,
                 "hasBtn": false,
                 "json": "'./html/json/home-services.json'"
-                }, )
+                },
+                )
+
                 @@include('html/_specialists.html', {
                 "title": "Наши специалисты — наша гордость",
                 "type": "grid",
@@ -234,6 +237,7 @@
                         <a href="" class="gallery__more more-link icon-arrow-circle">Все фото</a>
                     </div>
                 </section>
+
                 @@include('html/_contacts.html', {
                 "formTitle": "Остались вопросы?",
                 "formSubtitle": "Оставьте заявку и получите бесплатную консультацию наших специалистов.",

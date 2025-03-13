@@ -37,12 +37,12 @@
 	<link rel="manifest" href="/site.webmanifest" />
 	<!-- favicon -->
 	<!-- plugins -->
-	<link rel="stylesheet" href="css/libs/input-tel.css?_v=20250313105814">
-	<link rel="stylesheet" href="css/libs/swiper-bundle.min.css?_v=20250313105814">
-	<link rel="stylesheet" href="css/libs/fancybox.min.css?_v=20250313105814">
+	<link rel="stylesheet" href="css/libs/input-tel.css?_v=20250313133542">
+	<link rel="stylesheet" href="css/libs/swiper-bundle.min.css?_v=20250313133542">
+	<link rel="stylesheet" href="css/libs/fancybox.min.css?_v=20250313133542">
 	<!-- plugins -->
-	<link rel="stylesheet" href="css/reset.min.css?_v=20250313105814">
-	<link rel="stylesheet" href="css/style.min.css?_v=20250313105814">
+	<link rel="stylesheet" href="css/reset.min.css?_v=20250313133542">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250313133542">
 </head>
 
 <body>
@@ -54,9 +54,11 @@
 						<a href="/" class="header__logo">
 							<img src="img/logo.png" alt="Логотип">
 						</a>
-						<address class="header__location icon-location">г. Москва, мкрн. Кожухово, ул. Руднёвка, д.3</address>
-						<div class="header__time icon-clock">пн-пт: с 9:00 до 21:00</div>
-						<a href="tel:+74991107705" class="header__phone icon-phone">+7(499) 110-77-05</a>
+						<div class="header__info">
+							<address class="header__location icon-location">г.&nbsp;Москва, мкрн.&nbsp;Кожухово, ул.&nbsp;Руднёвка, д.3</address>
+							<div class="header__time icon-clock">пн-пт: с 9:00 до&nbsp;21:00</div>
+							<a href="tel:+74991107705" class="header__phone icon-phone">+7(499) 110-77-05</a>
+						</div>
 						<div class="header__actions">
 							<button type="button" class="header__menu-toggler icon-menu">
 								<span></span>
@@ -76,13 +78,14 @@
 							<a href="" class="header__btn btn btn-primary btn-sm">Запись на прием</a>
 						</div>
 					</div>
-					<nav class="header__menu menu">
+					<nav class="header__menu menu" aria-label="Меню в шапке">
+						<button type="button" aria-label="Закрыть меню" class="menu__close icon-close"></button>
 						<ul class="menu__list">
 							<li class="menu__item">
 								<a href="/for-patients.html" class="menu__link">Пациентам</a>
 							</li>
 							<li class="menu__item has-child">
-								<a href="" class="menu__link">Услуги</a>
+								<button type="button" class="menu__btn">Услуги</button>
 								<div class="submenu">
 									<ul class="submenu__list">
 										<li class="submenu__item">
@@ -418,23 +421,23 @@
 						<a href="" class="guidelines__btn btn btn-primary">Получить консультацию</a>
 						<ol class="guidelines__list">
 							<li class="guidelines__item">
-								<div class="guidelines__item-caption">Двухэтапная имплантация</div>
+								<div class="guidelines__item-caption title-sm">Двухэтапная имплантация</div>
 								<div class="guidelines__item-desc">Установка импланта с последующей фиксацией коронки после полного приживления стержня.</div>
 							</li>
 							<li class="guidelines__item">
-								<div class="guidelines__item-caption">Одноэтапная имплантация</div>
+								<div class="guidelines__item-caption title-sm">Одноэтапная имплантация</div>
 								<div class="guidelines__item-desc">Имплант и временная коронка устанавливаются за один визит, что сокращает общее время лечения.</div>
 							</li>
 							<li class="guidelines__item">
-								<div class="guidelines__item-caption">Одномоментная имплантация</div>
+								<div class="guidelines__item-caption title-sm">Одномоментная имплантация</div>
 								<div class="guidelines__item-desc">Установка импланта сразу после удаления зуба, что позволяет избежать дополнительной операции.</div>
 							</li>
 							<li class="guidelines__item">
-								<div class="guidelines__item-caption">Съемное протезирование</div>
+								<div class="guidelines__item-caption title-sm">Съемное протезирование</div>
 								<div class="guidelines__item-desc">Использование имплантов в качестве опоры для съемных протезов.</div>
 							</li>
 							<li class="guidelines__item">
-								<div class="guidelines__item-caption">Несъемное протезирование</div>
+								<div class="guidelines__item-caption title-sm">Несъемное протезирование</div>
 								<div class="guidelines__item-desc">Установка постоянных протезов на импланты для максимально естественного вида и ощущения.</div>
 							</li>
 						</ol>
@@ -495,19 +498,19 @@
 								<div class="benefits__block-icon">
 									<img src="img/icons/check.svg" alt="Иконка">
 								</div>
-								<div class="benefits__block-text"> Платите частями на каждом этапе лечения </div>
+								<div class="benefits__block-text title-sm"> Платите частями на каждом этапе лечения </div>
 							</li>
 							<li class="benefits__block">
 								<div class="benefits__block-icon">
 									<img src="img/icons/check.svg" alt="Иконка">
 								</div>
-								<div class="benefits__block-text"> Возвращайте 13% через налоговый вычет </div>
+								<div class="benefits__block-text title-sm"> Возвращайте 13% через налоговый вычет </div>
 							</li>
 							<li class="benefits__block">
 								<div class="benefits__block-icon">
 									<img src="img/icons/check.svg" alt="Иконка">
 								</div>
-								<div class="benefits__block-text"> Воспользуйтесь рассрочкой на выгодных условиях </div>
+								<div class="benefits__block-text title-sm"> Воспользуйтесь рассрочкой на выгодных условиях </div>
 							</li>
 						</ul>
 						<p class="benefits__hint">Оставьте заявку, и наши специалисты произведут точный расчет стоимости процедуры.</p>
@@ -571,23 +574,23 @@
 						<h2 class="guidelines__title title">5 причин провести имплантацию <br> в нашей клинике</h2>
 						<ol class="guidelines__list">
 							<li class="guidelines__item">
-								<div class="guidelines__item-caption">Квалифицированные специалисты</div>
+								<div class="guidelines__item-caption title-sm">Квалифицированные специалисты</div>
 								<div class="guidelines__item-desc">Наши врачи-имплантологи регулярно проходят обучение, повышают свою квалификацию на международных курсах и имеют обширный опыт проведения операций.</div>
 							</li>
 							<li class="guidelines__item">
-								<div class="guidelines__item-caption">Широкий выбор имплантов</div>
+								<div class="guidelines__item-caption title-sm">Широкий выбор имплантов</div>
 								<div class="guidelines__item-desc">Мы предлагаем широкий выбор имплантационных систем от ведущих мировых производителей, что позволяет найти оптимальный вариант для каждого пациента.</div>
 							</li>
 							<li class="guidelines__item">
-								<div class="guidelines__item-caption">Современные методы имплантации</div>
+								<div class="guidelines__item-caption title-sm">Современные методы имплантации</div>
 								<div class="guidelines__item-desc">Используем передовые техники, такие как одномоментная имплантация и установка несъемных конструкций, что позволяет ускорить процесс восстановления после операции.</div>
 							</li>
 							<li class="guidelines__item">
-								<div class="guidelines__item-caption">Гарантия качества</div>
+								<div class="guidelines__item-caption title-sm">Гарантия качества</div>
 								<div class="guidelines__item-desc">На все установленные импланты предоставляется официальная гарантия от производителя, что подтверждает их качество и надежность.</div>
 							</li>
 							<li class="guidelines__item">
-								<div class="guidelines__item-caption">Возможность рассрочки</div>
+								<div class="guidelines__item-caption title-sm">Возможность рассрочки</div>
 								<div class="guidelines__item-desc">Удобные условия оплаты делают имплантацию зубов в стоматологии «ДоброДент» доступной для каждого пациента.</div>
 							</li>
 						</ol>
@@ -613,7 +616,7 @@
 									<img src="img/specialists/yurchenko-mikhail-vadimovich.jpg" class="cover-image" alt="Фото доктора">
 								</a>
 								<div class="specialist__body">
-									<a href="yurchenko-mikhail-vadimovich.html" class="specialist__name">Юрченко <br> Михаил Вадимович</a>
+									<a href="yurchenko-mikhail-vadimovich.html" class="specialist__name title-sm">Юрченко <br> Михаил Вадимович</a>
 									<div class="specialist__info">
 										<div class="specialist__position">Хирург-имплантолог</div>
 									</div>
@@ -627,7 +630,7 @@
 				<div class="contacts__wrapper">
 					<div class="contacts__container">
 						<div class="contacts__body">
-							<div class="contacts__side">
+							<div class="contacts__question">
 								<h2 class="contacts__title title">Задайте вопрос <br> врачу—стоматологу</h2>
 								<p class="contacts__subtitle">Получите консультацию по телефону или через популярные мессенджеры. Это удобно!</p>
 								<ul class="contacts__list">
@@ -804,13 +807,13 @@
 			</form>
 			<div class="form__privacy">Нажимая на кнопку, вы даете согласие на обработку персональных данных</div>
 		</div> <!-- plugins -->
-		<script src="js/libs/jquery-3.7.1.min.js?_v=20250313105814"></script>
-		<script src="js/libs/jquery.inputmask.min.js?_v=20250313105814"></script>
-		<script src="js/libs/intlTelInput.min.js?_v=20250313105814"></script>
-		<script src="js/libs/fancybox.umd.js?_v=20250313105814"></script>
-		<script src="js/libs/swiper-bundle.min.js?_v=20250313105814"></script>
+		<script src="js/libs/jquery-3.7.1.min.js?_v=20250313133542"></script>
+		<script src="js/libs/jquery.inputmask.min.js?_v=20250313133542"></script>
+		<script src="js/libs/intlTelInput.min.js?_v=20250313133542"></script>
+		<script src="js/libs/fancybox.umd.js?_v=20250313133542"></script>
+		<script src="js/libs/swiper-bundle.min.js?_v=20250313133542"></script>
 		<!-- plugins -->
-		<script src="js/app.min.js?_v=20250313105814"></script>
+		<script src="js/app.min.js?_v=20250313133542"></script>
 	</div>
 </body>
 

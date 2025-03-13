@@ -94,23 +94,36 @@
 	}
 	// .reviews__list
 	&__list {
-		margin-top: 4.5rem;
 		display: flex;
 		flex-direction: column;
 		gap: 1.5rem;
+		margin-top: 2.5rem;
+		@media (min-width: $md5) {
+			margin-top: 3.5rem;
+		}
+		@media (min-width: $md3) {
+			margin-top: 4.5rem;
+		}
 	}
 	// .reviews__grid
 	&__grid {
-		margin-top: 4.5rem;
 		display: grid;
-		grid-template-columns: repeat(3, 1fr);
 		gap: 1.25rem;
-		.review {
-			min-height: rem(352);
+		margin-top: 2.5rem;
+		@media (min-width: $md4) {
+			margin-top: 3.5rem;
+			grid-template-columns: repeat(2, 1fr);
 		}
-		.review__name {
-			font-size: rem(26);
-			font-family: $font-manrope;
+		@media (min-width: $md3) {
+			margin-top: 4.5rem;
+			grid-template-columns: repeat(3, 1fr);
+			.review__name {
+				font-size: rem(26);
+				font-family: $font-manrope;
+			}
+			.review {
+				min-height: rem(352);
+			}
 		}
 	}
 }
@@ -127,21 +140,33 @@
 	}
 	// .review__thumb
 	&__thumb {
-		border-radius: 8.75rem;
+		border-radius: 50%;
 		background: #f186aa;
 		display: flex;
-		width: 3.375rem;
-		height: 3.375rem;
+
 		padding: 0.5rem;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		color: #fff;
 		font-family: $font-manrope;
-		font-size: 1.75rem;
+
 		font-weight: 500;
 		text-transform: capitalize;
 		flex-shrink: 0;
+		width: 2.75rem;
+		height: 2.75rem;
+		font-size: 1.25rem;
+		@media (min-width: $md5) {
+			width: 3rem;
+			height: 3rem;
+			font-size: 1.5rem;
+		}
+		@media (min-width: $md3) {
+			width: 3.375rem;
+			height: 3.375rem;
+			font-size: 1.75rem;
+		}
 	}
 	// .review__name
 	&__name {
@@ -155,6 +180,8 @@
 	// .review__quote
 	&__quote {
 		margin-top: 0.75rem;
-		font-size: 1.125rem;
+		@media (min-width: $md5) {
+			font-size: 1.125rem;
+		}
 	}
 }

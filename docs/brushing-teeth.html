@@ -37,12 +37,12 @@
 	<link rel="manifest" href="/site.webmanifest" />
 	<!-- favicon -->
 	<!-- plugins -->
-	<link rel="stylesheet" href="css/libs/input-tel.css?_v=20250313105814">
-	<link rel="stylesheet" href="css/libs/swiper-bundle.min.css?_v=20250313105814">
-	<link rel="stylesheet" href="css/libs/fancybox.min.css?_v=20250313105814">
+	<link rel="stylesheet" href="css/libs/input-tel.css?_v=20250313133542">
+	<link rel="stylesheet" href="css/libs/swiper-bundle.min.css?_v=20250313133542">
+	<link rel="stylesheet" href="css/libs/fancybox.min.css?_v=20250313133542">
 	<!-- plugins -->
-	<link rel="stylesheet" href="css/reset.min.css?_v=20250313105814">
-	<link rel="stylesheet" href="css/style.min.css?_v=20250313105814">
+	<link rel="stylesheet" href="css/reset.min.css?_v=20250313133542">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250313133542">
 </head>
 
 <body>
@@ -54,9 +54,11 @@
 						<a href="/" class="header__logo">
 							<img src="img/logo.png" alt="Логотип">
 						</a>
-						<address class="header__location icon-location">г. Москва, мкрн. Кожухово, ул. Руднёвка, д.3</address>
-						<div class="header__time icon-clock">пн-пт: с 9:00 до 21:00</div>
-						<a href="tel:+74991107705" class="header__phone icon-phone">+7(499) 110-77-05</a>
+						<div class="header__info">
+							<address class="header__location icon-location">г.&nbsp;Москва, мкрн.&nbsp;Кожухово, ул.&nbsp;Руднёвка, д.3</address>
+							<div class="header__time icon-clock">пн-пт: с 9:00 до&nbsp;21:00</div>
+							<a href="tel:+74991107705" class="header__phone icon-phone">+7(499) 110-77-05</a>
+						</div>
 						<div class="header__actions">
 							<button type="button" class="header__menu-toggler icon-menu">
 								<span></span>
@@ -76,13 +78,14 @@
 							<a href="" class="header__btn btn btn-primary btn-sm">Запись на прием</a>
 						</div>
 					</div>
-					<nav class="header__menu menu">
+					<nav class="header__menu menu" aria-label="Меню в шапке">
+						<button type="button" aria-label="Закрыть меню" class="menu__close icon-close"></button>
 						<ul class="menu__list">
 							<li class="menu__item">
 								<a href="/for-patients.html" class="menu__link">Пациентам</a>
 							</li>
 							<li class="menu__item has-child">
-								<a href="" class="menu__link">Услуги</a>
+								<button type="button" class="menu__btn">Услуги</button>
 								<div class="submenu">
 									<ul class="submenu__list">
 										<li class="submenu__item">
@@ -418,35 +421,35 @@
 						<a href="#" class="steps__btn btn btn-primary">Получить консультацию</a>
 						<ol class="steps__list">
 							<li class="steps__item">
-								<div class="steps__item-caption">Осмотр</div>
+								<div class="steps__item-caption title-sm">Осмотр</div>
 								<div class="steps__item-desc">Врач тщательно оценивает состояние ротовой полости, чтобы выявить необходимость процедур и исключить противопоказания.</div>
 								<div class="steps__item-image">
 									<img src="img/steps/01.jpg" class="cover-image" alt="Фото процедуры">
 								</div>
 							</li>
 							<li class="steps__item">
-								<div class="steps__item-caption">Ультразвуковая чистка</div>
+								<div class="steps__item-caption title-sm">Ультразвуковая чистка</div>
 								<div class="steps__item-desc">Если у пациента имеются зубные камни, проводится ультразвуковая чистка. Если камней нет, этот этап пропускается. Для уменьшения неприятных ощущений применяется анестезия в&nbsp;виде обезболивающего спрея.</div>
 								<div class="steps__item-image">
 									<img src="img/steps/02.jpg" class="cover-image" alt="Фото процедуры">
 								</div>
 							</li>
 							<li class="steps__item">
-								<div class="steps__item-caption">Air Flow</div>
+								<div class="steps__item-caption title-sm">Air Flow</div>
 								<div class="steps__item-desc">С помощью специального аппарата под давлением подается струя порошка, которая позволяет бережно убрать мягкий и пигментированный налет, не травмируя десну и эмаль.</div>
 								<div class="steps__item-image">
 									<img src="img/steps/03.jpg" class="cover-image" alt="Фото процедуры">
 								</div>
 							</li>
 							<li class="steps__item">
-								<div class="steps__item-caption">Полировка</div>
+								<div class="steps__item-caption title-sm">Полировка</div>
 								<div class="steps__item-desc"> Стоматолог использует резиновые насадки и&nbsp;щеточки с различными пастами, начиная с&nbsp;более абразивной и&nbsp;заканчивая мелкозернистой. Это помогает замедлить образование налета на эмали.</div>
 								<div class="steps__item-image">
 									<img src="img/steps/04.jpg" class="cover-image" alt="Фото процедуры">
 								</div>
 							</li>
 							<li class="steps__item">
-								<div class="steps__item-caption">Фторирование или&nbsp;реминерализация</div>
+								<div class="steps__item-caption title-sm">Фторирование или&nbsp;реминерализация</div>
 								<div class="steps__item-desc">На финальном этапе на зубы наносится фторсодержащий лак, который проникает в&nbsp;эмаль и укрепляет её. Если фтор не <br> требуется, применяется реминерализирующий состав, который также защищает зубы от&nbsp;воздействия бактерий.</div>
 								<div class="steps__item-image">
 									<img src="img/steps/05.jpg" class="cover-image" alt="Фото процедуры">
@@ -523,23 +526,23 @@
 						<h2 class="guidelines__title title">Как ухаживать за зубами после профессиональной чистки?</h2>
 						<ol class="guidelines__list">
 							<li class="guidelines__item">
-								<div class="guidelines__item-caption">В первые часы воздержитесь от еды и напитков</div>
+								<div class="guidelines__item-caption title-sm">В первые часы воздержитесь от еды и напитков</div>
 								<div class="guidelines__item-desc">В течение первых 1-2 часов после процедуры следует избегать приема пищи и любых напитков, особенно горячих или холодных, чтобы сохранить эффект от процедуры и дать эмали время стабилизироваться после чистки.</div>
 							</li>
 							<li class="guidelines__item">
-								<div class="guidelines__item-caption">Выберите подходящую зубную пасту</div>
+								<div class="guidelines__item-caption title-sm">Выберите подходящую зубную пасту</div>
 								<div class="guidelines__item-desc">В первое время рекомендуется использовать реминерализирующие пасты вместо абразивных, чтобы укрепить эмаль и избежать раздражения. В дальнейшем следует отдать предпочтение пастам с содержанием фтора.</div>
 							</li>
 							<li class="guidelines__item">
-								<div class="guidelines__item-caption">Избегайте продуктов с красителями</div>
+								<div class="guidelines__item-caption title-sm">Избегайте продуктов с красителями</div>
 								<div class="guidelines__item-desc">На несколько дней после профессиональной чистки исключите из&nbsp;рациона продукты, содержащие красители (кофе, чай, ягоды, соки и вино), чтобы минимизировать риск окрашивания эмали.</div>
 							</li>
 							<li class="guidelines__item">
-								<div class="guidelines__item-caption">Поменяйте зубную щетку</div>
+								<div class="guidelines__item-caption title-sm">Поменяйте зубную щетку</div>
 								<div class="guidelines__item-desc">После процедуры рекомендуется перейти на новую зубную щетку,&nbsp;предпочтительно электрическую (она лучше очищает труднодоступные места, что особенно важно для поддержания длительного эффекта после профгигиены).</div>
 							</li>
 							<li class="guidelines__item">
-								<div class="guidelines__item-caption">Используйте антисептические растворы для полоскания</div>
+								<div class="guidelines__item-caption title-sm">Используйте антисептические растворы для полоскания</div>
 								<div class="guidelines__item-desc">В первые несколько дней рекомендовано полоскание полости рта антисептиками, такими как хлоргексидин или слабый раствор перекиси водорода, для профилактики воспалений и усиления защиты зубов.</div>
 							</li>
 						</ol>
@@ -566,7 +569,7 @@
 									<img src="img/specialists/kuzmicheva-tatyana-olegovna.jpg" class="cover-image" alt="Фото доктора">
 								</a>
 								<div class="specialist__body">
-									<a href="kuzmicheva-tatyana-olegovna.html" class="specialist__name">Кузьмичева <br> Татьяна Олеговна</a>
+									<a href="kuzmicheva-tatyana-olegovna.html" class="specialist__name title-sm">Кузьмичева <br> Татьяна Олеговна</a>
 									<div class="specialist__info">
 										<div class="specialist__position">Стоматолог-терапевт</div>
 									</div>
@@ -580,7 +583,7 @@
 				<div class="contacts__wrapper">
 					<div class="contacts__container">
 						<div class="contacts__body">
-							<div class="contacts__side">
+							<div class="contacts__question">
 								<h2 class="contacts__title title">Задайте вопрос <br> врачу—стоматологу</h2>
 								<p class="contacts__subtitle">Получите консультацию по телефону или через популярные мессенджеры. Это удобно!</p>
 								<ul class="contacts__list">
@@ -712,13 +715,13 @@
 			</form>
 			<div class="form__privacy">Нажимая на кнопку, вы даете согласие на обработку персональных данных</div>
 		</div> <!-- plugins -->
-		<script src="js/libs/jquery-3.7.1.min.js?_v=20250313105814"></script>
-		<script src="js/libs/jquery.inputmask.min.js?_v=20250313105814"></script>
-		<script src="js/libs/intlTelInput.min.js?_v=20250313105814"></script>
-		<script src="js/libs/fancybox.umd.js?_v=20250313105814"></script>
-		<script src="js/libs/swiper-bundle.min.js?_v=20250313105814"></script>
+		<script src="js/libs/jquery-3.7.1.min.js?_v=20250313133542"></script>
+		<script src="js/libs/jquery.inputmask.min.js?_v=20250313133542"></script>
+		<script src="js/libs/intlTelInput.min.js?_v=20250313133542"></script>
+		<script src="js/libs/fancybox.umd.js?_v=20250313133542"></script>
+		<script src="js/libs/swiper-bundle.min.js?_v=20250313133542"></script>
 		<!-- plugins -->
-		<script src="js/app.min.js?_v=20250313105814"></script>
+		<script src="js/app.min.js?_v=20250313133542"></script>
 	</div>
 </body>
 

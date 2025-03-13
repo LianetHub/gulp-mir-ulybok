@@ -68,6 +68,12 @@
 	// .promotion__price-current
 	&__price-current {
 		color: #106fae;
-		font-size: 1.375rem;
+		font-size: 0.875rem;
+		@media (min-width: $md5) {
+			font-size: 1rem;
+		}
+		@media (min-width: $md3) {
+			font-size: 1.375rem;
+		}
 	}
 }

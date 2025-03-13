@@ -7,7 +7,13 @@
 	}
 	// .video__content
 	&__content {
-		margin-top: rem(72);
+		margin-top: rem(32);
+		@media (min-width: $md5) {
+			margin-top: rem(48);
+		}
+		@media (min-width: $md3) {
+			margin-top: rem(72);
+		}
 		max-width: 73rem;
 		& iframe {
 			width: 100%;
