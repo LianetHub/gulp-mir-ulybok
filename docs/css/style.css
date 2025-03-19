@@ -9,23 +9,23 @@
 @font-face {
   font-family: "Gilroy";
   font-display: swap;
-  src: url("../fonts/Gilroy-Medium.woff2") format("woff2"), url("../fonts/Gilroy-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Gilroy";
-  font-display: swap;
   src: url("../fonts/Gilroy-Regular.woff2") format("woff2"), url("../fonts/Gilroy-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Manrope";
+  font-family: "icons";
   font-display: swap;
-  src: url("../fonts/Manrope-Medium.woff2") format("woff2"), url("../fonts/Manrope-Medium.woff") format("woff");
+  src: url("../fonts/icons.woff2") format("woff2"), url("../fonts/icons.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-display: swap;
+  src: url("../fonts/Gilroy-Medium.woff2") format("woff2"), url("../fonts/Gilroy-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
@@ -39,10 +39,10 @@
 }
 
 @font-face {
-  font-family: "icons";
+  font-family: "Manrope";
   font-display: swap;
-  src: url("../fonts/icons.woff2") format("woff2"), url("../fonts/icons.woff") format("woff");
-  font-weight: 400;
+  src: url("../fonts/Manrope-Medium.woff2") format("woff2"), url("../fonts/Manrope-Medium.woff") format("woff");
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -431,7 +431,6 @@
 }
 
 .table table tbody tr td:first-child {
-  font-weight: 500;
   text-align: left;
 }
 
@@ -2080,6 +2079,10 @@ body {
   font-size: 0.75rem;
 }
 
+.specialist__info:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
 .specialist__btns {
   margin-top: auto;
   width: 100%;
@@ -2096,6 +2099,7 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 50%;
           flex: 1 1 50%;
+  white-space: nowrap;
 }
 
 .specialist__btn:first-child:last-child {
@@ -5134,11 +5138,6 @@ body {
     grid-template-columns: 13.8125rem 1fr;
   }
 
-  .specialist__btns {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-  }
-
   .license__wrapper {
     padding: 3.31rem 0 0;
   }
@@ -5857,6 +5856,11 @@ body {
 
   [class*=__container] {
     max-width: 82.25rem;
+  }
+
+  .specialist__btns {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
 
   .header__location,

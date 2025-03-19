@@ -794,6 +794,9 @@ body {
 		flex-direction: column;
 		gap: 0.25rem;
 		font-size: 0.75rem;
+		&:not(:last-child) {
+			margin-bottom: 1rem;
+		}
 		@media (min-width: $md5) {
 			font-size: 1rem;
 		}
@@ -814,7 +817,7 @@ body {
 		display: flex;
 		gap: 1.31rem;
 		flex-wrap: wrap;
-		@media (min-width: $md3) {
+		@media (min-width: $md1) {
 			flex-wrap: nowrap;
 		}
 	}
@@ -822,6 +825,7 @@ body {
 	&__btn {
 		padding: 0.75rem;
 		flex: 1 1 50%;
+		white-space: nowrap;
 		&:first-child:last-child {
 			width: 100%;
 			@media (min-width: $md4) {
