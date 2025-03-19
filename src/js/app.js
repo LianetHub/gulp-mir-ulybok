@@ -1,8 +1,13 @@
 "use strict";
 
 
-
+import { Datepicker } from 'vanillajs-datepicker';
+import ru from 'vanillajs-datepicker/locales/ru';
 import * as devFunctions from "./modules/functions.js";
+
+
+Object.assign(Datepicker.locales, ru);
+
 
 //  init Fancybox
 if (typeof Fancybox !== "undefined" && Fancybox !== null) {
@@ -18,7 +23,35 @@ document.addEventListener("DOMContentLoaded", () => {
     devFunctions.isWebp();
     devFunctions.OS();
     devFunctions.mask();
-    devFunctions.beforeSlider()
+    devFunctions.beforeSlider();
+
+    // select
+
+    const selects = document.querySelectorAll("select");
+
+    selects?.forEach(select => {
+        select.addEventListener("click", function () {
+            const parent = this.parentElement;
+            parent.classList.toggle("focus");
+        });
+
+        select.addEventListener("blur", function () {
+            this.parentElement.classList.remove("focus");
+        });
+    });
+
+
+    // datepickers
+
+    const datepickers = document.querySelectorAll('input[name="date"]');
+    datepickers?.forEach(datepicker => {
+
+        const datepickerInstanse = new Datepicker(datepicker, {
+            language: "ru",
+        });
+
+    })
+
 
 
 

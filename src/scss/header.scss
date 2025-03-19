@@ -43,6 +43,7 @@
 			justify-content: space-between;
 			flex: 1 1 auto;
 			flex-direction: row;
+			padding: 0 1rem;
 		}
 	}
 	// .header__logo
@@ -54,6 +55,10 @@
 			max-width: 9.3125rem;
 			height: rem(60);
 		}
+		@media (min-width: $md2) {
+			max-width: rem(195);
+			height: rem(65);
+		}
 	}
 	// .header__location
 	&__location {
@@ -62,11 +67,15 @@
 		gap: 0.5rem;
 
 		font-size: 0.7rem;
-		@media (max-width: $md5) {
+		@media (max-width: $md4) {
 			max-width: rem(165);
 		}
 		@media (min-width: $md5) {
 			font-size: 1rem;
+		}
+
+		@media (min-width: $md1) {
+			font-size: 1.25rem;
 		}
 
 		&::before {
@@ -79,6 +88,9 @@
 		@extend .header__location;
 		@media (max-width: $md2) {
 			display: none;
+		}
+		@media (min-width: $md1) {
+			flex-shrink: 0;
 		}
 		&::before {
 			font-size: 1em;

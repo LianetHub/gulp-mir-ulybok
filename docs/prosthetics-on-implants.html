@@ -37,12 +37,11 @@
 	<link rel="manifest" href="/site.webmanifest" />
 	<!-- favicon -->
 	<!-- plugins -->
-	<link rel="stylesheet" href="css/libs/input-tel.css?_v=20250313135204">
-	<link rel="stylesheet" href="css/libs/swiper-bundle.min.css?_v=20250313135204">
-	<link rel="stylesheet" href="css/libs/fancybox.min.css?_v=20250313135204">
+	<link rel="stylesheet" href="css/libs/swiper-bundle.min.css?_v=20250319203555">
+	<link rel="stylesheet" href="css/libs/fancybox.min.css?_v=20250319203555">
 	<!-- plugins -->
-	<link rel="stylesheet" href="css/reset.min.css?_v=20250313135204">
-	<link rel="stylesheet" href="css/style.min.css?_v=20250313135204">
+	<link rel="stylesheet" href="css/reset.min.css?_v=20250319203555">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250319203555">
 </head>
 
 <body>
@@ -595,62 +594,33 @@
 		</footer>
 		<div id="callback" class="popup">
 			<button type="button" data-fancybox-close class="popup__close icon-close"></button>
-			<h2 class="popup__title">Заказать звонок</h2>
-			<p class="popup__subtitle">Мы перезвоним Вам в ближайшее время!</p>
+			<h2 class="popup__title title-md">Заказать звонок</h2>
 			<form action="#" class="popup__form form">
-				<div class="form__field">
-					<label for="callback-name">Имя</label>
-					<input type="text" name="name" id="callback-name" class="form__control" placeholder="Ваше имя">
+				<div class="form__field icon-chevron-down">
+					<select name="service" class="form__control">
+						<option value="0">Выбрать услугу</option>
+						<option value="1">Услуга № 1</option>
+						<option value="2">Услуга № 2</option>
+						<option value="3">Услуга № 3</option>
+					</select>
 				</div>
-				<div class="form__field">
-					<label for="callback-phone">Телефон</label>
-					<input type="tel" name="phone" id="callback-phone" class="form__control" placeholder="+7 ___ ___-__-__">
+				<div class="form__field icon-calendar">
+					<input type="text" name="date" id="callback-date" class="form__control" autocomplete="off" placeholder="Выбрать дату">
 				</div>
-				<div class="form__field">
-					<label for="callback-message">Вопрос</label>
-					<textarea name="message" id="callback-message" class="form__control" placeholder="Опишите Ваш вопрос"></textarea>
-				</div>
+				<input type="text" name="name" id="callback-name" class="form__control" placeholder="Ваше имя">
+				<input type="tel" name="phone" id="callback-phone" class="form__control" placeholder="+7 ___ ___-__-__">
+				<textarea name="message" class="form__control" placeholder="Комментарий"></textarea>
+				<button type="submit" class="btn btn-primary btn-fullwidth btn-xl">Записаться</button>
 				<label class="form__checkbox">
-					<input type="checkbox" name="not-call" class="form__checkbox-input hidden" hidden>
-					<span class="form__checkbox-text">Не звоните, напишите в Whatsapp</span>
+					<input type="checkbox" name="agree" class="form__checkbox-input hidden" hidden>
+					<span class="form__checkbox-text">Я согласен на обработку персональных данных в соответствии с&nbsp;<a href="">политика конфинденциальности</a></span>
 				</label>
-				<div class="form__footer">
-					<button type="submit" class="form__btn btn btn-primary btn-sm icon-phone">Отправить заявку</button>
-					<div class="form__socials">
-						<a href="" class="form__social icon-whatsapp"></a>
-						<a href="" class="form__social icon-telegram"></a>
-					</div>
-				</div>
 			</form>
-			<div class="form__privacy">Нажимая на кнопку, вы даете согласие на обработку персональных данных</div>
-		</div>
-		<div id="one-click-buy" class="popup">
-			<button type="button" data-fancybox-close class="popup__close icon-close"></button>
-			<h2 class="popup__title">Купить в 1 клик</h2>
-			<p class="popup__subtitle">Мы перезвоним Вам в ближайшее время!</p>
-			<form action="#" class="popup__form form">
-				<div class="form__field">
-					<label for="callback-name">Имя</label>
-					<input type="text" name="name" id="callback-name" class="form__control" placeholder="Ваше имя">
-				</div>
-				<div class="form__field">
-					<label for="callback-phone">Телефон</label>
-					<input type="tel" name="phone" id="callback-phone" class="form__control" placeholder="+7 ___ ___-__-__">
-				</div>
-				<div class="form__footer">
-					<button type="submit" class="form__btn btn btn-secondary btn-sm icon-phone">Оформить заказ</button>
-					<div class="form__socials">
-						<a href="" class="form__social icon-whatsapp"></a>
-						<a href="" class="form__social icon-telegram"></a>
-					</div>
-				</div>
-			</form>
-			<div class="form__privacy">Нажимая на кнопку, вы даете согласие на обработку персональных данных</div>
 		</div> <!-- plugins -->
-		<script src="js/libs/fancybox.umd.js?_v=20250313135204"></script>
-		<script src="js/libs/swiper-bundle.min.js?_v=20250313135204"></script>
+		<script src="js/libs/fancybox.umd.js?_v=20250319203555"></script>
+		<script src="js/libs/swiper-bundle.min.js?_v=20250319203555"></script>
 		<!-- plugins -->
-		<script src="js/app.min.js?_v=20250313135204"></script>
+		<script src="js/app.min.js?_v=20250319203555"></script>
 	</div>
 </body>
 

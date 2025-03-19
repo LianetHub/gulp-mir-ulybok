@@ -30,13 +30,13 @@
 	position: relative;
 	display: none;
 	width: 100%;
-	max-width: rem(670);
+	max-width: rem(713);
 	background: #fff;
 	color: $text;
 	border-radius: rem(12);
-	padding: rem(30) rem(10);
-	@media (min-width: $md4) {
-		padding: rem(30) rem(40);
+	padding: 2.5rem 1rem;
+	@media (min-width: $md3) {
+		padding: 2.5rem;
 	}
 	// .popup__body
 	&__body {
@@ -44,16 +44,17 @@
 	// .popup__close
 	&__close {
 		position: absolute;
-		top: 0.63rem;
-		right: 0.63rem;
-		font-size: 2rem;
+		top: rem(24);
+		right: rem(24);
+		font-size: 1.5rem;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		transition: color 0.3s ease 0s;
+		color: #106fae;
 		@media (any-hover: hover) {
 			&:hover {
-				color: $accent;
+				color: $red;
 			}
 		}
 	}
@@ -71,9 +72,12 @@
 	}
 	// .popup__form
 	&__form {
-		margin-top: 2rem;
+		margin-top: 1.5rem;
 		display: flex;
 		flex-direction: column;
-		gap: 2rem;
+		gap: 1rem;
+		.form__checkbox {
+			margin-top: 0;
+		}
 	}
 }

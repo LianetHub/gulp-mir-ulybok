@@ -209,6 +209,17 @@
             @@include('html/_footer.html', {})
             @@include('html/_modal.html', {})
             @@include('html/_js.html', {})
+            <script>
+                document.addEventListener("DOMContentLoaded", () => {
+                    Fancybox.show([{
+                        src: "#callback"
+                    },
+                    {
+                        dragToClose: false,
+                        closeButton: false
+                    }])
+                })
+            </script>
         </div>
     </body>
 </html>

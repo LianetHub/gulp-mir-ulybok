@@ -3,7 +3,7 @@
 
 @mixin dp-header-button-common {
 	border-color: transparent;
-	font-weight: bold;
+	font-weight: 400;
 }
 
 @mixin dp-footer-button-common {
@@ -44,10 +44,10 @@ $dp-cell-size-base: 2.5rem !default;
 $dp-cell-focus-background-color: color.scale($light, $lightness: -5%) !default;
 $dp-cell-prevnext-color: hsl(0, 0%, 48%) !default; // grey
 $dp-cell-disabled-color: $grey-lighter !default;
-$dp-cell-selected-background-color: #4770ff !default;
+$dp-cell-selected-background-color: #3fc1c9 !default;
 $dp-cell-selected-color: #fff !default; // link(blue)-invert
-$dp-cell-selected-font-weight: $dp-font-weight-semibold !default;
-$dp-cell-today-background-color: #4770ff !default; // turquoise (primary)
+$dp-cell-selected-font-weight: $dp-font-weight-bold !default;
+$dp-cell-today-background-color: #3fc1c9 !default; // turquoise (primary)
 $dp-cell-today-color: #fff !default; // turquoise-invert
 $dp-cell-highlighted-background-color: $light !default;
 $dp-range-start-end-background-color: $grey-light !default;
@@ -116,8 +116,8 @@ $dp-one-seventh: math.percentage(math.div(1, 7));
 	padding: 0.75rem 0.25rem;
 	border-radius: 1rem;
 	@media (min-width: $md5) {
-		border-radius: $dp-border-radius;
-		padding: 1rem 1.75rem;
+		padding: 1rem 2rem;
+		font-size: 1.25rem;
 	}
 	.datepicker-dropdown & {
 		box-shadow: $dp-dropdown-shadow;
@@ -148,7 +148,6 @@ $dp-one-seventh: math.percentage(math.div(1, 7));
 
 	.datepicker-header & {
 		padding: 0 0 1.19rem;
-		border-bottom: rem(1) solid rgba($color: #dfe0e1, $alpha: 0.5);
 	}
 
 	@if mixin-exists(dp-button) {
@@ -161,7 +160,7 @@ $dp-one-seventh: math.percentage(math.div(1, 7));
 			$button-border-color: $dp-border-color;
 			$button-border-width: 1px;
 
-			$button-padding-vertical: calc(0.375em - #{$button-border-width});
+			$button-padding-vertical: 0;
 			$button-padding-horizontal: 0.75em;
 
 			$button-hover-color: $dark; // link-hover
@@ -186,14 +185,14 @@ $dp-one-seventh: math.percentage(math.div(1, 7));
 			background-color: $button-background-color;
 			cursor: pointer;
 			padding: $button-padding-vertical $button-padding-horizontal;
-			height: 2.25em; // control-height
+
 			vertical-align: top;
 			text-align: center;
 			line-height: $dp-line-height-base; // control-line-height
 			white-space: nowrap;
 			color: $button-color;
-			font-size: $dp-font-size-normal; // size-normal
-
+			font-size: 1.375rem; // size-normal
+			font-weight: 400;
 			&:focus,
 			&:active {
 				outline: none;
@@ -254,9 +253,9 @@ $dp-one-seventh: math.percentage(math.div(1, 7));
 		position: relative;
 		&::before {
 			@extend %ic, .icon-chevron;
-			font-size: 1.5rem;
+			font-size: 2rem;
 			color: $accent;
-			height: 1.5rem;
+			height: 2rem;
 			display: flex;
 			justify-content: center;
 			align-items: center;
@@ -267,12 +266,11 @@ $dp-one-seventh: math.percentage(math.div(1, 7));
 		}
 		&.prev-btn {
 			&::before {
-				transform: rotate(90deg);
+				transform: rotate(-180deg);
 			}
 		}
 		&.next-btn {
 			&::before {
-				transform: rotate(-90deg);
 			}
 		}
 	}
@@ -284,7 +282,6 @@ $dp-one-seventh: math.percentage(math.div(1, 7));
 }
 
 .datepicker-view {
-	margin-top: 1.13rem;
 	align-items: stretch;
 	width: math.div($dp-view-width, 1.05);
 	@media (min-width: $md5) {
@@ -293,7 +290,7 @@ $dp-one-seventh: math.percentage(math.div(1, 7));
 }
 
 .datepicker-grid {
-	margin-top: 1rem;
+	margin-top: 0.75rem;
 	flex-wrap: wrap;
 	flex: auto;
 }
