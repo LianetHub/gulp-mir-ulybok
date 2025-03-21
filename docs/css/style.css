@@ -23,6 +23,14 @@
 }
 
 @font-face {
+  font-family: "Manrope";
+  font-display: swap;
+  src: url("../fonts/Manrope-Regular.woff2") format("woff2"), url("../fonts/Manrope-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "icons";
   font-display: swap;
   src: url("../fonts/icons.woff2") format("woff2"), url("../fonts/icons.woff") format("woff");
@@ -35,14 +43,6 @@
   font-display: swap;
   src: url("../fonts/Manrope-Medium.woff2") format("woff2"), url("../fonts/Manrope-Medium.woff") format("woff");
   font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Manrope";
-  font-display: swap;
-  src: url("../fonts/Manrope-Regular.woff2") format("woff2"), url("../fonts/Manrope-Regular.woff") format("woff");
-  font-weight: 400;
   font-style: normal;
 }
 
@@ -3568,6 +3568,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   gap: 2rem;
 }
 
