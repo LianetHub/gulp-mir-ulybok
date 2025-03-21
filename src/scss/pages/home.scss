@@ -1,7 +1,7 @@
 .main {
-	padding-bottom: rem(500);
+	padding-bottom: rem(500) !important;
 	@media (min-width: $md4) {
-		padding-bottom: 10.75rem;
+		padding-bottom: 10.75rem !important;
 	}
 	// .main__wrapper
 	&__wrapper {

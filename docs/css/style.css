@@ -3309,7 +3309,7 @@ body {
 }
 
 .main {
-  padding-bottom: 31.25rem;
+  padding-bottom: 31.25rem !important;
 }
 
 .main__wrapper {
@@ -4853,7 +4853,7 @@ body {
   }
 
   .main {
-    padding-bottom: 10.75rem;
+    padding-bottom: 10.75rem !important;
   }
 
   .main__caption {
