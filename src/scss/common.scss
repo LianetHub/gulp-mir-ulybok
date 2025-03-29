@@ -278,6 +278,11 @@ body {
 		&:not(:last-child) {
 			margin-bottom: 1.5rem;
 		}
+		&:is(a) {
+			@media (max-width: $md3) {
+				font-size: rem(18);
+			}
+		}
 	}
 	// .desc__list
 	&__list {
@@ -347,6 +352,7 @@ body {
 				display: inline;
 			}
 			& a {
+				white-space: nowrap;
 				transition: color 0.3s ease;
 				@media (any-hover: hover) {
 					&:hover {
@@ -536,6 +542,9 @@ body {
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
 		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='53' viewBox='0 0 50 53' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M24.5815 0.00326537C32.5332 -0.118102 40.3335 3.14549 45.2434 9.51151C50.1099 15.8212 50.8118 24.147 49.2697 32.013C47.6623 40.2124 44.5299 49.2226 36.867 52.2391C29.5575 55.1165 22.4233 49.1831 15.5945 45.2693C9.5814 41.823 3.17078 38.4311 1.09132 31.7348C-1.18402 24.4077 0.13899 16.2682 4.68251 10.1306C9.37731 3.78867 16.7797 0.122345 24.5815 0.00326537Z' fill='%23EDFCFD'/%3E%3C/svg%3E");
 	}
 	// .service__caption
@@ -1063,7 +1072,9 @@ body {
 	}
 	// .contacts__item
 	&__item {
-		max-width: 17rem;
+		@media (min-width: $md5) {
+			max-width: 17rem;
+		}
 		&:not(:last-child) {
 			margin-bottom: 1.65rem;
 		}
@@ -1432,6 +1443,7 @@ body {
 			width: 20.5rem;
 		}
 		&.banner__image-cover {
+			display: flex;
 			margin: -1.31rem 0rem -1.31rem -3rem;
 			width: 10rem;
 			@media (min-width: $md5) {
@@ -1441,12 +1453,16 @@ body {
 				width: 37.5rem;
 				margin: -5.06rem -1rem -7.5rem -5rem;
 			}
+			& img {
+				max-height: 100%;
+				height: inherit;
+			}
 		}
 		& img {
-			height: 100%;
-			width: auto;
 			object-fit: cover;
+			width: auto;
 			object-position: 0 center;
+			max-width: 100%;
 		}
 	}
 }

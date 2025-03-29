@@ -88,12 +88,18 @@
 	// .heading__contacts-worktime
 	&__contacts-worktime {
 		margin-top: 0.5rem;
-		font-size: 1.25rem;
+		@media (min-width: $md3) {
+			font-size: 1.25rem;
+		}
 	}
 	// .heading__btn
 	&__btn {
 		margin-top: 2rem;
 		min-width: 19.0625rem;
+		width: 100%;
+		@media (min-width: $md5) {
+			width: auto;
+		}
 	}
 	// .heading__list
 	&__list {
@@ -120,6 +126,7 @@
 			text-decoration-thickness: auto;
 			text-underline-offset: auto;
 			text-underline-position: from-font;
+			white-space: nowrap;
 			@media (any-hover: hover) {
 				&:hover {
 					text-decoration: none;
@@ -156,8 +163,11 @@
 	&__content {
 		border-radius: 0.9375rem;
 		background: #fff;
+		padding: 2rem;
 		max-width: 25.8125rem;
-		padding: 2rem 2.5rem;
+		@media (min-width: $md5) {
+			padding: 2rem 2.5rem;
+		}
 	}
 	// .location__map
 	&__map {
