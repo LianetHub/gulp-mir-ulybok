@@ -183,7 +183,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (document.querySelector('.reviews__slider')) {
         new Swiper('.reviews__slider', {
-            slidesPerView: "auto",
+            slidesPerView: 2,
             spaceBetween: 16,
             watchOverflow: true,
             pagination: {
@@ -191,7 +191,12 @@ document.addEventListener("DOMContentLoaded", () => {
                 clickable: true,
             },
             breakpoints: {
+                576.78: {
+                    slidesPerView: "auto",
+                    spaceBetween: 16,
+                },
                 767.98: {
+                    slidesPerView: "auto",
                     spaceBetween: 46,
                 }
             }

@@ -28,14 +28,6 @@
 	// .heading__contacts
 	&__contacts {
 		margin-top: 2.5rem;
-		@media (min-width: $md5) {
-			margin-top: 3.5rem;
-		}
-		@media (min-width: $md3) {
-			align-items: center;
-			margin-top: 4.5rem;
-			flex-direction: row;
-		}
 		border-radius: 0.75rem;
 		background: #fff;
 		box-shadow: rem(6) rem(7) rem(6.3) 0 rgba(0, 0, 0, 0.15);
@@ -43,20 +35,40 @@
 		justify-content: space-between;
 
 		flex-direction: column;
-		padding: 0.63rem 1.5rem;
+		padding: 1.5rem 1.125rem;
+		@media (min-width: $md5) {
+			padding: 0.63rem 1.5rem;
+			margin-top: 3.5rem;
+		}
+		@media (min-width: $md3) {
+			align-items: center;
+			margin-top: 4.5rem;
+			flex-direction: row;
+		}
 	}
 	// .heading__contacts-block
 	&__contacts-block {
 		display: flex;
 		align-items: center;
 		gap: 1rem;
-		padding: 0.63rem 1.12rem;
+		@media (min-width: $md5) {
+			padding: 0.63rem 1.12rem;
+		}
+		@media (max-width: $md5) {
+			&:not(:last-child) {
+				margin-bottom: 2rem;
+			}
+		}
 	}
 	// .heading__contacts-icon
 	&__contacts-icon {
 		flex-shrink: 0;
-		width: 2rem;
-		height: 2rem;
+		width: 1.5rem;
+		height: 1.5rem;
+		@media (min-width: $md5) {
+			width: 2rem;
+			height: 2rem;
+		}
 		@media (min-width: $md3) {
 			width: 2.5rem;
 			height: 2.5rem;
@@ -70,12 +82,16 @@
 	}
 	// .heading__contacts-caption
 	&__contacts-caption {
+		@media (max-width: $md5) {
+			font-size: 1.125rem;
+		}
 	}
 	// .heading__contacts-link
 	&__contacts-link {
-		margin-top: 0.5rem;
 		font-size: 1rem;
+		margin-top: 0.25rem;
 		@media (min-width: $md3) {
+			margin-top: 0.5rem;
 			font-size: 1.25rem;
 		}
 		transition: color 0.3s ease;
@@ -87,8 +103,9 @@
 	}
 	// .heading__contacts-worktime
 	&__contacts-worktime {
-		margin-top: 0.5rem;
+		margin-top: 0.25rem;
 		@media (min-width: $md3) {
+			margin-top: 0.5rem;
 			font-size: 1.25rem;
 		}
 	}
@@ -103,9 +120,10 @@
 	}
 	// .heading__list
 	&__list {
-		margin-top: 3.5rem;
 		font-size: 0.875rem;
+		margin-top: 2.5rem;
 		@media (min-width: $md5) {
+			margin-top: 3.5rem;
 			font-size: 1rem;
 		}
 		@media (min-width: $md3) {

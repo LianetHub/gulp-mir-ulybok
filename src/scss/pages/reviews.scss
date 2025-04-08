@@ -122,7 +122,7 @@
 				font-family: $font-manrope;
 			}
 			.review {
-				min-height: rem(352);
+				min-height: rem(305);
 			}
 		}
 	}
@@ -131,7 +131,7 @@
 .review {
 	border-radius: 0.9375rem;
 	background: #fff;
-	padding: 1.25rem 1.125rem;
+	padding: 1.25rem 1.125rem 2.5rem;
 	// .review__header
 	&__header {
 		display: flex;

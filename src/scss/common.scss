@@ -29,12 +29,13 @@ body {
 	overflow: hidden;
 	& > * {
 		padding: rem(28) 0;
-		@media (min-width: $md2) {
-			padding: rem(32) 0;
-		}
 		@media (min-width: $md5) {
+			padding: rem(40) 0;
+		}
+		@media (min-width: $md2) {
 			padding: rem(60) 0;
 		}
+
 		&:first-child {
 			&:not(.promo, .heading) {
 				padding-top: 0;
@@ -84,6 +85,24 @@ body {
 	@media (min-width: $md2) {
 		margin-top: rem(-40);
 	}
+	&.promo--promotions {
+		.promo__wrapper {
+			@media (max-width: $md5) {
+				background-position: 63% 0;
+				background-size: 80rem auto;
+				padding: $header rem(18) 0;
+			}
+		}
+	}
+	&.promo--caries {
+		.promo__wrapper {
+			@media (max-width: $md5) {
+				background-position: 63% 0;
+				background-size: 70rem auto;
+				padding: $header rem(18) 0;
+			}
+		}
+	}
 	// .promo__container
 	&__container {
 		@media (max-width: $md3) {
@@ -99,8 +118,9 @@ body {
 		background-repeat: no-repeat;
 		background-position: center right;
 		background-size: auto 100%;
+		min-height: 39rem;
 		@media (max-width: $md3) {
-			background-position: center;
+			background-position: right center;
 			background-size: cover;
 			padding: $header rem(18) 0;
 		}
@@ -114,8 +134,8 @@ body {
 			left: 0;
 			width: 100%;
 			height: 100%;
-			z-index: 2;
-			background: linear-gradient(90deg, $bg-color 0%, rgba(221, 221, 221, 0) 80.62%), linear-gradient(180deg, $bg-color 0%, rgba(221, 221, 221, 0) 26.62%);
+			z-index: 3;
+			background: linear-gradient(90deg, $bg-color 0%, rgba(221, 221, 221, 0) 120.62%), linear-gradient(180deg, $bg-color 0%, rgba(221, 221, 221, 0) 26.62%);
 			@media (min-width: $md3) {
 				background: linear-gradient(90deg, $bg-color 26.72%, rgba(221, 221, 221, 0) 56.62%);
 			}
@@ -132,6 +152,21 @@ body {
 				z-index: 1;
 			}
 		}
+		&:has(.promo__image) {
+			@media (max-width: $md4) {
+				min-height: 0;
+				.promo__offer {
+					padding-bottom: 0;
+				}
+			}
+			.promo__body {
+				position: static;
+			}
+			.promo__offer {
+				position: relative;
+				z-index: 4;
+			}
+		}
 	}
 	// .promo__body
 	&__body {
@@ -146,7 +181,7 @@ body {
 			min-height: rem(680);
 		}
 		position: relative;
-		z-index: 2;
+		z-index: 4;
 		display: flex;
 		flex-direction: column;
 	}
@@ -155,6 +190,7 @@ body {
 		display: flex;
 		flex: 1 1 auto;
 		flex-direction: column;
+
 		@media (min-width: $md4) {
 			align-items: flex-start;
 			flex-direction: row;
@@ -162,10 +198,7 @@ body {
 	}
 	// .promo__offer
 	&__offer {
-		padding-top: 5rem;
-		@media (min-width: $md5) {
-			padding-top: 4.5rem;
-		}
+		padding-top: 4.5rem;
 		padding-bottom: 5.19rem;
 		flex: 1 1 auto;
 	}
@@ -174,7 +207,8 @@ body {
 		margin-bottom: 3.5rem;
 		@media (max-width: $md5) {
 			margin-bottom: 1.5rem;
-			font-size: rem(32);
+			font-size: 1.875rem;
+			max-width: 18rem;
 		}
 	}
 	// .promo__position
@@ -202,7 +236,9 @@ body {
 
 	// .promo__desc
 	&__desc {
-		font-size: 1.125rem;
+		@media (min-width: $md5) {
+			font-size: 1.125rem;
+		}
 		@media (min-width: $md3) {
 			font-size: 1.375rem;
 		}
@@ -229,6 +265,10 @@ body {
 	}
 	// .promo__image
 	&__image {
+		align-self: flex-end;
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
 		@media (min-width: $md4) {
 			flex: 0 0 28rem;
 		}
@@ -238,10 +278,17 @@ body {
 			margin: 0 auto;
 			margin-right: 3rem;
 		}
-		align-self: flex-end;
-		display: flex;
-		justify-content: center;
-		align-items: flex-end;
+
+		@media (max-width: $md4) {
+			position: absolute;
+			right: -9.6rem;
+			width: 25.25rem;
+			height: 33.625rem;
+			bottom: 0;
+			text-align: right;
+			display: flex;
+			z-index: -1;
+		}
 		& img {
 			max-height: 37rem;
 		}
@@ -282,6 +329,21 @@ body {
 			@media (max-width: $md3) {
 				font-size: rem(18);
 			}
+		}
+	}
+	// .desc__license
+	&__license {
+		font-size: 0.875rem;
+		@media (min-width: $md5) {
+			font-size: 1rem;
+		}
+		@media (min-width: $md3) {
+			font-size: 1.375rem;
+		}
+		line-height: normal;
+		& span {
+			color: #3fc1c9;
+			white-space: nowrap;
 		}
 	}
 	// .desc__list
@@ -325,7 +387,10 @@ body {
 	}
 	// .desc__supervisory
 	&__supervisory {
-		margin-top: 3.5rem;
+		margin-top: 2.5rem;
+		@media (min-width: $md5) {
+			margin-top: 3.5rem;
+		}
 	}
 	// .desc__supervisory-block
 	&__supervisory-block {
@@ -419,12 +484,13 @@ body {
 		.service {
 			display: grid;
 			align-items: center;
+			min-height: auto;
+			gap: 1.5rem;
 			@media (min-width: $md4) {
+				gap: 2rem;
+				padding: 1.5rem 2rem;
 				grid-template-columns: repeat(2, 1fr);
 			}
-			gap: 2rem;
-			padding: 1.5rem 2rem;
-			min-height: auto;
 
 			.service__desc {
 				margin-top: auto;
@@ -550,7 +616,10 @@ body {
 	// .service__caption
 	&__caption {
 		line-height: 1.25;
-		max-width: 26rem;
+		max-width: 32rem;
+		@media (max-width: $md5) {
+			font-size: 1.125rem;
+		}
 	}
 	// .service__price
 	&__price {
@@ -564,8 +633,11 @@ body {
 	}
 	// .service__price-caption
 	&__price-caption {
-		line-height: 1;
-		font-size: 1rem;
+		font-size: 0.875rem;
+		@media (min-width: $md5) {
+			line-height: 1;
+			font-size: 1rem;
+		}
 		@media (min-width: $md3) {
 			letter-spacing: em(0.03125, 1.25);
 			font-size: 1.25rem;
@@ -575,8 +647,11 @@ body {
 	&__price-value {
 		margin-top: 1.06rem;
 		color: $blue;
-		font-size: 1.5rem;
 		text-transform: lowercase;
+		font-size: 1.125rem;
+		@media (min-width: $md5) {
+			font-size: 1.5rem;
+		}
 		@media (min-width: $md3) {
 			font-family: $font-manrope;
 		}
@@ -707,9 +782,18 @@ body {
 			background: #fff;
 			height: auto;
 			border-radius: 1.25rem;
-			padding: 1.25rem 1.5rem;
+			padding: 1.125rem;
+			@media (min-width: $md5) {
+				padding: 1.25rem 1.5rem;
+			}
 			.specialist__image {
-				height: 24.5625rem;
+				height: 20.5625rem;
+				@media (min-width: $md5) {
+					height: 24.5625rem;
+				}
+				& img {
+					border-radius: 0.75rem;
+				}
 			}
 			.specialist__body {
 				display: flex;
@@ -719,9 +803,20 @@ body {
 				flex: 1 1 auto;
 			}
 			.specialist__info {
-				margin-bottom: 5.25rem;
 				flex-direction: column-reverse;
 				max-width: 100%;
+				margin-bottom: 3.38rem;
+				@media (min-width: $md5) {
+					margin-bottom: 5.25rem;
+				}
+				@media (max-width: $md5) {
+					font-size: 1rem;
+				}
+			}
+			.specialist__name {
+				@media (max-width: $md5) {
+					font-size: 1.125rem;
+				}
 			}
 			.specialist__btns {
 				margin-top: auto;
@@ -744,6 +839,7 @@ body {
 	&.specialist-white {
 		background: #fff;
 		padding: 1rem 1.125rem;
+		border-radius: rem(15);
 		@media (min-width: $md3) {
 			grid-template-columns: 13.8125rem 1fr;
 		}
@@ -982,7 +1078,7 @@ body {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		padding: rem(28) 0;
+		padding: 2.5rem 0;
 		@media (min-width: $md5) {
 			padding: rem(48) 0;
 		}
@@ -1006,8 +1102,9 @@ body {
 		}
 		display: grid;
 		align-items: center;
-		gap: rem(24);
+		gap: 3.5rem;
 		@media (min-width: $md4) {
+			gap: rem(24);
 			grid-template-columns: repeat(2, 1fr);
 		}
 	}
@@ -1022,34 +1119,42 @@ body {
 	}
 	// .contacts__title
 	&__title {
+		& br {
+			@media (max-width: $md5) {
+				display: none;
+			}
+		}
 	}
 	// .contacts__list
 	&__list {
-		margin-top: 1.5rem;
 		display: flex;
 		flex-direction: column;
+		margin-top: 1rem;
+		@media (min-width: $md5) {
+			margin-top: 1.5rem;
+		}
 	}
 	// .contacts__subtitle
 	&__subtitle {
-		margin-top: 2rem;
+		margin-top: 1.5rem;
 		color: #666a71;
-		font-size: 0.875rem;
-		@media (min-width: $md5) {
-			font-size: 1rem;
-		}
+		font-size: 1rem;
 		@media (min-width: $md3) {
 			font-size: 1.375rem;
 		}
 		max-width: 34rem;
 		&:not(:last-child) {
-			margin-bottom: 1.75rem;
+			margin-bottom: 1rem;
+			@media (min-width: $md5) {
+				margin-bottom: 1.75rem;
+			}
 		}
 	}
 
 	// .contacts__row
 	&__row {
 		color: #171717;
-		font-size: 0.875rem;
+		font-size: 1rem;
 		@media (min-width: $md5) {
 			font-size: 1rem;
 		}
@@ -1188,6 +1293,7 @@ body {
 	background-size: contain;
 	// .guidelines__wrapper
 	&__wrapper {
+		position: relative;
 		background-color: rgba(63, 193, 201, 0.25);
 
 		background-repeat: no-repeat;
@@ -1205,17 +1311,56 @@ body {
 		&.guidelines__wrapper_white {
 			background-color: transparent;
 			padding: 2.62rem 0;
+			@media (max-width: $md3) {
+				&::before {
+					content: "";
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					background: linear-gradient(90deg, $bg-color 100%, transparent 100%);
+					z-index: 1;
+					pointer-events: none;
+					opacity: 0.4;
+				}
+			}
 			@media (min-width: $md3) {
 				padding: 0;
+			}
+		}
+		&.guidelines__wrapper--cover {
+			@media (max-width: $md5) {
+				background-color: transparent;
+				&::before {
+					content: "";
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					background: linear-gradient(90deg, rgba(63, 193, 201, 0.5) 0%, rgba(221, 221, 221, 0) 50.44%),
+						linear-gradient(90deg, rgba(63, 193, 201, 0.25) 75%, rgba(63, 193, 201, 0.25) 100%), linear-gradient(90deg, $bg-color 100%, rgba(63, 193, 201, 0.25) 100%);
+					z-index: 1;
+					pointer-events: none;
+					opacity: 0.5;
+				}
 			}
 		}
 	}
 	// .guidelines__container
 	&__container {
+		position: relative;
+		z-index: 2;
 	}
 	// .guidelines__title
 	&__title {
 		max-width: 47rem;
+		&.guidelines__title--nowrap-desktop {
+			@media (min-width: $md2) {
+				white-space: nowrap;
+			}
+		}
 	}
 	// .guidelines__subtitle
 	&__subtitle {
@@ -1323,8 +1468,10 @@ body {
 	overflow: hidden;
 	padding: 2.75rem 3rem 2rem 3rem;
 	@media (max-width: $md3) {
-		gap: 2rem;
+		gap: 3.5rem;
 		flex-wrap: wrap;
+		border-radius: 0.9375rem;
+		padding: 1.5rem 1.12rem 2rem 1.12rem;
 	}
 	&:has(.banner__image-cover) {
 		@media (max-width: $md3) {
@@ -1332,13 +1479,13 @@ body {
 		}
 		padding: 1.31rem 0rem 1.31rem 1.6rem;
 		@media (min-width: $md3) {
-			padding: 3rem 1rem 7.5rem 6.5rem;
+			padding: 3rem 1rem 2rem 3rem;
 		}
 	}
 	// .banner__main
 	&__main {
 		position: relative;
-		z: 2px;
+		z-index: 2;
 	}
 	// .banner__time
 	&__time {
@@ -1346,35 +1493,49 @@ body {
 		align-items: center;
 		gap: 0.38rem;
 		color: #3fc1c9;
-		font-size: 1.25rem;
-		margin-bottom: 1.25rem;
+		font-size: 1rem;
+		margin-bottom: 1rem;
+		@media (min-width: $md5) {
+			margin-bottom: 1.25rem;
+			font-size: 1.25rem;
+		}
 	}
 	// .banner__time-icon
 	&__time-icon {
+		@media (max-width: $md5) {
+			width: 1.5rem;
+			height: 1.5rem;
+		}
 	}
 	// .banner__title
 	&__title {
 		&.title-md {
 			margin-bottom: 2rem;
+			@media (max-width: $md5) {
+				margin-bottom: 1.5rem;
+				font-size: 1.125rem;
+			}
 		}
 	}
 	// .banner__desc
 	&__desc {
-		margin-top: 1rem;
 		line-height: 1.2;
-		font-size: 0.875rem;
-		@media (min-width: $md5) {
-			font-size: 1rem;
-		}
+		font-size: 1rem;
+		margin-top: 1rem;
 		@media (min-width: $md3) {
 			font-size: 1.375rem;
 		}
 	}
 	&__list {
-		margin-top: 1.5rem;
 		color: #666a71;
 		line-height: 1.2;
+		margin-top: 0.75rem;
+		font-size: 0.875rem;
+		@media (min-width: $md5) {
+			font-size: 1rem;
+		}
 		@media (min-width: $md3) {
+			margin-top: 1.5rem;
 			font-size: 1.25rem;
 		}
 		li {
@@ -1384,7 +1545,10 @@ body {
 			}
 		}
 		& + .banner__footer {
-			margin-top: 1.5rem;
+			margin-top: 1.75rem;
+			@media (min-width: $md5) {
+				margin-top: 1.5rem;
+			}
 		}
 	}
 	// .banner__footer
@@ -1393,7 +1557,7 @@ body {
 		gap: 0.81rem;
 		@media (min-width: $md3) {
 			gap: 2rem;
-			margin-top: 2.62rem;
+			margin-top: 4.25rem;
 		}
 		display: flex;
 		align-items: center;
@@ -1450,8 +1614,8 @@ body {
 				width: 20rem;
 			}
 			@media (min-width: $md3) {
-				width: 37.5rem;
-				margin: -5.06rem -1rem -7.5rem -5rem;
+				width: 29.5rem;
+				margin: -3rem -1rem -2rem -2rem;
 			}
 			& img {
 				max-height: 100%;

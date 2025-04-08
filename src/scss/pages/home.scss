@@ -6,9 +6,14 @@
 	// .main__wrapper
 	&__wrapper {
 		padding-top: $header;
-		background: linear-gradient(90deg, $bg-color 26.72%, rgba(221, 221, 221, 0) 50.62%), linear-gradient(180deg, $bg-color -10%, rgba(221, 221, 221, 0) 16.62%),
-			url("@img/main.jpg") 0 0 / cover no-repeat;
 		padding-bottom: rem(1);
+		background: linear-gradient(90deg, $bg-color 0%, rgba(221, 221, 221, 0) 40%), linear-gradient(180deg, $bg-color 0%, rgba(221, 221, 221, 0) 26.62%),
+			url("@img/main.jpg") center 0 / 60rem auto no-repeat;
+
+		@media (min-width: $md5) {
+			background: linear-gradient(90deg, $bg-color 26.72%, rgba(221, 221, 221, 0) 50.62%), linear-gradient(180deg, $bg-color -10%, rgba(221, 221, 221, 0) 16.62%),
+				url("@img/main.jpg") 0 0 / cover no-repeat;
+		}
 	}
 	// .main__container
 	&__container {
@@ -35,11 +40,10 @@
 	}
 	// .main__caption
 	&__caption {
-		font-size: 1rem;
-		@media (max-width: $md5) {
-			max-width: 13.375rem;
+		font-size: 0.875rem;
+		@media (min-width: $md5) {
+			font-size: 1rem;
 		}
-
 		@media (min-width: $md4) {
 			font-size: 1.25rem;
 		}
@@ -278,6 +282,10 @@
 		width: 3.125rem;
 		height: 3.125rem;
 		flex-shrink: 0;
+		background-image: url("data:image/svg+xml,%3Csvg width='51' height='53' viewBox='0 0 51 53' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M25.0815 0.00326537C33.0332 -0.118102 40.8335 3.14549 45.7434 9.51151C50.6099 15.8212 51.3118 24.147 49.7697 32.013C48.1623 40.2124 45.0299 49.2226 37.367 52.2391C30.0575 55.1165 22.9233 49.1831 16.0945 45.2693C10.0814 41.823 3.67078 38.4311 1.59132 31.7348C-0.684017 24.4077 0.63899 16.2682 5.18251 10.1306C9.87731 3.78867 17.2797 0.122345 25.0815 0.00326537Z' fill='%23EDFCFD'/%3E%3C/svg%3E%0A");
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
 	}
 	// .benefits__block-text
 	&__block-text {
@@ -400,16 +408,16 @@
 	}
 	// .sales__banner
 	&__banner {
-		margin-top: 3.56rem;
+		margin-top: 2.5rem;
+		@media (min-width: $md5) {
+			margin-top: 3.56rem;
+		}
 		@media (min-width: $md3) {
 			margin-top: 4.69rem;
 		}
 	}
 
 	&__more {
-		@media (min-width: $md3) {
-			margin-top: 4rem;
-		}
 		margin-left: auto;
 		margin-right: auto;
 		width: fit-content;

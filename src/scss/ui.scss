@@ -261,14 +261,18 @@
 		width: 100%;
 
 		& thead {
-			border-radius: 1rem 1rem 0rem 0rem;
 			background: rgba(63, 193, 201, 0.5);
 			color: #fff;
-			text-align: center;
+			text-align: left;
+			border-radius: 0.5rem 0.5rem 0rem 0rem;
+			@media (min-width: $md5) {
+				border-radius: 1rem 1rem 0rem 0rem;
+				text-align: center;
+			}
 			& th {
 				font-weight: 500;
 				font-size: 1rem;
-				padding: 0.75rem 1rem;
+				padding: 0.75rem 0.75rem;
 				@media (min-width: $md5) {
 					font-size: 1.25rem;
 				}
@@ -277,20 +281,30 @@
 					font-size: 1.5rem;
 				}
 				&:first-child {
-					border-radius: 1rem 0rem 0rem 0;
+					border-radius: 0.5rem 0rem 0rem 0;
+					@media (min-width: $md5) {
+						border-radius: 1rem 0rem 0rem 0;
+					}
 				}
 				&:last-child {
-					border-radius: 0rem 1rem 0 0rem;
+					text-align: center;
+					border-radius: 0rem 0.5rem 0 0rem;
+					@media (min-width: $md5) {
+						border-radius: 0rem 1rem 0 0rem;
+					}
 				}
 			}
 		}
 		& tbody {
 			& tr {
 				&:not(:last-child) {
-					border-bottom: 1.5rem solid $bg-color;
+					border-bottom: 1rem solid $bg-color;
+					@media (min-width: $md5) {
+						border-bottom: 1.5rem solid $bg-color;
+					}
 				}
 				& td {
-					font-size: 0.75rem;
+					font-size: 0.875rem;
 					padding: 1em;
 
 					@media (min-width: $md5) {

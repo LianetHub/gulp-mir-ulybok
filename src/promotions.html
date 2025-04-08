@@ -11,11 +11,12 @@
             <main class="page">
                 @@include('html/_promo.html', {
                 "breads": ["Главная", "Акции"],
+                "promoClass": "promo--promotions",
                 "hasCover": false,
                 "background": "@img/promo/promotions.jpg",
                 "title": "Акции и скидки",
                 "desc": "Воспользуйтесь акциями, скидками и специальными предложениями стоматологии «ДоброДент». Получите качественное лечение по доступной стоимости!",
-                "btnText": "Смотреть все"
+                "btns": ["Смотреть все"]
                 })
                 <section class="promotions">
                     <div class="promotions__container">
@@ -46,7 +47,7 @@
                                     <li>Скидка не суммируется с другими акциями и скидками.</li>
                                 </ul>
                                 <div class="banner__footer">
-                                    <a href="" class="banner__btn btn btn-primary">Записаться</a>
+                                    <a href="" class="banner__btn btn btn-primary btn-fullwidth--mobile">Записаться</a>
                                 </div>
                             </div>
                             <div class="banner__image">
