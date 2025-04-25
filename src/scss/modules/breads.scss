@@ -1,4 +1,6 @@
 .breadcrumbs {
+	position: relative;
+	z-index: 3;
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;

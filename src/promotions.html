@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
     @@include('html/_head.html', {
-    'title': 'Акции и скидки'
+    'title': 'Акции и&nbsp;скидки'
     })
     <body>
         <div class="wrapper">
@@ -14,18 +14,18 @@
                 "promoClass": "promo--promotions",
                 "hasCover": false,
                 "background": "@img/promo/promotions.jpg",
-                "title": "Акции и скидки",
-                "desc": "Воспользуйтесь акциями, скидками и специальными предложениями стоматологии «ДоброДент». Получите качественное лечение по доступной стоимости!",
+                "title": "Акции и&nbsp;скидки",
+                "desc": "Воспользуйтесь акциями, скидками и&nbsp;специальными предложениями стоматологии «ДоброДент». Получите качественное лечение по доступной стоимости!",
                 "btns": ["Смотреть все"]
                 })
-                <section class="promotions">
+                <!-- <section class="promotions">
                     <div class="promotions__container">
                         <h2 class="promotions__title title">Действующие акции</h2>
                         <ul class="promotions__list">
                             @@loop('./html/templates/_promotion.html', './html/json/promotions.json')
                         </ul>
                     </div>
-                </section>
+                </section> -->
                 <section class="sales">
                     <div class="sales__container">
                         <h2 class="sales__title title">Выгодные предложения</h2>
@@ -37,14 +37,14 @@
                                     </div>
                                     Предложение действует бессрочно
                                 </div>
-                                <h3 class="banner__title title-md">Скидка 5% на первое посещение двух членов семьи</h3>
+                                <h3 class="banner__title title-md">Скидка 5% на&nbsp;первое посещение двух членов семьи</h3>
                                 <p class="banner__desc">
-                                    Записывайтесь на прием с близкими <br>
-                                    и получите скидку 5% на лечение.
+                                    Записывайтесь на&nbsp;прием с&nbsp;близкими <br>
+                                    и&nbsp;получите скидку 5% на&nbsp;лечение.
                                 </p>
                                 <ul class="banner__list">
-                                    <li>Скидка действует один раз на одну услугу.</li>
-                                    <li>Скидка не суммируется с другими акциями и скидками.</li>
+                                    <li>Скидка действует один раз на&nbsp;одну услугу.</li>
+                                    <li>Скидка не суммируется с&nbsp;другими акциями и&nbsp;скидками.</li>
                                 </ul>
                                 <div class="banner__footer">
                                     <a href="" class="banner__btn btn btn-primary btn-fullwidth--mobile">Записаться</a>
@@ -57,8 +57,8 @@
                     </div>
                 </section>
                 @@include('html/_contacts.html', {
-                "formTitle": "Запишитесь на прием",
-                "formSubtitle": "Оставьте заявку, чтобы получить бесплатную консультацию и записаться на прием к специалисту.",
+                "formTitle": "Запишитесь на&nbsp;прием",
+                "formSubtitle": "Оставьте заявку, чтобы получить бесплатную консультацию и&nbsp;записаться на&nbsp;прием к специалисту.",
                 "image": "@img/feedback/01.png",
                 "inContainer": true
                 })

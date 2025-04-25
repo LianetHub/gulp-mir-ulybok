@@ -35,15 +35,15 @@ DynamicAdapt.prototype.init = function () {
 		return Array.prototype.indexOf.call(self, item) === index;
 	});
 
-	// навешивание слушателя на медиа-запрос
-	// и вызов обработчика при первом запуске
+	// навешивание слушателя на&nbsp;медиа-запрос
+	// и&nbsp;вызов обработчика при первом запуске
 	for (let i = 0; i < this.mediaQueries.length; i++) {
 		const media = this.mediaQueries[i];
 		const mediaSplit = String.prototype.split.call(media, ',');
 		const matchMedia = window.matchMedia(mediaSplit[0]);
 		const mediaBreakpoint = mediaSplit[1];
 
-		// массив объектов с подходящим брейкпоинтом
+		// массив объектов с&nbsp;подходящим брейкпоинтом
 		const оbjectsFilter = Array.prototype.filter.call(this.оbjects, function (item) {
 			return item.breakpoint === mediaBreakpoint;
 		});
@@ -101,7 +101,7 @@ DynamicAdapt.prototype.indexInParent = function (parent, element) {
 	return Array.prototype.indexOf.call(array, element);
 };
 
-// Функция сортировки массива по breakpoint и place 
+// Функция сортировки массива по breakpoint и&nbsp;place 
 // по возрастанию для this.type = min
 // по убыванию для this.type = max
 DynamicAdapt.prototype.arraySort = function (arr) {

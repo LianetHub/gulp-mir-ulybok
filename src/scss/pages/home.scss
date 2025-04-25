@@ -154,9 +154,10 @@
 	}
 	// .benefits__subtitle
 	&__subtitle {
-		margin-top: 3.5rem;
+		margin-top: rem(24);
 		font-size: 0.875rem;
 		@media (min-width: $md5) {
+			margin-top: 3.5rem;
 			font-size: 1rem;
 		}
 		@media (min-width: $md3) {
@@ -178,7 +179,7 @@
 		}
 		@media (min-width: $md3) {
 			.swiper-wrapper {
-				grid-template-columns: repeat(3, 1fr);
+				grid-template-columns: repeat(2, 1fr) 1.1fr;
 			}
 		}
 	}
@@ -234,6 +235,11 @@
 	}
 	// .benefits__item-caption
 	&__item-caption {
+		@media (max-width: $md5) {
+			br {
+				display: none;
+			}
+		}
 	}
 	// .benefits__item-text
 	&__item-text {

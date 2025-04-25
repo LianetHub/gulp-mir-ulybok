@@ -323,6 +323,7 @@
 						color: $blue;
 						font-weight: 500;
 						font-size: 1rem;
+						white-space: nowrap;
 						@media (min-width: $md5) {
 							font-size: 1.25rem;
 						}

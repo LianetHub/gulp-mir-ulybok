@@ -132,6 +132,11 @@
 		@media (min-width: $md5) {
 			font-size: 1.25rem;
 		}
+		@media (max-width: $md5) {
+			& br {
+				display: none;
+			}
+		}
 	}
 	// .works__row-link
 	&__row-link {

@@ -39,6 +39,9 @@
 	}
 	// .form__title
 	&__title {
+		@media (max-width: $md5) {
+			font-size: rem(22);
+		}
 		&.text-center {
 			@media (max-width: $md5) {
 				text-align: left;

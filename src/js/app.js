@@ -265,6 +265,37 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+    document.querySelectorAll('[data-license]').forEach(link => {
+        link.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            const indexAttr = link.getAttribute('data-license');
+            let index = parseInt(indexAttr, 10);
+
+            if (isNaN(index) || index < 1) index = 1;
+
+
+            const slides = [
+                {
+                    src: '/img/license.jpg',
+                    type: 'image',
+                    thumb: '/img/license.jpg',
+                },
+                {
+                    src: '/img/license-back.jpg',
+                    type: 'image',
+                    thumb: '/img/license-back.jpg',
+                }
+            ];
+
+            if (index > slides.length) index = 1;
+
+            Fancybox.show(slides, {
+                startIndex: index - 1
+            });
+        });
+    });
+
 
 
 

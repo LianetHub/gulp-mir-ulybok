@@ -53,7 +53,7 @@ export const copyWoff = () => {
 export const fontsStyle = () => {
     let fontsFile = `${app.path.srcFolder}/scss/fonts.scss`;
 
-    // Проверяем наличие папки с шрифтами
+    // Проверяем наличие папки с&nbsp;шрифтами
     fs.readdir(app.path.build.fonts, function (err, fontsFiles) {
         if (fontsFiles) {
             // Если файл существует, удаляем его
